@@ -7,36 +7,36 @@
         "phaseName": "1: Core Topic",
         "correct": "Banning city-center cars versus individual driving rights.",
         "distractors": [
-          "How best to reduce air pollution in modern cities.",
-          "The environmental damage caused by private cars.",
-          "Whether public transport is better than driving."
+          "How cities can best reduce their air pollution over the coming decades.",
+          "The serious environmental damage that private cars cause across the world.",
+          "Whether reliable public transport is better than owning a car."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Governments should ban private cars downtown to cut pollution.",
         "distractors": [
-          "Cars release harmful exhaust into the air.",
-          "City traffic jams waste everyone's time.",
-          "Bicycles are a healthier way to travel."
+          "Cars release a large amount of harmful exhaust into the city air every day.",
+          "Traffic jams in the city centre waste an enormous amount of people's time.",
+          "Riding a bicycle to work is a much healthier way to travel around town."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Individuals have the right to drive their own cars freely.",
         "distractors": [
-          "Driving your own car is very convenient.",
-          "Petrol stations exist all over the city.",
-          "Many people enjoy the feeling of driving."
+          "Driving your own private car is convenient for busy families.",
+          "Petrol stations can be found on almost every street corner in the city.",
+          "A great many people enjoy the freedom and feeling of driving."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why ban cars, 2) Why protect driving rights, 3) Your view.",
         "distractors": [
-          "1) Why cars pollute, 2) Why people drive, 3) A conclusion.",
-          "1) The history of cars, 2) The future of cars, 3) The best car.",
-          "1) Why pollution is bad, 2) How to stop it, 3) Best transport."
+          "1) Why cars pollute, 2) Why people like driving, 3) A short conclusion.",
+          "1) The history of the car, 2) The future of the car, 3) The best model.",
+          "1) Why pollution is harmful, 2) How to stop it, 3) The best transport."
         ]
       }
     ]
@@ -49,36 +49,36 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether government should fund only science or also the arts.",
         "distractors": [
-          "Which subjects are the most useful to study.",
-          "How expensive university tuition has become.",
-          "Why science degrees are harder than arts degrees."
+          "Which university subjects are the most useful for society.",
+          "How incredibly expensive university tuition fees have become recently.",
+          "Why science degrees are generally harder to study than arts degrees."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Government should fund only science degrees because they are most useful.",
         "distractors": [
-          "Scientists invent new technology and medicine.",
-          "Many students want a well-paid career.",
-          "Laboratories are expensive to run."
+          "Scientists invent the new technology and medicine that society relies on.",
+          "A great many students simply want a secure and well-paid future career.",
+          "University laboratories are very expensive places to build and to run."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Government should keep funding arts subjects too.",
         "distractors": [
-          "Museums are full of famous paintings.",
-          "Some people are naturally good at art.",
-          "Music is enjoyable to listen to."
+          "The world's greatest museums are filled with beautiful, famous paintings.",
+          "Some people are born naturally talented at drawing and painting.",
+          "Listening to music is an enjoyable pastime for millions of people."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why fund only science, 2) Why also fund the arts, 3) Your view.",
         "distractors": [
-          "1) Science is useful, 2) Art is nice, 3) A conclusion.",
-          "1) How taxes work, 2) How universities spend, 3) Free education.",
-          "1) Why science is hard, 2) Why art is easy, 3) Your major."
+          "1) Science is useful, 2) Art is also nice, 3) A short conclusion.",
+          "1) How taxes are collected, 2) How universities spend, 3) Free study.",
+          "1) Why science is hard, 2) Why art is easy, 3) Your chosen major."
         ]
       }
     ]
@@ -91,27 +91,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether prisons should punish criminals or rehabilitate them.",
         "distractors": [
-          "How society can lower the overall crime rate.",
-          "Why some people choose to commit crimes.",
-          "Whether the death penalty is ever justified."
+          "Every victim of a serious crime surely deserves to see real justice done.",
+          "Some crimes committed in society are serious and shocking.",
+          "Courts and judges are the ones who decide how long each sentence lasts."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Prisons should mainly exist to punish criminals.",
         "distractors": [
-          "Victims of crime deserve to see justice.",
-          "Some crimes are extremely serious.",
-          "Courts decide how long sentences last."
+          "A surprising number of prisoners never learned how to read or to write.",
+          "Many prisons are badly overcrowded and rather unpleasant.",
+          "Prison guards often work long, difficult and stressful shifts."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Prisons should focus on rehabilitating inmates.",
         "distractors": [
-          "Some prisoners never learned to read or write.",
-          "Prisons can be overcrowded and unpleasant.",
-          "Guards work long and difficult shifts."
+          "A surprising number of prisoners never learned how to read or write.",
+          "Many prisons are badly overcrowded and rather unpleasant places.",
+          "Prison guards often work long, difficult and stressful shifts."
         ]
       },
       {
@@ -133,36 +133,36 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether remote work helps or harms staff and companies.",
         "distractors": [
-          "How the modern office is changing over time.",
-          "How workers can keep a good work-life balance.",
-          "Which online tools remote teams should use."
+          "The way the traditional modern office is slowly changing over the years.",
+          "How busy employees can keep a healthy balance between work and home life.",
+          "Which online video and chat tools remote teams ought to be using."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Remote work benefits both workers and employers.",
         "distractors": [
-          "Working from home avoids a long commute.",
-          "Home offices can be quiet and comfortable.",
-          "Video calls connect people across countries."
+          "Working from home lets employees avoid a long and tiring daily commute.",
+          "A home office can be a quiet and comfortable place to concentrate.",
+          "Video calls easily connect colleagues working in different countries."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Remote work isolates staff and lowers productivity.",
         "distractors": [
-          "Some homes have a slow internet connection.",
-          "Not everyone owns a suitable desk or chair.",
-          "Children can be noisy during the day."
+          "Some people's homes only have a slow and unreliable internet connection.",
+          "Not every worker owns a suitable desk and a comfortable office chair.",
+          "Young children can be noisy and distracting during the working day."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why remote work helps, 2) Why it harms output, 3) Your view.",
         "distractors": [
-          "1) It's flexible, 2) It's lonely, 3) A conclusion.",
-          "1) Home office setup, 2) Online meetings, 3) Best apps.",
-          "1) History of offices, 2) Future of offices, 3) Dream job."
+          "1) It is flexible, 2) It can be lonely, 3) A short conclusion.",
+          "1) The home office setup, 2) Online meetings, 3) The best apps.",
+          "1) The history of offices, 2) The future of offices, 3) A dream job."
         ]
       }
     ]
@@ -175,27 +175,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether children's screen time should be limited or not.",
         "distractors": [
-          "How parents can raise physically healthy children.",
-          "The dangers of social media for teenagers.",
-          "How much a tablet or phone actually costs."
+          "Spending too many hours staring at a bright screen can tire the eyes.",
+          "Growing children have an enormous amount of energy that they must burn.",
+          "Local parks and playgrounds are free and open for every child to enjoy."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Parents should strictly limit children's screen time.",
         "distractors": [
-          "Too much screen time can tire the eyes.",
-          "Children have lots of energy to burn.",
-          "Playgrounds are free and open to all."
+          "Some learning apps are colourful, engaging and good fun.",
+          "A great many children own a tablet or a phone.",
+          "Teachers also use computers and screens in the classroom every day."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Screens should not be restricted because they aid learning.",
         "distractors": [
-          "Some apps are colourful and fun.",
-          "Many children already own a tablet.",
-          "Teachers use computers at school too."
+          "Some children's learning apps are colourful, engaging and good fun.",
+          "A great many children these days already own a tablet of their own.",
+          "Teachers also use computers and screens in the classroom every day."
         ]
       },
       {
@@ -217,36 +217,36 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether tourism helps the economy or harms culture and nature.",
         "distractors": [
-          "How to become a responsible, eco-friendly tourist.",
-          "Why the airline industry has grown so fast.",
-          "Which countries are the most popular to visit."
+          "How a person can become a more responsible and eco-friendly tourist.",
+          "Why the global airline industry has grown so quickly in recent years.",
+          "Which countries and cities are currently the most popular to visit."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "International tourism strengthens the local economy.",
         "distractors": [
-          "Tourists like to buy small souvenirs.",
-          "Hotels are often built near beaches.",
-          "Airports connect cities around the world."
+          "Tourists visiting a new place love to buy small local souvenirs.",
+          "Large hotels are often built right beside the popular beaches.",
+          "International airports connect busy cities all."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Tourism damages local cultures and natural environments.",
         "distractors": [
-          "Tourists sometimes get lost in new cities.",
-          "Flights can be long and tiring.",
-          "Guidebooks are printed in many languages."
+          "Tourists visiting a foreign country sometimes get lost in the streets.",
+          "Long international flights can be tiring and uncomfortable for travellers.",
+          "Travel guidebooks are printed in different languages."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Economic benefits, 2) Culture and nature damage, 3) Your view.",
         "distractors": [
-          "1) It earns money, 2) It causes harm, 3) A conclusion.",
-          "1) Attracting tourists, 2) Saving nature, 3) Best holiday.",
-          "1) Discuss hotels, 2) Discuss food, 3) Discuss guides."
+          "1) It earns money, 2) It causes some harm, 3) A short conclusion.",
+          "1) Attracting tourists, 2) Protecting nature, 3) The best holiday.",
+          "1) Discuss the hotels, 2) Discuss the food, 3) Discuss the guides."
         ]
       }
     ]
@@ -259,36 +259,36 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether space funding is a waste or a source of vital technology.",
         "distractors": [
-          "Whether alien life exists elsewhere in the universe.",
-          "How rockets and satellites are actually built.",
-          "Whether humans will one day live on Mars."
+          "Whether intelligent alien life exists somewhere in the universe.",
+          "How enormous rockets and delicate satellites are actually designed and built.",
+          "Whether human beings will one day be able to live on the planet Mars."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Space funding is wasteful while Earth still has problems.",
         "distractors": [
-          "Rockets are very large machines.",
-          "Space is extremely far away.",
-          "Astronauts train for many years."
+          "The rockets used to reach space are enormous and complex machines.",
+          "Outer space is an almost unimaginably vast and empty distance away.",
+          "Astronauts have to train hard for many years before they fly."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Space research produces essential technological breakthroughs.",
         "distractors": [
-          "The stars are beautiful to look at.",
-          "Space films are popular at the cinema.",
-          "Many children dream of being astronauts."
+          "The stars in the night sky are beautiful things to look at.",
+          "Science-fiction films about space are hugely popular at the cinema.",
+          "A great many young children dream of one day becoming an astronaut."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why fund Earth instead, 2) Tech benefits of space, 3) Your view.",
         "distractors": [
-          "1) Earth needs help, 2) Space helps too, 3) A conclusion.",
-          "1) History of NASA, 2) Future of SpaceX, 3) Planet to visit.",
-          "1) Why poverty exists, 2) Why satellites help, 3) Science views."
+          "1) Earth needs help, 2) Space helps too, 3) A short conclusion.",
+          "1) The history of NASA, 2) The future of SpaceX, 3) A planet to visit.",
+          "1) Why poverty exists, 2) Why satellites help, 3) Your science views."
         ]
       }
     ]
@@ -301,27 +301,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether fast food should be taxed or diet left to personal choice.",
         "distractors": [
-          "The causes of and solutions to the obesity epidemic.",
-          "How the government collects and spends taxes.",
-          "Which fast foods are the least healthy."
+          "Fast food is often sold cheaply at every corner shop.",
+          "Fast-food chains advertise heavily on television and across the internet.",
+          "Burgers, fries and pizza are all quick and easy to prepare."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "A high tax on fast food would improve public health.",
         "distractors": [
-          "Fast food is often sold very cheaply.",
-          "Restaurants advertise on television.",
-          "Burgers and fries are quick to prepare."
+          "Fast food tastes delicious to different people.",
+          "Many of our daily meals have to be eaten in an enormous hurry.",
+          "Restaurant menus offer a wide range of tempting choices."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "People should be free to choose what they eat.",
         "distractors": [
-          "Fast food tastes good to many people.",
-          "Some meals are eaten in a hurry.",
-          "Menus offer a wide range of choices."
+          "Fast food genuinely tastes delicious to a great many people.",
+          "So many of our daily meals now have to be eaten in a hurry.",
+          "Restaurant menus these days offer a very wide range of choices."
         ]
       },
       {
@@ -343,27 +343,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether online news will replace print or print will survive.",
         "distractors": [
-          "The growing problem of fake news online.",
-          "How journalists research and write their stories.",
-          "Which news sources are the most trustworthy."
+          "News websites are able to show large, bright and colourful photographs.",
+          "Mobile phones are carried everywhere by almost everyone.",
+          "Digital news apps are quick and simple to download and open."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Online news will completely replace printed newspapers.",
         "distractors": [
-          "Websites can show colourful photos.",
-          "Phones are carried everywhere.",
-          "News apps are easy to download."
+          "Old newspapers can conveniently be recycled after they have been read.",
+          "Printed newspapers are produced in several different shapes and sizes.",
+          "Newsstands selling papers can be found on many busy streets."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Print newspapers will always keep a vital place in society.",
         "distractors": [
-          "Newspapers can be recycled after reading.",
-          "Print comes in different sizes.",
-          "Newsstands are found on many streets."
+          "Old newspapers can conveniently be recycled after being read.",
+          "Printed newspapers are produced in several different sizes.",
+          "Newsstands selling papers can still be found on many streets."
         ]
       },
       {
@@ -385,27 +385,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether medical animal testing is justified or cruel and needless.",
         "distractors": [
-          "The wider issue of animal rights and welfare.",
-          "How new medicines are discovered and made.",
-          "Whether testing cosmetics on animals is wrong."
+          "Research laboratories keep different kinds of animals.",
+          "Some medical tests can take an long time to fully complete.",
+          "Laboratory scientists always wear special protective coats and gloves."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Animal testing is justified because it saves human lives.",
         "distractors": [
-          "Laboratories keep many different animals.",
-          "Some tests take a long time.",
-          "Scientists wear protective clothing."
+          "Some of the animals used in laboratories are undeniably very cute.",
+          "Zoos also keep wild animals inside cages and enclosures.",
+          "People all over the world dearly love their pets at home."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Animal testing is cruel and unnecessary with modern alternatives.",
         "distractors": [
-          "Some animals are very cute.",
-          "Zoos also keep animals in cages.",
-          "People love their pets at home."
+          "Some of the animals kept in laboratories are undeniably very cute.",
+          "Zoos around the world also keep wild animals in cages and enclosures.",
+          "People everywhere dearly love the pets they keep at home."
         ]
       },
       {
@@ -427,27 +427,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether youth sport should be competitive or purely for fun.",
         "distractors": [
-          "The physical health benefits of playing sport.",
-          "How to train a child to become a professional.",
-          "How schools fund their sports programmes."
+          "Playing regular sport keeps busy children active and fit after school.",
+          "Every member of a sports team wears the same matching uniform.",
+          "Important matches and games are often played on the weekends."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Competitive sport teaches children discipline and resilience.",
         "distractors": [
-          "Sport keeps children active after school.",
-          "Teams wear matching uniforms.",
-          "Matches are often played at weekends."
+          "Children sometimes get rather muddy and dirty when they play outside.",
+          "Not every young child owns the proper kit, boots and equipment.",
+          "Outdoor games are cancelled because of heavy wind and rain."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Competition causes needless stress, so youth sport should be for fun.",
         "distractors": [
-          "Some children get muddy when they play.",
-          "Not every child owns proper kit.",
-          "Games can be cancelled by rain."
+          "Children sometimes get rather muddy and dirty when they play outdoors.",
+          "Not every young child owns the proper kit, boots and equipment.",
+          "Outdoor games are frequently cancelled because of heavy wind and rain."
         ]
       },
       {
@@ -469,27 +469,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether advertising to children should be banned or allowed.",
         "distractors": [
-          "How toy companies design their products.",
-          "How much money children spend on toys.",
-          "Which adverts are the funniest on TV."
+          "Some television adverts aimed at children are loud and annoying.",
+          "Children's cartoons are usually shown with lots of adverts in between them.",
+          "A great many young children watch an enormous amount of television."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Advertising aimed at children should be completely banned.",
         "distractors": [
-          "Some adverts are very loud.",
-          "Cartoons are shown between adverts.",
-          "Children watch a lot of television."
+          "Adverts often use catchy little songs to stay in your memory.",
+          "Companies have to pay a great deal of money to show their adverts.",
+          "Some of the most memorable adverts appear all over the internet."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Advertising teaches children about the market and making choices.",
         "distractors": [
-          "Adverts often use catchy songs.",
-          "Companies pay to show their adverts.",
-          "Some adverts appear on the internet."
+          "Adverts very often use catchy little songs to stay in your memory.",
+          "Companies have to pay a great deal of money to broadcast their adverts.",
+          "Some of the most memorable adverts now appear all over the internet."
         ]
       },
       {
@@ -511,27 +511,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether minority languages should be left to die or be protected.",
         "distractors": [
-          "Why English has become a global language.",
-          "How languages naturally change over time.",
-          "How hard it is to translate rare languages."
+          "Some minority languages have only a tiny handful of speakers.",
+          "Learning any new language properly takes years of hard effort.",
+          "A lot of words in rare languages are very hard to pronounce."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Letting minority languages die out makes global communication easier.",
         "distractors": [
-          "Some languages have very few speakers.",
-          "Learning a language takes years.",
-          "Many words are hard to pronounce."
+          "Some minority languages use very unusual and ancient writing systems.",
+          "People are often able to speak much faster in their own native language.",
+          "A single large dictionary can list many thousands of different words."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Governments should spend money to protect minority languages.",
         "distractors": [
-          "Some languages have unusual alphabets.",
-          "People speak faster in their own language.",
-          "Dictionaries list thousands of words."
+          "Some minority languages use very unusual and ancient writing systems.",
+          "People can usually speak much faster in their own native language.",
+          "One large dictionary can list many thousands of separate words."
         ]
       },
       {
@@ -553,27 +553,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether schools should teach only national or also world history.",
         "distractors": [
-          "Why studying history matters at all.",
-          "How to make history lessons interesting.",
-          "Whether history textbooks are accurate."
+          "Nearly every country has its own famous historical leaders.",
+          "History lessons normally take place inside a classroom during school hours.",
+          "Old historical dates can be quite hard for pupils to remember."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Children should learn only national history to build pride.",
         "distractors": [
-          "Every country has famous leaders.",
-          "History lessons happen at school.",
-          "Old dates can be hard to remember."
+          "The wider world is made up of different countries.",
+          "Some of the most important historical events happened long ago.",
+          "Maps are useful for showing exactly where each country is located."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "World history matters more for understanding global issues.",
         "distractors": [
-          "The world has many countries.",
-          "Some events happened long ago.",
-          "Maps show where countries are."
+          "The wider world is made up of a great many different countries.",
+          "Some of the most important historical events happened extremely long ago.",
+          "Maps are very useful for showing exactly where each country lies."
         ]
       },
       {
@@ -595,27 +595,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether the government or families should pay for elderly care.",
         "distractors": [
-          "How to improve the elderly's quality of life.",
-          "The medical problems that come with ageing.",
-          "Why nursing homes have become so expensive."
+          "Elderly people often need to take several different pills every day.",
+          "Good nursing homes employ kind, patient and trained care staff.",
+          "Growing old is something that eventually happens to every single person."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "The government should entirely pay for elderly housing and care.",
         "distractors": [
-          "Old people often need daily medicine.",
-          "Nursing homes have trained staff.",
-          "Ageing happens to everyone eventually."
+          "Many grandparents look forward to regular visits from family.",
+          "Some larger family homes happen to have a spare bedroom going unused.",
+          "Older people usually carry a lifetime of wonderful memories with them."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Families should be responsible for supporting older relatives.",
         "distractors": [
-          "Grandparents enjoy family visits.",
-          "Some homes have spare bedrooms.",
-          "Older people have many memories."
+          "Many grandparents look forward to regular visits from their family.",
+          "Some larger family homes happen to have a spare bedroom going unused.",
+          "Older people usually carry a lifetime of wonderful memories with them."
         ]
       },
       {
@@ -637,27 +637,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether GM crops are a necessity or a serious hidden risk.",
         "distractors": [
-          "How the world could end global starvation.",
-          "The science of how plant DNA is altered.",
-          "How large the farming industry has become."
+          "Some hardy crops are able to grow in hot, dry climates.",
+          "Farmers plant fresh seeds at the start of each season.",
+          "Fruit and vegetables naturally come in a wonderful range of colours."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "GM crops are necessary to feed a growing population.",
         "distractors": [
-          "Some crops grow in hot climates.",
-          "Farmers plant seeds each season.",
-          "Vegetables come in many colours."
+          "Fresh organic food is sold at farmers' markets in many towns.",
+          "A great many people prefer simple, traditional home cooking.",
+          "Large farms are located a long way from the nearest city."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "GM crops pose severe, unknown risks to health and ecosystems.",
         "distractors": [
-          "Organic food is sold at markets.",
-          "Some people prefer home cooking.",
-          "Farms can be far from cities."
+          "Fresh organic food is now sold at farmers' markets in many towns.",
+          "A great many people genuinely prefer simple, traditional home cooking.",
+          "Large modern farms are frequently located far from the nearest city."
         ]
       },
       {
@@ -679,27 +679,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether libraries are now unnecessary or still a vital resource.",
         "distractors": [
-          "Why fewer people read physical books.",
-          "How to research information safely online.",
-          "How local public buildings are funded."
+          "A news website can be opened at any time of the day or night.",
+          "A single mobile phone is easily able to store digital books.",
+          "Modern search engines are quick and simple for anyone to use."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Public libraries are unnecessary because information is online.",
         "distractors": [
-          "Websites can be opened at any time.",
-          "Phones can store many books.",
-          "Search engines are quick to use."
+          "Public libraries are usually calm and quiet places to sit and read.",
+          "The books in a library are arranged in order along the shelves.",
+          "Some of the world's public libraries are old and beautiful."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Libraries are still vital as community spaces and resources.",
         "distractors": [
-          "Libraries are usually quiet places.",
-          "Books are arranged on shelves.",
-          "Some libraries are very old."
+          "Public libraries are usually calm and quiet places to sit and read.",
+          "The books inside a library are carefully arranged along the shelves.",
+          "Some of the world's public libraries are extremely old and beautiful."
         ]
       },
       {
@@ -721,27 +721,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether individual action or government regulation best fights climate change.",
         "distractors": [
-          "The main causes and effects of global warming.",
-          "How households can recycle their waste.",
-          "How the world can switch to clean energy."
+          "Electric cars are quickly becoming far more popular all around the world.",
+          "A number of people now choose to grow their own fruit and vegetables.",
+          "Ordinary bicycles are wonderfully clean because they use no fuel at all."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Individual lifestyle changes are the best way to fight climate change.",
         "distractors": [
-          "Electric cars are becoming popular.",
-          "Some people grow their own food.",
-          "Bicycles do not use any fuel."
+          "Large factories are usually built with extremely tall smoking chimneys.",
+          "Governments hold important meetings on a regular basis.",
+          "The very biggest companies employ many thousands of ordinary people."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Only government action and corporate rules can make a real difference.",
         "distractors": [
-          "Factories have very tall chimneys.",
-          "Governments hold regular meetings.",
-          "Big companies employ many people."
+          "Large factories are usually built with extremely tall smoking chimneys.",
+          "Governments around the world hold important meetings on a regular basis.",
+          "The very biggest companies each employ many thousands of people."
         ]
       },
       {
@@ -763,27 +763,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether new buildings should be traditional or modern in design.",
         "distractors": [
-          "How to preserve old historical buildings.",
-          "How to build in an eco-friendly way.",
-          "How cities can solve housing shortages."
+          "Beautiful old historical buildings attract curious tourists.",
+          "The bricks used in construction come in a surprising range of colours.",
+          "Some charming little towns are hundreds of years old."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "New buildings should be designed traditionally to match their surroundings.",
         "distractors": [
-          "Old buildings attract many tourists.",
-          "Bricks come in different colours.",
-          "Some towns are hundreds of years old."
+          "Very tall towers can often be seen clearly from miles and miles away.",
+          "Large glass windows brightly reflect the sunlight during the daytime.",
+          "Enormous cranes are used to lift materials on every big building site."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "Modern, innovative architecture should always be encouraged.",
         "distractors": [
-          "Tall towers can be seen from far away.",
-          "Glass reflects the sunlight.",
-          "Cranes are used on building sites."
+          "Very tall towers can often be seen clearly from miles and miles away.",
+          "Large glass windows brightly reflect the sunlight during the day.",
+          "Enormous cranes are used to lift materials on every big building site."
         ]
       },
       {
@@ -805,27 +805,27 @@
         "phaseName": "1: Core Topic",
         "correct": "Whether raising the minimum wage helps the economy or harms it.",
         "distractors": [
-          "The widening wealth gap between rich and poor.",
-          "How to negotiate a pay rise with a boss.",
-          "Why the cost of living keeps increasing."
+          "Workers' wages are usually paid out at the end of each month.",
+          "A number of people have to work at more than one job to get by.",
+          "A printed payslip lists all the hours worked and the pay."
         ]
       },
       {
         "phaseName": "2: Side A",
         "correct": "Raising the minimum wage reduces poverty and helps the economy.",
         "distractors": [
-          "Wages are paid at the end of the month.",
-          "Some workers have more than one job.",
-          "Payslips list hours and pay."
+          "Ordinary shops always display their prices for every customer.",
+          "Most local businesses open up bright and early in the morning.",
+          "A certain number of jobs are only ever seasonal or temporary work."
         ]
       },
       {
         "phaseName": "3: Side B",
         "correct": "A higher minimum wage forces prices up and cuts jobs.",
         "distractors": [
-          "Shops display their prices clearly.",
-          "Businesses open early in the morning.",
-          "Some jobs are seasonal work."
+          "Ordinary shops always display their prices clearly for every customer.",
+          "Most local businesses open up bright and early in the morning.",
+          "A certain number of jobs are only ever seasonal or temporary work."
         ]
       },
       {

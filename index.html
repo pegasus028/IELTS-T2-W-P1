@@ -64,17 +64,34 @@
   .prompt-box .plabel{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:6px}
   .prompt-box .ptext{font-family:'Fraunces',serif;font-size:15px;line-height:1.55;font-weight:400}
 
+  /* ---- Round progress (prompt count + phase dots) ---- */
+  .progress{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:10px}
+  .promptCount{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;white-space:nowrap}
+  .dots{display:flex;gap:6px}
+  .dot{width:26px;height:6px;border-radius:6px;background:var(--paper);border:1.5px solid var(--ink);transition:background .2s}
+  .dot.done{background:var(--green)}
+  .dot.miss{background:var(--red)}
+  .dot.cur{background:var(--gold)}
+
   /* ---- Speed bar ---- */
-  .speed-track{height:10px;border:2px solid var(--ink);border-radius:20px;background:var(--paper);overflow:hidden;margin-bottom:16px}
+  .speed-track{height:10px;border:2px solid var(--ink);border-radius:20px;background:var(--paper);overflow:hidden;margin-bottom:6px}
   .speed-fill{height:100%;width:100%;background:var(--green);transition:width .25s linear, background .25s linear;border-radius:20px}
   .speed-fill.mid{background:var(--gold)}
   .speed-fill.low{background:var(--red)}
+  .speed-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);text-align:right;margin-bottom:14px;height:12px;font-weight:700}
 
   /* ---- Phase ---- */
   .phase-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
   .phase-tag{font-family:'Fraunces',serif;font-weight:900;font-size:20px;color:var(--gold-deep)}
   .phase-count{font-size:11px;letter-spacing:.14em;color:var(--gold-deep);text-transform:uppercase}
   .phase-q{font-family:'Space Mono',monospace;font-size:12px;color:#4a3f30;margin-bottom:14px;line-height:1.5}
+
+  /* option number badge + timeout */
+  .opt{position:relative}
+  .opt .kbd{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-right:9px;
+       border:1.5px solid currentColor;border-radius:5px;font-size:11px;font-weight:700;flex:0 0 auto;opacity:.65;vertical-align:middle}
+  .opt.timeout{opacity:.55}
+  @media (hover:hover){.opt:not(:disabled):hover{background:var(--gold);transform:translateY(-1px)}}
 
   .opts{display:grid;grid-template-columns:1fr;gap:10px}
   .opt{
@@ -142,8 +159,15 @@
       <div class="ptext" id="promptText">—</div>
     </div>
 
+    <!-- Round progress -->
+    <div class="progress">
+      <span class="promptCount" id="promptCount">Prompt 1 / 5</span>
+      <span class="dots" id="dots"></span>
+    </div>
+
     <!-- Speed bar -->
     <div class="speed-track"><div class="speed-fill" id="speedFill"></div></div>
+    <div class="speed-label" id="speedLabel">⚡ Speed bonus active</div>
 
     <div class="phase-head">
       <span class="phase-tag" id="phaseTag">—</span>
@@ -192,10 +216,10 @@ const SPEED_BONUS   = 5;     // answered correctly while bar still > 50%
 const FALLBACK_PROMPTS = [
   {id:"demo1",promptText:"Some argue governments should ban private cars in city centers to reduce pollution. Others believe individuals should have the right to drive anywhere. Discuss both views and give your opinion.",
    phases:[
-     {phaseName:"1: Core Topic",correct:"Banning city cars vs. individual driving rights.",distractors:["How to reduce pollution in modern city centers.","The global environmental impact of private cars.","Governments powers vs private car owners rights."]},
-     {phaseName:"2: Side A",correct:"Governments must ban downtown cars entirely.",distractors:["Cars cause severe pollution in urban areas.","Citizens should ride bicycles in the city.","Only electric vehicles should be allowed."]},
-     {phaseName:"3: Side B",correct:"Citizens need absolute freedom to drive.",distractors:["Driving a private car is extremely convenient.","Banning cars ruins local city businesses.","Commuters need cars to travel from suburbs."]},
-     {phaseName:"4: 3-Part Rule",correct:"1) Why ban cars, 2) Why protect rights, 3) Your view.",distractors:["1) Why cars pollute, 2) Why people drive, 3) Your opinion.","1) History of cars, 2) Future of cars, 3) Best car type.","1) Why pollution is bad, 2) How to stop it, 3) Best transport."]}
+     {phaseName:"1: Core Topic",correct:"Banning city-center cars versus individual driving rights.",distractors:["How cities can best reduce their air pollution over the coming decades.","The serious environmental damage that private cars cause across the world.","Whether reliable public transport is better than owning a car."]},
+     {phaseName:"2: Side A",correct:"Governments should ban private cars downtown to cut pollution.",distractors:["Cars release a large amount of harmful exhaust into the city air every day.","Traffic jams in the city centre waste an enormous amount of people's time.","Riding a bicycle to work is a much healthier way to travel around town."]},
+     {phaseName:"3: Side B",correct:"Individuals have the right to drive their own cars freely.",distractors:["Driving your own private car is convenient for busy families.","Petrol stations can be found on almost every street corner in the city.","A great many people enjoy the freedom and feeling of driving."]},
+     {phaseName:"4: 3-Part Rule",correct:"1) Why ban cars, 2) Why protect driving rights, 3) Your view.",distractors:["1) Why cars pollute, 2) Why people like driving, 3) A short conclusion.","1) The history of the car, 2) The future of the car, 3) The best model.","1) Why pollution is harmful, 2) How to stop it, 3) The best transport."]}
    ]}
 ];
 
@@ -213,9 +237,11 @@ let currentOptions=[];   // shuffled option list for this phase
 let trapText="";         // distractors[0] for this phase
 let correctText="";
 let totalPhases=0, phasesSeen=0, phasesCorrect=0;
+let phaseResults=[null,null,null,null];   // per-phase correctness for the CURRENT prompt's dots
+let optButtons=[];                        // current phase option <button> refs (for keyboard)
 
 /* speed bar */
-let speedRAF=null, phaseStart=0;
+let speedRAF=null, phaseStart=0, timeoutTimer=null;
 
 const $ = id => document.getElementById(id);
 
@@ -280,6 +306,10 @@ function renderPhase(){
   ];
   $('phaseQ').textContent = questions[phaseIdx] || "Pick the best option.";
 
+  // round progress
+  $('promptCount').textContent = 'Prompt '+(pIdx+1)+' / '+prompts.length;
+  renderDots();
+
   correctText = ph.correct;
   trapText = ph.distractors[0];            // distractors[0] is the TRAP
   currentOptions = shuffle([ph.correct, ...ph.distractors]);
@@ -289,18 +319,34 @@ function renderPhase(){
   $('feedback').className='feedback'; $('feedback').innerHTML='';
   $('nextBtn').classList.add('hide');
   $('scorePill').textContent = score+' pts';
+  $('speedLabel').textContent = '⚡ Speed bonus active';
+  $('speedLabel').style.color = 'var(--green)';
   updateStreakPill();
 
   startSpeedBar();
 }
 
+/* 4 dots = the 4 phases of the CURRENT prompt */
+function renderDots(){
+  const c=$('dots'); c.innerHTML='';
+  for(let i=0;i<4;i++){
+    const d=document.createElement('span'); d.className='dot';
+    if(i<phaseIdx) d.classList.add(phaseResults[i]===false?'miss':'done');
+    else if(i===phaseIdx) d.classList.add('cur');
+    c.appendChild(d);
+  }
+}
+
 function buildOpts(opts){
-  const c = $('opts'); c.innerHTML='';
-  opts.forEach(o=>{
+  const c = $('opts'); c.innerHTML=''; optButtons=[];
+  opts.forEach((o,i)=>{
     const b=document.createElement('button');
-    b.className='opt'; b.type='button'; b.textContent=o;
+    b.className='opt'; b.type='button';
+    const kbd=document.createElement('span'); kbd.className='kbd'; kbd.textContent=(i+1);
+    const txt=document.createElement('span'); txt.textContent=o;
+    b.appendChild(kbd); b.appendChild(txt);
     b.onclick=()=>selectAnswer(o, b);
-    c.appendChild(b);
+    c.appendChild(b); optButtons.push(b);
   });
 }
 
@@ -313,14 +359,24 @@ function updateStreakPill(){
 /* ========= SPEED BAR ========= */
 function startSpeedBar(){
   cancelAnimationFrame(speedRAF);
+  clearTimeout(timeoutTimer);
   phaseStart = performance.now();
   const fill = $('speedFill');
   fill.className='speed-fill';
+  // hard timeout: if no answer within PHASE_SECONDS, auto-resolve as a timeout
+  timeoutTimer = setTimeout(()=>{ if(!answered) selectAnswer(null, null); }, PHASE_SECONDS*1000);
   const step = ()=>{
     const elapsed = (performance.now()-phaseStart)/1000;
     let pct = Math.max(0, 1 - elapsed/PHASE_SECONDS);
     fill.style.width = (pct*100)+'%';
     fill.className = 'speed-fill' + (pct<=0.25?' low':pct<=0.5?' mid':'');
+    // live speed-bonus indicator
+    const sl=$('speedLabel');
+    if(!answered){
+      if(pct>0.5){ sl.textContent='⚡ Speed bonus active'; sl.style.color='var(--green)'; }
+      else if(pct>0){ sl.textContent='Speed bonus lost'; sl.style.color='var(--gold-deep)'; }
+      else { sl.textContent="Time's up!"; sl.style.color='var(--red)'; }
+    }
     if(pct>0 && !answered) speedRAF=requestAnimationFrame(step);
   };
   step();
@@ -335,14 +391,19 @@ async function selectAnswer(choice, btn){
   if(answered) return;
   answered=true;
   cancelAnimationFrame(speedRAF);
+  clearTimeout(timeoutTimer);
   phasesSeen++;
 
+  const isTimeout = (choice===null);        // ran out of time
   const isCorrect = (choice===correctText);
-  const isTrap    = (!isCorrect && choice===trapText);
+  const isTrap    = (!isCorrect && !isTimeout && choice===trapText);
   const stillFast = speedPct()>0.5;
 
+  // record for the phase dots
+  phaseResults[phaseIdx] = isCorrect;
+
   // disable all
-  [...$('opts').children].forEach(b=>b.disabled=true);
+  optButtons.forEach(b=>b.disabled=true);
 
   // compute points client-side (server is authoritative if online)
   let gained=0, streakBonus=0, speedBonus=0;
@@ -370,11 +431,13 @@ async function selectAnswer(choice, btn){
     score+=gained;
   }
 
-  // mark buttons
-  [...$('opts').children].forEach(b=>{
-    if(b.textContent===correctText) b.classList.add('right');
-    else if(b.textContent===choice && isTrap) b.classList.add('trap');
-    else if(b.textContent===choice && !isCorrect) b.classList.add('wrong');
+  // mark buttons (compare against the option text we stored, not textContent which includes the badge)
+  optButtons.forEach((b,i)=>{
+    const o=currentOptions[i];
+    if(o===correctText) b.classList.add('right');
+    else if(o===choice && isTrap) b.classList.add('trap');
+    else if(o===choice && !isCorrect) b.classList.add('wrong');
+    else if(isTimeout) b.classList.add('timeout');
   });
 
   // feedback
@@ -387,6 +450,9 @@ async function selectAnswer(choice, btn){
     fb.innerHTML=msg+'.';
     if(streakBonus) toast('🔥 '+currentStreak+' in a row! +'+streakBonus+' Bonus!','streak');
     else if(speedBonus) toast('⚡ Speed Bonus! +'+speedBonus,'speed');
+  }else if(isTimeout){
+    fb.className='feedback show bad';
+    fb.innerHTML="<strong>⏱ Time's up!</strong> No answer given.<br>Correct answer → <span class=\"corr\">"+correctText+'</span>';
   }else if(isTrap){
     fb.className='feedback show trap';
     fb.innerHTML='<strong>🚨 TRAP TRIGGERED!</strong> You chose a plausible but incorrect assumption. '+
@@ -396,22 +462,24 @@ async function selectAnswer(choice, btn){
     fb.innerHTML='<strong>✗ Not quite.</strong><br>Correct answer → <span class="corr">'+correctText+'</span>';
   }
 
+  renderDots();  // reflect this phase's result
   $('scorePill').textContent = score+' pts';
   updateStreakPill();
   $('nextBtn').classList.remove('hide');
+  $('nextBtn').focus();
   if(pIdx>=prompts.length-1 && phaseIdx>=3) $('nextBtn').textContent='Finish ✦';
 }
 
 /* ========= FLOW ========= */
 function next(){
   if(phaseIdx<3){ phaseIdx++; }
-  else if(pIdx<prompts.length-1){ pIdx++; phaseIdx=0; }
+  else if(pIdx<prompts.length-1){ pIdx++; phaseIdx=0; phaseResults=[null,null,null,null]; }
   else { finish(); return; }
   renderPhase();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function finish(){
-  cancelAnimationFrame(speedRAF);
+  cancelAnimationFrame(speedRAF); clearTimeout(timeoutTimer);
   $('game').classList.add('hide'); $('done').classList.remove('hide');
   $('finalScore').textContent = score;
   $('finalSummary').textContent =
@@ -426,26 +494,48 @@ function toast(msg, kind){
 }
 
 /* ========= EVENTS ========= */
+// Pre-fill last team name (handy when a phone reloads mid-lesson)
+try{ const last=localStorage.getItem('arena_team'); if(last) $('teamName').value=last; }catch(e){}
+
+function resetRoundState(){ pIdx=0; phaseIdx=0; score=0; currentStreak=0; bestStreak=0;
+  phasesSeen=0; phasesCorrect=0; phaseResults=[null,null,null,null]; }
+
 $('joinBtn').onclick = async ()=>{
   const name=$('teamName').value.trim();
   if(name.length<2){ toast('Enter a team name.'); return; }
-  team=name; $('joinBtn').textContent='Loading…'; $('joinBtn').disabled=true;
+  team=name; try{ localStorage.setItem('arena_team',team); }catch(e){}
+  $('joinBtn').textContent='Loading…'; $('joinBtn').disabled=true;
   await loadPrompts();
   prepareRound();
   if(!offline){ try{ await api('POST',{action:'register',team}); }catch(e){} }
   $('teamPill').textContent=team;
   $('join').classList.add('hide'); $('game').classList.remove('hide');
-  pIdx=0; phaseIdx=0; score=0; currentStreak=0; bestStreak=0;
+  resetRoundState();
   renderPhase();
 };
+// Enter key submits the join form
+$('teamName').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); $('joinBtn').click(); }});
+
 $('nextBtn').onclick = next;
 $('againBtn').onclick = async ()=>{
+  $('joinBtn').textContent='Enter the Arena'; $('joinBtn').disabled=false;
   await loadPrompts(); prepareRound();
-  pIdx=0; phaseIdx=0; score=0; currentStreak=0; bestStreak=0;
   $('done').classList.add('hide'); $('game').classList.remove('hide');
+  resetRoundState();
   if(!offline){ try{ await api('POST',{action:'register',team}); }catch(e){} }
   renderPhase();
 };
+
+/* ---- Keyboard: 1-4 to answer, Enter/Space to advance ---- */
+document.addEventListener('keydown', e=>{
+  if($('game').classList.contains('hide')) return;   // only during play
+  if(!answered && ['1','2','3','4'].includes(e.key)){
+    const i=+e.key-1;
+    if(optButtons[i]){ e.preventDefault(); optButtons[i].click(); }
+  }else if(answered && (e.key==='Enter'||e.key===' ')){
+    e.preventDefault(); next();
+  }
+});
 </script>
 </body>
 </html>

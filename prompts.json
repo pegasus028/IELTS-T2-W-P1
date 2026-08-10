@@ -5,37 +5,37 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Banning city cars vs. individual driving rights.",
+        "correct": "Banning city-center cars versus individual driving rights.",
         "distractors": [
-          "How to reduce pollution in modern city centers.",
-          "The global environmental impact of private cars.",
-          "Governments powers vs private car owners rights."
+          "How best to reduce air pollution in modern cities.",
+          "The environmental damage caused by private cars.",
+          "Whether public transport is better than driving."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Governments must ban downtown cars entirely.",
+        "correct": "Governments should ban private cars downtown to cut pollution.",
         "distractors": [
-          "Cars cause severe pollution in urban areas.",
-          "Citizens should ride bicycles in the city.",
-          "Only electric vehicles should be allowed."
+          "Cars release harmful exhaust into the air.",
+          "City traffic jams waste everyone's time.",
+          "Bicycles are a healthier way to travel."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Citizens need absolute freedom to drive.",
+        "correct": "Individuals have the right to drive their own cars freely.",
         "distractors": [
-          "Driving a private car is extremely convenient.",
-          "Banning cars ruins local city businesses.",
-          "Commuters need cars to travel from suburbs."
+          "Driving your own car is very convenient.",
+          "Petrol stations exist all over the city.",
+          "Many people enjoy the feeling of driving."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why ban cars, 2) Why protect rights, 3) Your view.",
+        "correct": "1) Why ban cars, 2) Why protect driving rights, 3) Your view.",
         "distractors": [
-          "1) Why cars pollute, 2) Why people drive, 3) Your opinion.",
-          "1) History of cars, 2) Future of cars, 3) Best car type.",
+          "1) Why cars pollute, 2) Why people drive, 3) A conclusion.",
+          "1) The history of cars, 2) The future of cars, 3) The best car.",
           "1) Why pollution is bad, 2) How to stop it, 3) Best transport."
         ]
       }
@@ -47,37 +47,37 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "How states should fund different degrees.",
+        "correct": "Whether government should fund only science or also the arts.",
         "distractors": [
-          "The importance of STEM and Arts degrees.",
-          "How much universities charge for tuition.",
-          "Why science is harder to study than art."
+          "Which subjects are the most useful to study.",
+          "How expensive university tuition has become.",
+          "Why science degrees are harder than arts degrees."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "State funds should target only STEM subjects.",
+        "correct": "Government should fund only science degrees because they are most useful.",
         "distractors": [
-          "Science and tech are the most useful subjects.",
-          "Universities should stop teaching the arts.",
-          "Students should choose science for better jobs."
+          "Scientists invent new technology and medicine.",
+          "Many students want a well-paid career.",
+          "Laboratories are expensive to run."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "State funds must keep supporting the arts.",
+        "correct": "Government should keep funding arts subjects too.",
         "distractors": [
-          "Arts and humanities are also very useful.",
-          "Art students must pay their own tuition.",
-          "Science degrees receive far too much money."
+          "Museums are full of famous paintings.",
+          "Some people are naturally good at art.",
+          "Music is enjoyable to listen to."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why fund STEM, 2) Why fund Arts, 3) Your opinion.",
+        "correct": "1) Why fund only science, 2) Why also fund the arts, 3) Your view.",
         "distractors": [
-          "1) STEM benefits, 2) Arts benefits, 3) Your preferred subject.",
-          "1) Tax collection, 2) University spending, 3) Free education.",
+          "1) Science is useful, 2) Art is nice, 3) A conclusion.",
+          "1) How taxes work, 2) How universities spend, 3) Free education.",
           "1) Why science is hard, 2) Why art is easy, 3) Your major."
         ]
       }
@@ -89,36 +89,36 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The main goals of the prison system.",
+        "correct": "Whether prisons should punish criminals or rehabilitate them.",
         "distractors": [
-          "How to lower the overall crime rate.",
-          "The history and ethics of capital punishment.",
-          "Why people commit violent acts in society."
+          "How society can lower the overall crime rate.",
+          "Why some people choose to commit crimes.",
+          "Whether the death penalty is ever justified."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Prisons should primarily penalize criminals.",
+        "correct": "Prisons should mainly exist to punish criminals.",
         "distractors": [
-          "Criminals deserve to suffer for their crimes.",
-          "Prisons should be harsh, miserable places.",
-          "The death penalty needs to be brought back."
+          "Victims of crime deserve to see justice.",
+          "Some crimes are extremely serious.",
+          "Courts decide how long sentences last."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Prisons must prioritize reforming all inmates.",
+        "correct": "Prisons should focus on rehabilitating inmates.",
         "distractors": [
-          "Prisoners should be taught how to read.",
-          "Criminals need therapy instead of prison.",
-          "Society is to blame for creating criminals."
+          "Some prisoners never learned to read or write.",
+          "Prisons can be overcrowded and unpleasant.",
+          "Guards work long and difficult shifts."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Prison as punishment, 2) Prison as rehab, 3) Your view.",
+        "correct": "1) Why punish, 2) Why rehabilitate, 3) Your view.",
         "distractors": [
-          "1) Why punish, 2) How to rehab, 3) Is crime increasing?",
+          "1) Crime is bad, 2) People can change, 3) A conclusion.",
           "1) Types of crime, 2) Prison sentences, 3) Views on police.",
           "1) Prison costs, 2) Why inmates escape, 3) Prison food."
         ]
@@ -131,38 +131,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The broad advantages vs. impacts of remote work.",
+        "correct": "Whether remote work helps or harms staff and companies.",
         "distractors": [
-          "The changing nature of the modern office.",
-          "Efficiency of employees vs corportate profits.",
-          "Maintaining a healthy work-life balance."
+          "How the modern office is changing over time.",
+          "How workers can keep a good work-life balance.",
+          "Which online tools remote teams should use."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Remote work benefits staff and companies.",
+        "correct": "Remote work benefits both workers and employers.",
         "distractors": [
-          "Remote work saves a lot of money on commuting.",
-          "Everyone should be forced to work remotely.",
-          "Employers save millions on office rent."
+          "Working from home avoids a long commute.",
+          "Home offices can be quiet and comfortable.",
+          "Video calls connect people across countries."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Remote work causes isolation and lowers output.",
+        "correct": "Remote work isolates staff and lowers productivity.",
         "distractors": [
-          "Employees who work from home become lonely.",
-          "It is impossible to manage a remote team.",
-          "Children distract parents who remote work."
+          "Some homes have a slow internet connection.",
+          "Not everyone owns a suitable desk or chair.",
+          "Children can be noisy during the day."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Dual benefits, 2) Isolation & low output, 3) Your stance.",
+        "correct": "1) Why remote work helps, 2) Why it harms output, 3) Your view.",
         "distractors": [
-          "1) Worker benefits, 2) Why workers are lonely, 3) Your stance.",
-          "1) Home office setup, 2) Online communication, 3) Best apps.",
-          "1) History of offices, 2) Future of offices, 3) Your dream job."
+          "1) It's flexible, 2) It's lonely, 3) A conclusion.",
+          "1) Home office setup, 2) Online meetings, 3) Best apps.",
+          "1) History of offices, 2) Future of offices, 3) Dream job."
         ]
       }
     ]
@@ -173,38 +173,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Restricting vs. encouraging children's screen time.",
+        "correct": "Whether children's screen time should be limited or not.",
         "distractors": [
-          "Parents wishes vs. children's healthy development.",
-          "How to raise physically healthy children.",
-          "The dangers of social media for teenagers."
+          "How parents can raise physically healthy children.",
+          "The dangers of social media for teenagers.",
+          "How much a tablet or phone actually costs."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Strict screen limits ensure healthy child growth.",
+        "correct": "Parents should strictly limit children's screen time.",
         "distractors": [
-          "Staring at screens damages children's eyesight.",
-          "Children should play outside, not watch TV.",
-          "Parents who buy iPads are bad parents."
+          "Too much screen time can tire the eyes.",
+          "Children have lots of energy to burn.",
+          "Playgrounds are free and open to all."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Screens are crucial for unrestricted learning.",
+        "correct": "Screens should not be restricted because they aid learning.",
         "distractors": [
-          "Kids must learn computers for future jobs.",
-          "Educational games beat violent video games.",
-          "Parents lack the time to restrict screen use."
+          "Some apps are colourful and fun.",
+          "Many children already own a tablet.",
+          "Teachers use computers at school too."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why limit screens, 2) Why allow screens, 3) Your view.",
         "distractors": [
-          "1) Negative effects, 2) Positive effects, 3) Internet views.",
-          "1) Discuss TV, 2) Discuss smartphones, 3) Discuss tablets.",
-          "1) Strict parenting, 2) iPads in school, 3) Favorite games."
+          "1) Screens are risky, 2) Screens teach, 3) A conclusion.",
+          "1) Discuss TV, 2) Discuss phones, 3) Discuss tablets.",
+          "1) Strict parents, 2) iPads at school, 3) Favourite games."
         ]
       }
     ]
@@ -215,38 +215,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Economic gains vs. costs of global tourism.",
+        "correct": "Whether tourism helps the economy or harms culture and nature.",
         "distractors": [
-          "The pros vs. cons of local culture.",
-          "How to become an eco-friendly global tourist.",
-          "The rapid growth of the airline industry."
+          "How to become a responsible, eco-friendly tourist.",
+          "Why the airline industry has grown so fast.",
+          "Which countries are the most popular to visit."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Foreigners bring high prosperity to host towns.",
+        "correct": "International tourism strengthens the local economy.",
         "distractors": [
-          "Tourism creates many jobs for local people.",
-          "Tourists spend lots of money on souvenirs.",
-          "Every country should build more luxury hotels."
+          "Tourists like to buy small souvenirs.",
+          "Hotels are often built near beaches.",
+          "Airports connect cities around the world."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Foreign visitors destroy local ecosystems.",
+        "correct": "Tourism damages local cultures and natural environments.",
         "distractors": [
-          "Tourists cause global pollution by flying.",
-          "Tourists consistently ignore local laws.",
-          "Local residents despise foreign tourists."
+          "Tourists sometimes get lost in new cities.",
+          "Flights can be long and tiring.",
+          "Guidebooks are printed in many languages."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Economic benefits, 2) Culture/nature damage, 3) Your view.",
+        "correct": "1) Economic benefits, 2) Culture and nature damage, 3) Your view.",
         "distractors": [
-          "1) Why tourism pays, 2) Why culture dies, 3) Where to travel.",
-          "1) Attracting tourists, 2) Saving nature, 3) Favorite holiday.",
-          "1) Discuss hotels, 2) Discuss restaurants, 3) Discuss guides."
+          "1) It earns money, 2) It causes harm, 3) A conclusion.",
+          "1) Attracting tourists, 2) Saving nature, 3) Best holiday.",
+          "1) Discuss hotels, 2) Discuss food, 3) Discuss guides."
         ]
       }
     ]
@@ -257,36 +257,36 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The financial justification for space exploration.",
+        "correct": "Whether space funding is a waste or a source of vital technology.",
         "distractors": [
-          "The importance of discovering new habitable planets.",
-          "How space technology is researched and developed.",
-          "The statistical possibility of alien life."
+          "Whether alien life exists elsewhere in the universe.",
+          "How rockets and satellites are actually built.",
+          "Whether humans will one day live on Mars."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Space funding is unjustifiable while Earth suffers.",
+        "correct": "Space funding is wasteful while Earth still has problems.",
         "distractors": [
-          "Space exploration is simply far too expensive.",
-          "Rockets cause heavy atmospheric pollution.",
-          "Humans are fundamentally not meant to leave Earth."
+          "Rockets are very large machines.",
+          "Space is extremely far away.",
+          "Astronauts train for many years."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Space research yields critical tech breakthroughs.",
+        "correct": "Space research produces essential technological breakthroughs.",
         "distractors": [
-          "We must find a new planet to survive.",
-          "Space exploration creates astronaut jobs.",
-          "Learning about the stars is fascinating."
+          "The stars are beautiful to look at.",
+          "Space films are popular at the cinema.",
+          "Many children dream of being astronauts."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
         "correct": "1) Why fund Earth instead, 2) Tech benefits of space, 3) Your view.",
         "distractors": [
-          "1) Earth's problems, 2) Space benefits, 3) Views on aliens.",
+          "1) Earth needs help, 2) Space helps too, 3) A conclusion.",
           "1) History of NASA, 2) Future of SpaceX, 3) Planet to visit.",
           "1) Why poverty exists, 2) Why satellites help, 3) Science views."
         ]
@@ -299,38 +299,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Taxing unhealthy food to influence dietary habits.",
+        "correct": "Whether fast food should be taxed or diet left to personal choice.",
         "distractors": [
-          "The causes and solutions for the obesity epidemic.",
-          "Why fast food is detrimental to human health.",
-          "How the government collects citizen taxes."
+          "The causes of and solutions to the obesity epidemic.",
+          "How the government collects and spends taxes.",
+          "Which fast foods are the least healthy."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Heavy junk food taxes will boost societal health.",
+        "correct": "A high tax on fast food would improve public health.",
         "distractors": [
-          "Fast food directly causes obesity and heart disease.",
-          "Fast food restaurants should be fully banned.",
-          "The government needs tax money for hospitals."
+          "Fast food is often sold very cheaply.",
+          "Restaurants advertise on television.",
+          "Burgers and fries are quick to prepare."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Citizens must retain liberty over their diets.",
+        "correct": "People should be free to choose what they eat.",
         "distractors": [
-          "Healthy food is too expensive for the poor.",
-          "Fast food is delicious and highly enjoyable.",
-          "Taxes do not stop people from eating junk food."
+          "Fast food tastes good to many people.",
+          "Some meals are eaten in a hurry.",
+          "Menus offer a wide range of choices."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Health tax rationale, 2) Personal freedom rationale, 3) Your view.",
+        "correct": "1) Why tax fast food, 2) Why protect free choice, 3) Your view.",
         "distractors": [
-          "1) Why junk food is bad, 2) Why it tastes good, 3) Healthy eating.",
-          "1) Cooking healthy food, 2) Avoiding fast food, 3) Favorite meal.",
-          "1) Economics of taxes, 2) Fast food profits, 3) Views on capitalism."
+          "1) It's unhealthy, 2) It's a choice, 3) A conclusion.",
+          "1) Cooking at home, 2) Avoiding junk food, 3) Favourite meal.",
+          "1) Economics of tax, 2) Fast food profit, 3) Views on business."
         ]
       }
     ]
@@ -341,38 +341,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The survival of print newspapers in the digital era.",
+        "correct": "Whether online news will replace print or print will survive.",
         "distractors": [
-          "The differences between online and offline reading.",
-          "The rising issue of fake news on the internet.",
-          "How journalists write and publish stories."
+          "The growing problem of fake news online.",
+          "How journalists research and write their stories.",
+          "Which news sources are the most trustworthy."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Digital platforms will eradicate physical papers.",
+        "correct": "Online news will completely replace printed newspapers.",
         "distractors": [
-          "Online news is much faster and cheaper to read.",
-          "Printing physical newspapers kills too many trees.",
-          "Only younger generations read the news online."
+          "Websites can show colourful photos.",
+          "Phones are carried everywhere.",
+          "News apps are easy to download."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Physical newspapers will always remain relevant.",
+        "correct": "Print newspapers will always keep a vital place in society.",
         "distractors": [
-          "Older generations prefer reading physical papers.",
-          "Print media employs far better journalists.",
-          "The internet requires electricity, which fails."
+          "Newspapers can be recycled after reading.",
+          "Print comes in different sizes.",
+          "Newsstands are found on many streets."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why digital replaces print, 2) Why print survives, 3) Your stance.",
+        "correct": "1) Why digital replaces print, 2) Why print survives, 3) Your view.",
         "distractors": [
-          "1) Pros of online news, 2) Pros of print news, 3) What you read.",
-          "1) History of newspapers, 2) Invention of internet, 3) Tech views.",
-          "1) Why reading matters, 2) Why TV is bad, 3) Favorite news channel."
+          "1) Online wins, 2) Print stays, 3) A conclusion.",
+          "1) History of print, 2) Rise of internet, 3) Tech views.",
+          "1) Why reading matters, 2) Why TV is bad, 3) Favourite channel."
         ]
       }
     ]
@@ -383,38 +383,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The ethical validity of medical animal testing.",
+        "correct": "Whether medical animal testing is justified or cruel and needless.",
         "distractors": [
-          "Animal rights and the prevention of cruelty.",
-          "Testing cosmetics and makeup on animals.",
-          "How to invent new medical treatments."
+          "The wider issue of animal rights and welfare.",
+          "How new medicines are discovered and made.",
+          "Whether testing cosmetics on animals is wrong."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Animal testing leads to human medical advances.",
+        "correct": "Animal testing is justified because it saves human lives.",
         "distractors": [
-          "Human lives are vastly more important than animals.",
-          "Animals do not feel pain the way humans do.",
-          "Scientists have always used animals for tests."
+          "Laboratories keep many different animals.",
+          "Some tests take a long time.",
+          "Scientists wear protective clothing."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Testing is obsolete due to modern technology.",
+        "correct": "Animal testing is cruel and unnecessary with modern alternatives.",
         "distractors": [
-          "Animal testing is cruel and must be stopped.",
-          "Animal tests never yield accurate human results.",
-          "We should test medicines on human prisoners."
+          "Some animals are very cute.",
+          "Zoos also keep animals in cages.",
+          "People love their pets at home."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Saving humans rationale, 2) Cruelty/alternatives rationale, 3) Your view.",
+        "correct": "1) Why it saves humans, 2) Why it's cruel/needless, 3) Your view.",
         "distractors": [
-          "1) Saving humans, 2) Hurting animals, 3) Views on doctors.",
+          "1) It helps us, 2) It hurts them, 3) A conclusion.",
           "1) Medical history, 2) Animal types, 3) Best test animal.",
-          "1) How scientists test, 2) Test costs, 3) Views on science."
+          "1) How tests work, 2) Test costs, 3) Views on science."
         ]
       }
     ]
@@ -425,38 +425,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The role of competition in children's athletics.",
+        "correct": "Whether youth sport should be competitive or purely for fun.",
         "distractors": [
-          "The physical health benefits of youth sports.",
-          "How to train children to become pro athletes.",
-          "Funding for competitive sports programs in schools."
+          "The physical health benefits of playing sport.",
+          "How to train a child to become a professional.",
+          "How schools fund their sports programmes."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Competitive athletics develop vital life skills.",
+        "correct": "Competitive sport teaches children discipline and resilience.",
         "distractors": [
-          "Children need to learn how to win and lose.",
-          "Sports keep children out of trouble after school.",
-          "Playing sports makes children physically stronger."
+          "Sport keeps children active after school.",
+          "Teams wear matching uniforms.",
+          "Matches are often played at weekends."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "The pressure to win causes anxiety in children.",
+        "correct": "Competition causes needless stress, so youth sport should be for fun.",
         "distractors": [
-          "Competitive sports cause physical injuries.",
-          "Children truly do not care about winning.",
-          "Aggressive parents ruin youth sports games."
+          "Some children get muddy when they play.",
+          "Not every child owns proper kit.",
+          "Games can be cancelled by rain."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why competition builds discipline, 2) Why stress means it should be fun, 3) Your view.",
+        "correct": "1) Why competition builds character, 2) Why it should be fun, 3) Your view.",
         "distractors": [
-          "1) Sports benefits, 2) Sports drawbacks, 3) Favorite sport.",
-          "1) Coaching kids, 2) Being a good parent, 3) Olympic views.",
-          "1) Lazy kids today, 2) School sports needs, 3) PE class views."
+          "1) It's good, 2) It's stressful, 3) A conclusion.",
+          "1) Coaching kids, 2) Being a parent, 3) Olympic views.",
+          "1) Lazy kids, 2) School sport, 3) PE lessons."
         ]
       }
     ]
@@ -467,38 +467,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The ethics and regulation of marketing to children.",
+        "correct": "Whether advertising to children should be banned or allowed.",
         "distractors": [
-          "The negative effects of TV commercials on youth.",
-          "How major toy companies design their products.",
-          "The amount of money children spend on toys."
+          "How toy companies design their products.",
+          "How much money children spend on toys.",
+          "Which adverts are the funniest on TV."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "The state must enact a ban on youth marketing.",
+        "correct": "Advertising aimed at children should be completely banned.",
         "distractors": [
-          "Ads manipulate kids into wanting junk food.",
-          "Parents should mute the TV during commercials.",
-          "Advertisements make children behave terribly."
+          "Some adverts are very loud.",
+          "Cartoons are shown between adverts.",
+          "Children watch a lot of television."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Marketing to youth teaches consumer economics.",
+        "correct": "Advertising teaches children about the market and making choices.",
         "distractors": [
-          "Children really enjoy watching funny adverts.",
-          "Banning ads would destroy the toy industry.",
-          "Children are smart enough to spot fake ads."
+          "Adverts often use catchy songs.",
+          "Companies pay to show their adverts.",
+          "Some adverts appear on the internet."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Rationale for an ad ban, 2) Ads as market education, 3) Your view.",
+        "correct": "1) Why ban child adverts, 2) Why they teach choice, 3) Your view.",
         "distractors": [
-          "1) Why ads are bad, 2) Why ads are good, 3) Childhood toys.",
-          "1) Ad creation, 2) Ad placement, 3) General marketing views.",
-          "1) Advertising history, 2) Color psychology, 3) Favorite ad."
+          "1) Ads are bad, 2) Ads teach, 3) A conclusion.",
+          "1) Making ads, 2) Placing ads, 3) Marketing views.",
+          "1) Advert history, 2) Colour psychology, 3) Favourite ad."
         ]
       }
     ]
@@ -509,38 +509,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The preservation vs. extinction of minority languages.",
+        "correct": "Whether minority languages should be left to die or be protected.",
         "distractors": [
-          "The importance of learning global English.",
-          "How spoken languages evolve over time.",
-          "The difficulty of translating rare languages."
+          "Why English has become a global language.",
+          "How languages naturally change over time.",
+          "How hard it is to translate rare languages."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "The loss of uncommon languages aids interaction.",
+        "correct": "Letting minority languages die out makes global communication easier.",
         "distractors": [
-          "Everyone on Earth should speak one language.",
-          "Minority languages are too difficult to learn.",
-          "English is clearly the best global language."
+          "Some languages have very few speakers.",
+          "Learning a language takes years.",
+          "Many words are hard to pronounce."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "State funds must safeguard endangered dialects.",
+        "correct": "Governments should spend money to protect minority languages.",
         "distractors": [
-          "Minority languages contain vital cultural history.",
-          "People should speak their native language at home.",
-          "Schools should teach five different languages."
+          "Some languages have unusual alphabets.",
+          "People speak faster in their own language.",
+          "Dictionaries list thousands of words."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why language death aids communication, 2) Why governments should fund preservation, 3) Your view.",
+        "correct": "1) Why language loss aids communication, 2) Why fund preservation, 3) Your view.",
         "distractors": [
-          "1) English benefits, 2) Small language beauty, 3) Learning views.",
-          "1) Grammar learning, 2) Vocab building, 3) Favorite language.",
-          "1) Language origins, 2) Future of language, 3) Views on accents."
+          "1) One language helps, 2) Old ones matter, 3) A conclusion.",
+          "1) Grammar, 2) Vocabulary, 3) Favourite language.",
+          "1) Language origins, 2) Language future, 3) Views on accents."
         ]
       }
     ]
@@ -551,36 +551,36 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The scope of history curriculum in modern schools.",
+        "correct": "Whether schools should teach only national or also world history.",
         "distractors": [
-          "The basic importance of teaching history.",
-          "How to make history classes more interesting.",
-          "The factual accuracy of history textbooks."
+          "Why studying history matters at all.",
+          "How to make history lessons interesting.",
+          "Whether history textbooks are accurate."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Education should be limited to domestic history.",
+        "correct": "Children should learn only national history to build pride.",
         "distractors": [
-          "Children must know their country's leaders.",
-          "World history is too complex for young kids.",
-          "Schools lack the time to teach everything."
+          "Every country has famous leaders.",
+          "History lessons happen at school.",
+          "Old dates can be hard to remember."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Global history is needed to grasp world dynamics.",
+        "correct": "World history matters more for understanding global issues.",
         "distractors": [
-          "World history helps you learn about fun cultures.",
-          "National history is biased and full of lies.",
-          "Students need world history for exams."
+          "The world has many countries.",
+          "Some events happened long ago.",
+          "Maps show where countries are."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Rationale for national history, 2) Rationale for world history, 3) Your view.",
+        "correct": "1) Why teach national history, 2) Why teach world history, 3) Your view.",
         "distractors": [
-          "1) Country history, 2) Other history, 3) Favorite era.",
+          "1) Home first, 2) World too, 3) A conclusion.",
           "1) Teaching dates, 2) Teaching events, 3) Views on teachers.",
           "1) History of wars, 2) History of peace, 3) Views on politics."
         ]
@@ -593,38 +593,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Financial and caregiving duty for aging populations.",
+        "correct": "Whether the government or families should pay for elderly care.",
         "distractors": [
-          "How to improve elderly quality of life.",
-          "The medical problems associated with aging.",
-          "The rapidly rising cost of nursing homes."
+          "How to improve the elderly's quality of life.",
+          "The medical problems that come with ageing.",
+          "Why nursing homes have become so expensive."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "The state must bear the financial burden of care.",
+        "correct": "The government should entirely pay for elderly housing and care.",
         "distractors": [
-          "The elderly paid taxes, so they deserve help.",
-          "Nursing homes should be built in every city.",
-          "Old people should be given free medicine."
+          "Old people often need daily medicine.",
+          "Nursing homes have trained staff.",
+          "Ageing happens to everyone eventually."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Relatives must bear sole obligation for aging care.",
+        "correct": "Families should be responsible for supporting older relatives.",
         "distractors": [
-          "Families should visit grandparents more often.",
-          "The government is too broke for elderly care.",
-          "Old people prefer living in their own homes."
+          "Grandparents enjoy family visits.",
+          "Some homes have spare bedrooms.",
+          "Older people have many memories."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why the state should fund care, 2) Why families should be responsible, 3) Your view.",
+        "correct": "1) Why the state should pay, 2) Why families should care, 3) Your view.",
         "distractors": [
-          "1) Nursing homes, 2) Living with family, 3) Views on aging.",
-          "1) Elderly health issues, 2) Mental issues, 3) Views on doctors.",
-          "1) High taxes, 2) Expensive housing, 3) Economic views."
+          "1) State pays, 2) Family cares, 3) A conclusion.",
+          "1) Elderly illness, 2) Mental health, 3) Views on doctors.",
+          "1) High taxes, 2) Costly housing, 3) Economic views."
         ]
       }
     ]
@@ -635,38 +635,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The necessity vs. potential dangers of GM crops.",
+        "correct": "Whether GM crops are a necessity or a serious hidden risk.",
         "distractors": [
-          "How to finally stop global starvation.",
-          "The science behind altering plant DNA.",
-          "The economics of the global farming industry."
+          "How the world could end global starvation.",
+          "The science of how plant DNA is altered.",
+          "How large the farming industry has become."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Manipulating plant genetics prevents starvation.",
+        "correct": "GM crops are necessary to feed a growing population.",
         "distractors": [
-          "Genetically modified crops grow much faster.",
-          "GM food tastes far better than organic food.",
-          "Farmers make more money using GM seeds."
+          "Some crops grow in hot climates.",
+          "Farmers plant seeds each season.",
+          "Vegetables come in many colours."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "GM agriculture threatens global health unpredictably.",
+        "correct": "GM crops pose severe, unknown risks to health and ecosystems.",
         "distractors": [
-          "Organic food is much healthier than GM food.",
-          "GM crops are too expensive for poor farmers.",
-          "Artificial food is unnatural and morally wrong."
+          "Organic food is sold at markets.",
+          "Some people prefer home cooking.",
+          "Farms can be far from cities."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) GM solving hunger, 2) GM health/nature risks, 3) Your view.",
+        "correct": "1) Why GM feeds people, 2) Why GM is risky, 3) Your view.",
         "distractors": [
-          "1) We need food, 2) GM is bad, 3) Farming views.",
-          "1) How GM is made, 2) Where GM grows, 3) Favorite vegetable.",
-          "1) Supermarkets, 2) Farmers' markets, 3) Cooking views."
+          "1) We need food, 2) It's risky, 3) A conclusion.",
+          "1) How GM is made, 2) Where GM grows, 3) Favourite vegetable.",
+          "1) Supermarkets, 2) Markets, 3) Cooking views."
         ]
       }
     ]
@@ -677,38 +677,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The relevance and utility of libraries today.",
+        "correct": "Whether libraries are now unnecessary or still a vital resource.",
         "distractors": [
-          "The decline in reading physical books.",
-          "How to accurately research information online.",
-          "The funding of local government buildings."
+          "Why fewer people read physical books.",
+          "How to research information safely online.",
+          "How local public buildings are funded."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "The internet has rendered physical libraries obsolete.",
+        "correct": "Public libraries are unnecessary because information is online.",
         "distractors": [
-          "Buying books online is cheaper than libraries.",
-          "Libraries are too noisy and crowded nowadays.",
-          "Nobody knows how to read physical books now."
+          "Websites can be opened at any time.",
+          "Phones can store many books.",
+          "Search engines are quick to use."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Libraries remain crucial as physical community hubs.",
+        "correct": "Libraries are still vital as community spaces and resources.",
         "distractors": [
-          "Reading a physical book is better for the eyes.",
-          "The internet has fake news, so libraries are safer.",
-          "Libraries provide necessary jobs for librarians."
+          "Libraries are usually quiet places.",
+          "Books are arranged on shelves.",
+          "Some libraries are very old."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why internet makes libraries obsolete, 2) Libraries as community hubs, 3) Your view.",
+        "correct": "1) Why the internet replaces libraries, 2) Why libraries still matter, 3) Your view.",
         "distractors": [
-          "1) Internet benefits, 2) Book benefits, 3) Reading views.",
+          "1) Online wins, 2) Libraries help, 3) A conclusion.",
           "1) Library history, 2) Wi-Fi invention, 3) Tech views.",
-          "1) Borrowing books, 2) Using Google, 3) Favorite author."
+          "1) Borrowing books, 2) Using Google, 3) Favourite author."
         ]
       }
     ]
@@ -719,38 +719,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The most effective scale of action for climate change.",
+        "correct": "Whether individual action or government regulation best fights climate change.",
         "distractors": [
-          "The primary causes and effects of global warming.",
-          "How to recycle household waste effectively.",
-          "The global transition to renewable energy."
+          "The main causes and effects of global warming.",
+          "How households can recycle their waste.",
+          "How the world can switch to clean energy."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Personal habit modifications are the superior method.",
+        "correct": "Individual lifestyle changes are the best way to fight climate change.",
         "distractors": [
-          "People should drive electric cars to stop pollution.",
-          "Everyone must become a vegetarian to save Earth.",
-          "Individuals caused the problem, so they must fix it."
+          "Electric cars are becoming popular.",
+          "Some people grow their own food.",
+          "Bicycles do not use any fuel."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Only state policies and business rules have impact.",
+        "correct": "Only government action and corporate rules can make a real difference.",
         "distractors": [
-          "The government should build solar panel farms.",
-          "Big corporations are evil and destroy the Earth.",
-          "Individuals are simply too lazy to change habits."
+          "Factories have very tall chimneys.",
+          "Governments hold regular meetings.",
+          "Big companies employ many people."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Case for individual change, 2) Case for state/corporate rules, 3) Your view.",
+        "correct": "1) Why individual change works, 2) Why rules are needed, 3) Your view.",
         "distractors": [
-          "1) Climate change is bad, 2) Govt actions, 3) Your actions.",
-          "1) Discuss recycling, 2) Discuss solar power, 3) Weather views.",
-          "1) History of pollution, 2) Future of Earth, 3) Nature views."
+          "1) You act, 2) They act, 3) A conclusion.",
+          "1) Recycling, 2) Solar power, 3) Weather views.",
+          "1) Pollution history, 2) Earth's future, 3) Nature views."
         ]
       }
     ]
@@ -761,38 +761,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The aesthetic philosophy for new urban construction.",
+        "correct": "Whether new buildings should be traditional or modern in design.",
         "distractors": [
-          "The preservation of old, historical buildings.",
-          "The environmental sustainability of construction.",
-          "How to solve housing shortages in big cities."
+          "How to preserve old historical buildings.",
+          "How to build in an eco-friendly way.",
+          "How cities can solve housing shortages."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "New developments must mimic classical aesthetics.",
+        "correct": "New buildings should be designed traditionally to match their surroundings.",
         "distractors": [
-          "Traditional buildings look better than modern ones.",
-          "Modern architecture is ugly and very depressing.",
-          "Tourists only want to see old-fashioned buildings."
+          "Old buildings attract many tourists.",
+          "Bricks come in different colours.",
+          "Some towns are hundreds of years old."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Cities should prioritize contemporary building designs.",
+        "correct": "Modern, innovative architecture should always be encouraged.",
         "distractors": [
-          "Modern buildings are taller and hold more people.",
-          "Traditional architecture is too expensive to build.",
-          "All old buildings should be torn down for the new."
+          "Tall towers can be seen from far away.",
+          "Glass reflects the sunlight.",
+          "Cranes are used on building sites."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Why match historical styles, 2) Why push modern designs, 3) Your view.",
+        "correct": "1) Why match historical styles, 2) Why encourage modern design, 3) Your view.",
         "distractors": [
-          "1) Beauty of old buildings, 2) Utility of new buildings, 3) City views.",
-          "1) Building a house, 2) Designing a skyscraper, 3) Favorite building.",
-          "1) History of architecture, 2) Building materials, 3) Art views."
+          "1) Old is nice, 2) New is useful, 3) A conclusion.",
+          "1) Building a house, 2) Designing a tower, 3) Favourite building.",
+          "1) Architecture history, 2) Building materials, 3) Art views."
         ]
       }
     ]
@@ -803,38 +803,38 @@
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The macroeconomic impacts of raising baseline salary.",
+        "correct": "Whether raising the minimum wage helps the economy or harms it.",
         "distractors": [
-          "The growing wealth gap between rich and poor.",
-          "How to negotiate a better salary with a boss.",
-          "The extremely high cost of living in cities."
+          "The widening wealth gap between rich and poor.",
+          "How to negotiate a pay rise with a boss.",
+          "Why the cost of living keeps increasing."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Mandating higher baseline pay alleviates hardship.",
+        "correct": "Raising the minimum wage reduces poverty and helps the economy.",
         "distractors": [
-          "Poor people deserve to earn more money to survive.",
-          "Everyone should be paid the exact same salary.",
-          "The government should just give everyone money."
+          "Wages are paid at the end of the month.",
+          "Some workers have more than one job.",
+          "Payslips list hours and pay."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Higher mandated wages cause inflation and job loss.",
+        "correct": "A higher minimum wage forces prices up and cuts jobs.",
         "distractors": [
-          "Small businesses cannot afford to pay workers more.",
-          "Poor people will waste the extra money they earn.",
-          "Minimum wage jobs are only meant for teenagers."
+          "Shops display their prices clearly.",
+          "Businesses open early in the morning.",
+          "Some jobs are seasonal work."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) How raising wages cuts poverty, 2) How raising wages cuts jobs, 3) Your view.",
+        "correct": "1) Why higher wages cut poverty, 2) Why they cost jobs, 3) Your view.",
         "distractors": [
-          "1) Poverty problems, 2) Business profits, 3) Views on money.",
-          "1) Finding a job, 2) Managing a budget, 3) Your ideal salary.",
-          "1) Labor union history, 2) Future of work, 3) Views on taxes."
+          "1) It helps, 2) It hurts, 3) A conclusion.",
+          "1) Finding a job, 2) Budgeting money, 3) Ideal salary.",
+          "1) Union history, 2) Future of work, 3) Views on tax."
         ]
       }
     ]

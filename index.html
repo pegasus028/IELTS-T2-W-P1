@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Anatomy of a Prompt · IELTS Task 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1410; --paper:#f4ead7; --paper-2:#ede0c8; --paper-3:#e6d6ba;
+    --gold:#c8961e; --gold-deep:#a8780f;
+    --green:#2f7d52; --green-soft:#d6ead7;
+    --red:#b8442f; --red-soft:#e8c4b9;
+    --trap:#e0651c; --trap-soft:#f6d9c2;
+    --shadow:rgba(26,20,16,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  body{
+    font-family:'Space Mono',monospace;background:var(--paper);color:#000;
+    background-image:radial-gradient(circle at 12% 10%,rgba(200,150,30,.10),transparent 40%),
+                     radial-gradient(circle at 88% 90%,rgba(47,125,82,.08),transparent 42%);
+    min-height:100%;display:flex;flex-direction:column;overscroll-behavior:none;
+  }
+  .wrap{width:100%;max-width:540px;margin:0 auto;padding:14px 14px calc(18px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column}
+
+  header{text-align:center;margin:6px 0 14px}
+  .kicker{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+  h1{font-family:'Fraunces',serif;font-weight:900;font-size:30px;line-height:.95;margin-top:4px}
+  h1 em{font-style:italic;color:var(--gold-deep)}
+  .bar{height:5px;width:58px;background:var(--gold);margin:10px auto 0;border-radius:3px}
+
+  .card{background:var(--paper-2);border:2px solid var(--ink);border-radius:14px;
+        box-shadow:6px 6px 0 var(--shadow);padding:20px}
+  .card + .card{margin-top:14px}
+
+  label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:8px;color:var(--gold-deep)}
+  input[type=text]{width:100%;font-family:'Space Mono',monospace;font-size:16px;padding:13px 14px;
+        border:2px solid var(--ink);border-radius:9px;background:var(--paper);color:var(--ink)}
+  input[type=text]:focus{outline:none;box-shadow:3px 3px 0 var(--gold)}
+  .hint{font-size:11px;line-height:1.6;margin-top:12px;color:#5a4a38}
+
+  .btn{display:block;width:100%;font-family:'Fraunces',serif;font-weight:900;font-size:18px;
+       padding:15px;border:2px solid var(--ink);border-radius:11px;background:var(--gold);color:var(--ink);
+       cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:transform .08s,box-shadow .08s;margin-top:16px}
+  .btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+  .btn.ghost{background:var(--paper)}
+  .btn:disabled{opacity:.55}
+
+  /* ===== GAME META BAR ===== */
+  .meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+  .pill{background:var(--ink);color:var(--paper);padding:5px 11px;border-radius:20px;font-weight:700;font-size:12px;letter-spacing:.06em;white-space:nowrap}
+  .scorepill{background:var(--green);color:#fff}
+  .timer{font-family:'Fraunces',serif;font-weight:900;font-size:15px;min-width:52px;text-align:right}
+  .timer.warn{color:var(--gold-deep)} .timer.danger{color:var(--red)}
+
+  /* progress dots for the 4 phases */
+  .phasedots{display:flex;gap:6px;justify-content:center;align-items:center;margin-bottom:12px}
+  .dot{flex:1 1 0;max-width:56px;height:6px;min-height:6px;border-radius:4px;background:var(--paper-3);border:1px solid rgba(26,20,16,.25)}
+  .dot.done{background:var(--green)}
+  .dot.cur{background:var(--gold);box-shadow:0 0 0 2px rgba(200,150,30,.3)}
+  .dot.trap{background:var(--trap)}
+
+  /* ===== STICKY PROMPT ===== */
+  .promptbox{background:var(--paper);border:2px solid var(--ink);border-radius:11px;padding:12px 14px;margin-bottom:14px;
+             position:sticky;top:8px;z-index:5;box-shadow:3px 3px 0 var(--shadow)}
+  .promptbox .plab{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between}
+  .promptscroll{max-height:112px;overflow-y:auto;font-family:'Fraunces',serif;font-size:15px;line-height:1.55;color:#000;
+                -webkit-overflow-scrolling:touch;padding-right:4px}
+  .promptscroll::-webkit-scrollbar{width:5px}
+  .promptscroll::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+
+  /* ===== SPEED BAR ===== */
+  .speedtrack{height:9px;background:var(--paper-3);border:1px solid rgba(26,20,16,.3);border-radius:6px;overflow:hidden;margin-bottom:16px}
+  .speedfill{height:100%;width:100%;background:var(--green);transition:width .1s linear,background .3s}
+  .speedfill.mid{background:var(--gold)}
+  .speedfill.low{background:var(--red)}
+
+  /* ===== PHASE QUESTION ===== */
+  .type-tag{font-family:'Fraunces',serif;font-weight:900;font-size:22px;margin-bottom:4px;color:var(--gold-deep)}
+  .ask{font-size:12px;line-height:1.5;color:#4a3c2c;margin-bottom:16px}
+
+  .opts{display:flex;flex-direction:column;gap:9px}
+  .opt{font-family:'Space Mono',monospace;font-size:13.5px;line-height:1.45;padding:13px 14px;border:2px solid var(--ink);border-radius:10px;
+       background:var(--paper);cursor:pointer;text-align:left;transition:transform .08s,box-shadow .08s,background .12s;box-shadow:2px 2px 0 var(--shadow)}
+  .opt:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--shadow)}
+  .opt.sel{background:var(--ink);color:var(--paper)}
+  .opt.right{background:var(--green);color:#fff;border-color:var(--green)}
+  .opt.wrong{background:var(--red);color:#fff;border-color:var(--red)}
+  .opt.trapped{background:var(--trap);color:#fff;border-color:var(--trap)}
+  .opt[disabled]{cursor:default}
+
+  .feedback{margin-top:15px;padding:14px;border-radius:10px;font-size:13.5px;line-height:1.6;display:none}
+  .feedback.show{display:block}
+  .feedback.good{background:var(--green-soft);border:2px solid var(--green)}
+  .feedback.bad{background:var(--red-soft);border:2px solid var(--red)}
+  .feedback.trap{background:var(--trap-soft);border:2px solid var(--trap)}
+  .feedback strong{font-weight:700}
+  .feedback .why{margin-top:8px;font-size:12.5px;color:#4a3c2c}
+  .corr{font-weight:700;color:var(--gold-deep)}
+
+  .hide{display:none!important}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(160%);
+         background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:30px;font-size:13px;font-weight:700;
+         transition:transform .35s cubic-bezier(.2,.9,.3,1.4);z-index:50;max-width:90%;text-align:center}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+  .toast.fire{background:var(--trap)}
+  .toast.speed{background:var(--green)}
+
+  /* ===== DONE ===== */
+  .done{text-align:center;padding:24px 8px}
+  .done h2{font-family:'Fraunces',serif;font-size:28px;margin-bottom:6px}
+  .done .big{font-family:'Fraunces',serif;font-size:60px;color:var(--gold-deep);font-weight:900;margin:6px 0}
+  .statrow{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px 0 4px}
+  .stat{background:var(--paper);border:2px solid var(--ink);border-radius:10px;padding:10px 14px;min-width:88px}
+  .stat .n{font-family:'Fraunces',serif;font-weight:900;font-size:24px}
+  .stat .l{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+  .rank{font-family:'Fraunces',serif;font-weight:900;font-size:16px;margin-top:12px;color:var(--green)}
+
+  footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin-top:16px;opacity:.75}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">IELTS Academic · Writing Task 2</div>
+    <h1>Anatomy of a<br><em>Prompt</em></h1>
+    <div class="bar"></div>
+  </header>
+
+  <!-- JOIN -->
+  <section id="join" class="card">
+    <label for="teamName">Team Name (2 players)</label>
+    <input type="text" id="teamName" placeholder="e.g. The Thesis Slayers" maxlength="28" autocomplete="off" />
+    <button class="btn" id="joinBtn">Enter the Arena</button>
+    <div class="hint">
+      You'll dissect real Task 2 prompts in <strong>4 phases</strong>: find the <em>core topic</em>, identify
+      <em>Side A</em> and <em>Side B</em>, then choose the correct <em>3-part essay plan</em>.
+      Answer fast &amp; build streaks for bonus points — but watch for the <strong style="color:var(--trap)">🚨 traps</strong>.
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section id="game" class="card hide">
+    <div class="meta">
+      <span class="pill" id="teamPill">—</span>
+      <span class="pill scorepill" id="scorePill">0 pts</span>
+      <span class="timer" id="timer">--:--</span>
+    </div>
+
+    <div class="phasedots" id="phasedots">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+
+    <div class="promptbox">
+      <div class="plab"><span>The Prompt</span><span id="qcount">—</span></div>
+      <div class="promptscroll" id="promptTxt"></div>
+    </div>
+
+    <div class="speedtrack"><div class="speedfill" id="speedfill"></div></div>
+
+    <div class="type-tag" id="typeTag">—</div>
+    <div class="ask" id="askTxt"></div>
+    <div class="opts" id="opts"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <button class="btn hide" id="nextBtn">Next →</button>
+  </section>
+
+  <!-- DONE -->
+  <section id="done" class="card hide">
+    <div class="done">
+      <h2>Round Complete!</h2>
+      <div class="big" id="finalScore">0</div>
+      <p>points earned</p>
+      <div class="statrow">
+        <div class="stat"><div class="n" id="stCorrect">0</div><div class="l">Correct</div></div>
+        <div class="stat"><div class="n" id="stBest">0</div><div class="l">Best Streak</div></div>
+        <div class="stat"><div class="n" id="stTraps">0</div><div class="l">Traps Hit</div></div>
+      </div>
+      <div class="rank" id="rankLine"></div>
+      <button class="btn ghost" id="againBtn">Play Again</button>
+    </div>
+  </section>
+
+  <footer id="connNote">Connecting…</footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script id="promptData" type="application/json">[{"id":"p1","promptText":"Some people think that governments should ban private cars in city centers to reduce pollution. Others believe that individuals should always have the right to drive wherever they choose. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The conflict between banning cars in city centers for environmental reasons and maintaining individual driving rights.","distractors":["How to reduce pollution in modern city centers.","The environmental impact of private cars globally.","Why public transportation is better than private cars."]},{"phaseName":"2: Side A","correct":"The government must prohibit private vehicles in downtown areas to combat pollution.","distractors":["Cars cause too much pollution in cities.","People should use bicycles in the city center.","Only electric cars should be allowed in the city."]},{"phaseName":"3: Side B","correct":"People should possess the personal freedom to drive their vehicles anywhere.","distractors":["Driving a car is more convenient than walking.","Banning cars will destroy local city businesses.","People need cars to commute from the suburbs."]},{"phaseName":"4: 3-Part Rule","correct":"1) Discuss reasons for banning cars in city centers, 2) Discuss reasons for protecting driving rights, 3) Give your stance on the ban.","distractors":["1) Discuss why cars cause pollution, 2) Discuss why people like driving, 3) Give your opinion on cars.","1) The history of cars, 2) The future of cars, 3) Which car is best.","1) Why pollution is bad, 2) How to stop pollution, 3) Your favorite mode of transport."]}]},{"id":"p2","promptText":"Some people argue that the government should only fund science and technology degrees at universities as they are more useful for society. Others believe that government funding should continue for arts and humanities subjects. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The allocation of government funding for different university disciplines.","distractors":["The importance of STEM and Arts degrees at university.","How much universities should charge for tuition.","Why science is more difficult to study than art."]},{"phaseName":"2: Side A","correct":"State financial support should be exclusively restricted to STEM subjects because of their societal utility.","distractors":["Science and technology degrees are the most useful subjects for society.","Universities should stop teaching arts and humanities.","Students should choose science degrees to get better jobs."]},{"phaseName":"3: Side B","correct":"State financial support should be maintained for arts and humanities programs.","distractors":["Arts and humanities subjects are also useful for society.","Art students should pay their own way through university.","Science degrees receive too much funding."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why state funding should be limited to STEM, 2) Why state funding for Arts should be maintained, 3) Your opinion on how the government should allocate these funds.","distractors":["1) The benefits of studying STEM, 2) The benefits of studying Arts, 3) Which subjects you prefer.","1) How governments collect taxes, 2) How universities spend money, 3) Your opinion on free education.","1) Why science is hard, 2) Why art is easy, 3) What you want to study."]}]},{"id":"p3","promptText":"Some people believe that the primary purpose of prisons is to punish criminals for their actions. Others argue that prisons should focus entirely on rehabilitating offenders so they can re-enter society safely. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The fundamental role and objective of the prison system.","distractors":["How to lower the crime rate in society.","The history of capital punishment.","Why people commit violent crimes."]},{"phaseName":"2: Side A","correct":"Incarceration exists primarily to penalize individuals who break the law.","distractors":["Criminals deserve to suffer for the pain they caused.","Prisons should be harsh and uncomfortable environments.","The death penalty should be brought back."]},{"phaseName":"3: Side B","correct":"Incarceration should prioritize reforming inmates for successful social reintegration.","distractors":["Prisoners should be taught how to read and write.","Criminals should not go to prison at all; they need therapy.","Society is to blame for creating criminals."]},{"phaseName":"4: 3-Part Rule","correct":"1) Discuss the rationale for prison as punishment, 2) Discuss the rationale for prison as rehabilitation, 3) Give your opinion on the true purpose of prison.","distractors":["1) Why criminals should be punished, 2) How to rehabilitate a criminal, 3) Whether you think crime is increasing.","1) The types of crimes committed, 2) The length of prison sentences, 3) Your opinion on police.","1) Why prisons are too expensive, 2) Why criminals escape, 3) Your opinion on prison food."]}]},{"id":"p4","promptText":"Many people believe that working from home is highly beneficial for both workers and employers. However, others think that it isolates employees and severely reduces overall productivity. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The advantages versus the negative impacts of remote work.","distractors":["The changing nature of the modern workplace.","How to use technology to work efficiently.","The importance of maintaining a healthy work-life balance."]},{"phaseName":"2: Side A","correct":"Remote work yields positive outcomes for staff and the companies they work for.","distractors":["Working from home saves employees money on commuting.","Everyone should be forced to work from home.","Employers save money on office rent."]},{"phaseName":"3: Side B","correct":"Remote work leads to social isolation and a drop in work output.","distractors":["Employees who work from home become lonely.","It is impossible to manage a team remotely.","People get distracted by their children when working at home."]},{"phaseName":"4: 3-Part Rule","correct":"1) Discuss the dual benefits for staff and employers, 2) Discuss the issues of isolation and low productivity, 3) Give your stance on remote work.","distractors":["1) Discuss the benefits for workers, 2) Discuss why workers feel isolated, 3) Give your opinion.","1) How to set up a home office, 2) How to communicate online, 3) Which software is best.","1) The history of office work, 2) The future of office work, 3) Your favorite job."]}]},{"id":"p5","promptText":"Some parents believe that heavily limiting their children's screen time is essential for their healthy development. Others argue that digital screens are a vital part of modern education and should not be restricted. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The debate over whether to restrict or encourage children's access to digital screens.","distractors":["The impact of technology on children.","How to raise healthy children.","The dangers of social media for teenagers."]},{"phaseName":"2: Side A","correct":"Strict boundaries on screen usage are necessary for a child's proper growth.","distractors":["Screens damage children's eyesight.","Children should play outside instead of watching TV.","Parents who let their kids use iPads are bad parents."]},{"phaseName":"3: Side B","correct":"Screen access is crucial for contemporary learning and should remain unrestricted.","distractors":["Children need to learn how to use computers for their future jobs.","Educational games are better than violent video games.","Parents do not have the time to restrict screen use."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why limiting screens aids development, 2) Why unrestricted screens aid modern education, 3) Your opinion on restricting screen time.","distractors":["1) The negative effects of screens, 2) The positive effects of screens, 3) Give your opinion on the internet.","1) Discuss television, 2) Discuss smartphones, 3) Discuss tablets.","1) Why parents are strict, 2) Why schools use iPads, 3) Your favorite video game."]}]},{"id":"p6","promptText":"Some people think that international tourism is highly beneficial for the local economy. Others argue that it severely damages local cultures and natural environments. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The economic benefits versus the cultural and environmental costs of global tourism.","distractors":["The pros and cons of international travel.","How to become an eco-friendly tourist.","The growth of the airline industry."]},{"phaseName":"2: Side A","correct":"Foreign visitors bring significant financial prosperity to host communities.","distractors":["Tourism creates jobs for local people.","Tourists spend a lot of money on souvenirs.","Every country should focus on building more hotels."]},{"phaseName":"3: Side B","correct":"The influx of foreign visitors destroys local heritage and ecological systems.","distractors":["Tourists cause pollution by taking airplanes.","Tourists do not respect local laws.","Local people hate tourists."]},{"phaseName":"4: 3-Part Rule","correct":"1) Discuss the economic benefits of tourism, 2) Discuss the cultural and environmental damage, 3) Give your opinion on the overall impact.","distractors":["1) Why tourism makes money, 2) Why tourism destroys culture, 3) Where you want to travel.","1) How to attract tourists, 2) How to protect the environment, 3) Your favorite holiday.","1) Discuss hotels, 2) Discuss restaurants, 3) Discuss tour guides."]}]},{"id":"p7","promptText":"Some argue that spending government money on space exploration is a complete waste of resources that should be used to solve problems on Earth. Others believe space research brings essential technological advancements to humanity. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The justification of financial investment in space exploration.","distractors":["The importance of discovering new planets.","How space technology is developed.","The possibility of alien life."]},{"phaseName":"2: Side A","correct":"Funding space programs is unjustifiable while terrestrial crises remain unsolved.","distractors":["Space exploration is too expensive.","Rockets cause too much pollution in the atmosphere.","Humans are not meant to leave Earth."]},{"phaseName":"3: Side B","correct":"Extraterrestrial research is valuable because it yields critical technological breakthroughs.","distractors":["We need to find a new planet in case Earth is destroyed.","Space exploration creates jobs for astronauts.","Learning about the stars is fascinating."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why space funding should be redirected to Earth's issues, 2) Why space funding is justified by tech advancements, 3) Your opinion on the spending allocation.","distractors":["1) Discuss the problems on Earth, 2) Discuss the benefits of space, 3) Give your opinion on aliens.","1) The history of NASA, 2) The future of SpaceX, 3) Which planet we should visit.","1) Why poverty exists, 2) Why satellites are good, 3) Your opinion on science."]}]},{"id":"p8","promptText":"Some people think that a significantly higher tax should be placed on fast food to improve public health. Others believe that individuals should be entirely free to choose what they eat without government financial interference. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The use of government taxation on unhealthy food to influence dietary choices.","distractors":["The causes and solutions for the obesity epidemic.","Why fast food is bad for you.","How the government collects taxes."]},{"phaseName":"2: Side A","correct":"Implementing heavy taxes on junk food is a necessary measure to boost societal health.","distractors":["Fast food causes obesity and heart disease.","Fast food restaurants should be banned completely.","The government needs more tax money to fund hospitals."]},{"phaseName":"3: Side B","correct":"Citizens must maintain absolute liberty over their dietary decisions without state-imposed financial penalties.","distractors":["Healthy food is too expensive for poor people to buy.","Fast food is delicious and people enjoy it.","Taxes do not stop people from eating what they want."]},{"phaseName":"4: 3-Part Rule","correct":"1) The public health rationale for a fast food tax, 2) The personal freedom rationale against the tax, 3) Your opinion on implementing the tax.","distractors":["1) Why fast food is unhealthy, 2) Why people like fast food, 3) Your opinion on eating healthy.","1) How to cook healthy food, 2) How to avoid fast food, 3) Your favorite meal.","1) The economics of taxation, 2) The profits of fast food companies, 3) Your opinion on capitalism."]}]},{"id":"p9","promptText":"Some people believe that traditional print newspapers will soon be completely replaced by online news sources. Others argue that print media will always maintain a vital place in society. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The survival of traditional print newspapers in the digital age.","distractors":["The differences between online and offline reading.","The issue of fake news on the internet.","How journalists write stories."]},{"phaseName":"2: Side A","correct":"Digital news platforms will inevitably eradicate physical newspapers.","distractors":["Online news is much faster and cheaper to read.","Printing newspapers kills too many trees.","Only young people read the news online."]},{"phaseName":"3: Side B","correct":"Physical newspapers will permanently retain their relevance and function in the world.","distractors":["Older generations prefer to read physical newspapers.","Print media has better journalists than the internet.","The internet requires electricity, which is unreliable."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why digital sources will replace print, 2) Why print media will endure, 3) Your opinion on the ultimate fate of print newspapers.","distractors":["1) Discuss the pros of online news, 2) Discuss the pros of print news, 3) Which one you read.","1) The history of newspapers, 2) The invention of the internet, 3) Your opinion on technology.","1) Why reading is important, 2) Why watching TV is bad, 3) Your favorite news channel."]}]},{"id":"p10","promptText":"Some people think that testing medical products on animals is fully justified because it saves human lives. Others argue that it is cruel and entirely unnecessary given modern technological alternatives. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The ethical and practical validity of using animals for medical research.","distractors":["Animal rights and the prevention of cruelty.","Testing cosmetics and makeup on animals.","How to invent new medical treatments."]},{"phaseName":"2: Side A","correct":"Animal experimentation is acceptable because it leads to life-saving medical breakthroughs for humans.","distractors":["Human lives are more important than animal lives.","Animals do not feel pain the same way humans do.","Scientists have always used animals for testing."]},{"phaseName":"3: Side B","correct":"Animal testing is an inhumane practice that is obsolete due to modern technological substitutes.","distractors":["Animal testing is cruel and should be stopped immediately.","Testing on animals never yields accurate results for humans.","We should test medicines on human prisoners instead."]},{"phaseName":"4: 3-Part Rule","correct":"1) The justification for testing based on saving humans, 2) The argument against testing based on cruelty and alternatives, 3) Your moral and practical stance.","distractors":["1) Why saving humans is important, 2) Why hurting animals is bad, 3) Your opinion on doctors.","1) The history of medicine, 2) The types of animals used, 3) Which animal is best to test on.","1) How scientists do tests, 2) How much tests cost, 3) Your opinion on science."]}]},{"id":"p11","promptText":"Some argue that competitive sports are highly beneficial for children as they teach discipline and resilience. Others believe that competition creates unnecessary psychological stress and that youth sports should purely be for fun. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The role of competition versus recreation in children's athletics.","distractors":["The physical health benefits of children playing sports.","How to train children to become professional athletes.","Funding for sports programs in schools."]},{"phaseName":"2: Side A","correct":"Engaging in competitive athletics develops essential life skills like discipline in youth.","distractors":["Children need to learn how to win and lose.","Competitive sports keep children out of trouble after school.","Playing sports makes children physically stronger."]},{"phaseName":"3: Side B","correct":"The pressure to win causes anxiety, meaning sports should be strictly recreational.","distractors":["Competitive sports cause physical injuries to children.","Children do not care about winning anyway.","Parents ruin youth sports by yelling at the referees."]},{"phaseName":"4: 3-Part Rule","correct":"1) Discuss how competition builds discipline/resilience, 2) Discuss the negative stress of competition and the value of pure fun, 3) Your opinion on the purpose of youth sports.","distractors":["1) The benefits of sports, 2) The drawbacks of sports, 3) Your favorite sport.","1) How to coach a team, 2) How to be a good parent, 3) Your opinion on the Olympics.","1) Why children are lazy today, 2) Why schools need more sports, 3) Your opinion on PE class."]}]},{"id":"p12","promptText":"Some people believe that advertising directed at children should be completely banned by the government. Others argue that it helps children learn about the free market and how to make choices. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The ethics and regulation of marketing products to children.","distractors":["The negative effects of television commercials on young people.","How toy companies design their products.","The amount of money children spend."]},{"phaseName":"2: Side A","correct":"The state must enact a total prohibition on marketing targeted at minors.","distractors":["Advertising manipulates children into wanting junk food and toys.","Parents should turn off the television during commercials.","Advertisements make children behave badly."]},{"phaseName":"3: Side B","correct":"Marketing to youth is educational, teaching them consumer autonomy and economics.","distractors":["Children enjoy watching funny advertisements.","Banning ads would destroy the toy industry.","Children are smart enough to know ads are fake."]},{"phaseName":"4: 3-Part Rule","correct":"1) The rationale for a government ban on child-directed ads, 2) The argument that ads provide market education, 3) Your opinion on regulating these ads.","distractors":["1) Why ads are bad for kids, 2) Why ads are good for kids, 3) What toys you bought as a child.","1) How ads are made, 2) Where ads are shown, 3) Your opinion on marketing.","1) The history of advertising, 2) The psychology of color, 3) Your favorite commercial."]}]},{"id":"p13","promptText":"Some people think that it is perfectly acceptable for minority languages to die out, as this makes global communication much easier. Others believe that governments should spend money to actively protect and preserve these languages. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The preservation versus the natural extinction of minority languages.","distractors":["The importance of learning a global language like English.","How languages evolve over time.","The difficulty of translating minority languages."]},{"phaseName":"2: Side A","correct":"The disappearance of uncommon languages is a positive trend that streamlines international interaction.","distractors":["Everyone should speak the same language.","Minority languages are too difficult to learn.","English is the best language in the world."]},{"phaseName":"3: Side B","correct":"State funds must be utilized to safeguard and sustain endangered dialects.","distractors":["Minority languages contain important cultural history.","People should speak their native language at home.","Schools should teach five different languages."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why language death benefits global communication, 2) Why governments should fund language preservation, 3) Your opinion on the fate of minority languages.","distractors":["1) Discuss the benefits of speaking English, 2) Discuss the beauty of small languages, 3) Give your opinion on language learning.","1) How to learn grammar, 2) How to improve vocabulary, 3) Your favorite language.","1) The origins of language, 2) The future of language, 3) Your opinion on accents."]}]},{"id":"p14","promptText":"Some people argue that school children should only learn the history of their own country to build national pride. Others believe that studying world history is much more important for understanding modern global issues. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The scope and focus of the history curriculum in schools (domestic vs. international).","distractors":["The importance of teaching history to children.","How to make history classes more interesting.","The accuracy of historical textbooks."]},{"phaseName":"2: Side A","correct":"Education should be strictly limited to domestic history to foster patriotism.","distractors":["Children need to know about the leaders of their country.","World history is too complicated for young children.","Schools do not have enough time to teach everything."]},{"phaseName":"3: Side B","correct":"Global history must be prioritized to comprehend contemporary international dynamics.","distractors":["Studying world history is interesting because you learn about other cultures.","National history is often biased and full of lies.","Students need world history to pass university entrance exams."]},{"phaseName":"4: 3-Part Rule","correct":"1) The rationale for exclusively teaching national history, 2) The rationale for prioritizing world history, 3) Your opinion on what the curriculum should focus on.","distractors":["1) Why your country's history is important, 2) Why other countries' history is important, 3) Your favorite historical era.","1) How to teach dates, 2) How to teach events, 3) Your opinion on teachers.","1) The history of wars, 2) The history of peace, 3) Your opinion on politics."]}]},{"id":"p15","promptText":"Some people think that the government should entirely pay for the housing and care of the elderly. Others believe that families should be strictly responsible for supporting their older relatives. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The assignment of financial and caregiving responsibility for the aging population.","distractors":["How to improve the quality of life for the elderly.","The medical problems associated with old age.","The rising cost of nursing homes."]},{"phaseName":"2: Side A","correct":"The state must bear the complete financial burden of accommodating and caring for senior citizens.","distractors":["The elderly have paid taxes all their lives, so they deserve government help.","Nursing homes should be built in every city.","Old people should be given free medicine."]},{"phaseName":"3: Side B","correct":"Relatives must bear the sole obligation of maintaining and assisting their aging family members.","distractors":["Families should visit their grandparents more often.","The government is too bankrupt to pay for elderly care.","Old people prefer to live in their own homes."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why the state should fund elderly care, 2) Why families should hold the responsibility, 3) Your opinion on who should bear the burden.","distractors":["1) Discuss nursing homes, 2) Discuss living with family, 3) Give your opinion on old age.","1) The health problems of the elderly, 2) The mental problems of the elderly, 3) Your opinion on doctors.","1) Why taxes are high, 2) Why houses are expensive, 3) Your opinion on the economy."]}]},{"id":"p16","promptText":"Some argue that the genetic engineering of crops is absolutely necessary to feed a growing global population. Others believe it poses severe and unknown risks to human health and natural ecosystems. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The necessity versus the potential dangers of genetically modified agriculture.","distractors":["How to stop global starvation.","The science behind altering plant DNA.","The economics of the farming industry."]},{"phaseName":"2: Side A","correct":"Manipulating plant genetics is a mandatory solution to prevent worldwide food shortages.","distractors":["Genetically modified crops grow much faster than normal crops.","GM food tastes better than organic food.","Farmers make more money using GM seeds."]},{"phaseName":"3: Side B","correct":"GM agriculture threatens human well-being and environmental stability in unpredictable ways.","distractors":["Organic food is much healthier than genetically modified food.","GM crops are too expensive for poor farmers to buy.","Artificial food is unnatural and morally wrong."]},{"phaseName":"4: 3-Part Rule","correct":"1) The argument that GM crops solve global hunger, 2) The argument that GM crops pose health/ecological risks, 3) Your opinion on the use of GM crops.","distractors":["1) Why we need more food, 2) Why GM food is bad, 3) Your opinion on farming.","1) How GM crops are made, 2) Where GM crops are grown, 3) Your favorite vegetable.","1) Discuss supermarkets, 2) Discuss farmers' markets, 3) Give your opinion on cooking."]}]},{"id":"p17","promptText":"Some people think that public libraries are no longer necessary because almost all information can be found on the internet. Others believe they still serve a vital role as essential community spaces and physical resources. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The ongoing relevance and utility of public libraries in the digital era.","distractors":["The decline in reading physical books.","How to research information online.","The funding of local government buildings."]},{"phaseName":"2: Side A","correct":"The internet has rendered physical libraries obsolete for finding information.","distractors":["Buying books online is cheaper than maintaining a library.","Libraries are too noisy and crowded nowadays.","Nobody knows how to read physical books anymore."]},{"phaseName":"3: Side B","correct":"Libraries remain crucial due to their function as communal hubs and physical asset providers.","distractors":["Reading a physical book is better for your eyes than looking at a screen.","The internet is full of fake news, so libraries are safer.","Libraries provide jobs for librarians."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why the internet makes libraries unnecessary, 2) Why libraries are vital community/physical resources, 3) Your opinion on whether libraries should be kept.","distractors":["1) Discuss the benefits of the internet, 2) Discuss the benefits of books, 3) Give your opinion on reading.","1) The history of libraries, 2) The invention of Wi-Fi, 3) Your opinion on technology.","1) How to borrow a book, 2) How to use Google, 3) Your favorite author."]}]},{"id":"p18","promptText":"Some argue that individuals changing their daily lifestyle is the best way to combat climate change. Others believe that only large-scale government action and corporate regulations can make a real difference. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The most effective scale of action (individual vs. systemic) required to fight climate change.","distractors":["The primary causes and effects of global warming.","How to recycle household waste effectively.","The transition to renewable energy sources."]},{"phaseName":"2: Side A","correct":"Personal habit modifications are the superior method for mitigating global warming.","distractors":["People should drive electric cars to stop pollution.","Everyone must become a vegetarian to save the planet.","Individuals caused the problem, so they must fix it."]},{"phaseName":"3: Side B","correct":"Only systemic state policies and business restrictions are capable of generating meaningful environmental impact.","distractors":["The government should build more solar panel farms.","Big corporations are evil and want to destroy the Earth.","Individuals are too lazy to change their habits."]},{"phaseName":"4: 3-Part Rule","correct":"1) The case for individual lifestyle changes, 2) The case for government/corporate regulation, 3) Your opinion on the best approach to combat climate change.","distractors":["1) Why climate change is bad, 2) What the government is doing, 3) What you are doing to help.","1) Discuss recycling, 2) Discuss solar power, 3) Give your opinion on the weather.","1) The history of pollution, 2) The future of Earth, 3) Your opinion on nature."]}]},{"id":"p19","promptText":"Some people believe that newly constructed buildings should be designed in a traditional style to match their historical surroundings. Others argue that modern, innovative architecture should always be encouraged in cities. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The aesthetic philosophy governing new urban construction (traditional vs. modern).","distractors":["The preservation of old, historical buildings.","The environmental sustainability of new construction.","How to solve housing shortages in growing cities."]},{"phaseName":"2: Side A","correct":"New developments must mimic classical aesthetics to maintain visual harmony with existing historical structures.","distractors":["Traditional buildings look much more beautiful than modern ones.","Modern architecture is ugly and depressing.","Tourists only want to see old-fashioned buildings."]},{"phaseName":"3: Side B","correct":"Cities should prioritize contemporary and progressive building designs.","distractors":["Modern buildings are taller and can hold more people.","Traditional architecture is too expensive to build today.","All old buildings should be torn down to make way for the new."]},{"phaseName":"4: 3-Part Rule","correct":"1) Why new buildings should match historical styles, 2) Why modern/innovative designs should be pushed, 3) Your opinion on urban architectural direction.","distractors":["1) Discuss the beauty of old buildings, 2) Discuss the utility of new buildings, 3) Give your opinion on city living.","1) How to build a house, 2) How to design a skyscraper, 3) Your favorite building.","1) The history of architecture, 2) The materials used in building, 3) Your opinion on art."]}]},{"id":"p20","promptText":"Some argue that significantly increasing the minimum wage helps reduce poverty and heavily benefits the economy. Others believe it forces businesses to raise prices and ultimately cut jobs. Discuss both these views and give your own opinion.","phases":[{"phaseName":"1: Core Topic","correct":"The macroeconomic and social impacts of raising the baseline legal salary.","distractors":["The growing wealth gap between the rich and the poor.","How to negotiate a better salary with an employer.","The high cost of living in modern cities."]},{"phaseName":"2: Side A","correct":"Mandating higher baseline pay alleviates financial hardship and stimulates economic growth.","distractors":["Poor people deserve to earn more money to survive.","Everyone should be paid the exact same salary.","The government should just give everyone free money."]},{"phaseName":"3: Side B","correct":"Higher mandated wages lead to inflation (raised prices) and increased unemployment.","distractors":["Small businesses cannot afford to pay their workers more.","Poor people will just waste the extra money they earn.","Minimum wage jobs are only meant for teenagers."]},{"phaseName":"4: 3-Part Rule","correct":"1) How raising the wage cuts poverty/helps the economy, 2) How raising the wage causes inflation/job cuts, 3) Your opinion on raising the minimum wage.","distractors":["1) Why poverty is a problem, 2) Why businesses need to make a profit, 3) Your opinion on money.","1) How to find a job, 2) How to manage a budget, 3) Your ideal salary.","1) The history of labor unions, 2) The future of work, 3) Your opinion on taxes."]}]}]</script>
+<script>
+/* ============================================================
+   CONFIG — paste your Google Apps Script Web App URL to enable
+   the live leaderboard. Leave as-is to run fully offline.
+   ============================================================ */
+const API_URL = "https://script.google.com/macros/s/AKfycbx2416RBKSZnwVPJjA8yBaLysGxNTGrQfwC3E4aDVaRI6salrHXIO19GKvjN3Dz8lIeAQ/exec";
+
+const PHASE_SECONDS = 15;     // speed bar duration per phase
+const PROMPTS_PER_ROUND = 5;  // prompts drawn per round (×4 phases = 20 questions). 0 = all.
+
+const PHASE_ASK = [
+  "What is the single core issue this essay must address?",
+  "Which sentence best paraphrases the FIRST view (Side A)?",
+  "Which sentence best paraphrases the SECOND view (Side B)?",
+  "Which is the correct 3-part plan for a 'discuss both views + opinion' essay?"
+];
+
+/* ---- Bank (embedded so it works with no server) ---- */
+const BANK = JSON.parse(document.getElementById('promptData').textContent);
+
+/* ---- State ---- */
+let team="", offline=false;
+let deck=[], pi=0, phase=0;           // pi = prompt index in deck, phase 0..3
+let score=0, streak=0, bestStreak=0, correctCount=0, trapCount=0;
+let currentOptions=[], answered=false;
+let speedTimer=null, speedStart=0;
+
+const $=id=>document.getElementById(id);
+
+/* ============================================================
+   NETWORK  (reuses the original Apps Script contract)
+   ============================================================ */
+async function api(method, body, params){
+  if(!API_URL || API_URL.indexOf("PASTE_")===0) throw new Error("no-api");
+  let url=API_URL; if(params) url+=(url.indexOf('?')>-1?'&':'?')+params;
+  const opts={method,redirect:'follow'};
+  if(method==='POST'){opts.headers={'Content-Type':'text/plain;charset=utf-8'};opts.body=JSON.stringify(body);}
+  // Timeout guard: a slow or dead server must never freeze the game.
+  const ctrl=new AbortController(); opts.signal=ctrl.signal;
+  const to=setTimeout(()=>ctrl.abort(),6000);
+  try{ const r=await fetch(url,opts); return await r.json(); }
+  finally{ clearTimeout(to); }
+}
+
+/* ============================================================
+   SHUFFLE HELPERS
+   ============================================================ */
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+function buildDeck(){
+  deck = shuffle(BANK.slice());
+  if(PROMPTS_PER_ROUND>0 && deck.length>PROMPTS_PER_ROUND) deck=deck.slice(0,PROMPTS_PER_ROUND);
+}
+
+/* ============================================================
+   TIMER POLL (shared class clock from the leaderboard)
+   ============================================================ */
+let timerInterval=null;
+function startTimerPoll(){
+  if(offline){ $('timer').textContent="--:--"; return; }
+  const tick=async()=>{
+    try{
+      const r=await api('GET',null,'action=leaderboard');
+      if(r&&r.timer){
+        const rem=r.timer.remainingMs;
+        if(!r.timer.running||rem<=0){ $('timer').textContent=r.timer.running?"00:00":"WAIT"; $('timer').className='timer'; return; }
+        const s=Math.floor(rem/1000),m=Math.floor(s/60),ss=String(s%60).padStart(2,'0');
+        $('timer').textContent=m+":"+ss;
+        $('timer').className='timer'+(s<30?' danger':s<60?' warn':'');
+      }
+    }catch(e){}
+  };
+  tick(); timerInterval=setInterval(tick,3000);
+}
+
+/* ============================================================
+   SPEED BAR
+   ============================================================ */
+function startSpeedBar(){
+  clearInterval(speedTimer);
+  const fill=$('speedfill');
+  speedStart=Date.now();
+  fill.style.transition='none'; fill.style.width='100%'; fill.className='speedfill';
+  void fill.offsetWidth;
+  speedTimer=setInterval(()=>{
+    const elapsed=(Date.now()-speedStart)/1000;
+    const pct=Math.max(0,100-(elapsed/PHASE_SECONDS)*100);
+    fill.style.transition='width .1s linear,background .3s';
+    fill.style.width=pct+'%';
+    fill.className='speedfill'+(pct<=25?' low':pct<=50?' mid':'');
+    if(pct<=0){ clearInterval(speedTimer); }
+  },100);
+}
+function speedRemainingPct(){
+  const elapsed=(Date.now()-speedStart)/1000;
+  return Math.max(0,100-(elapsed/PHASE_SECONDS)*100);
+}
+function stopSpeedBar(){ clearInterval(speedTimer); }
+
+/* ============================================================
+   RENDER A PHASE
+   ============================================================ */
+function renderPhase(){
+  answered=false;
+  const prompt=deck[pi];
+  const ph=prompt.phases[phase];
+
+  // sticky prompt + counters
+  $('promptTxt').textContent=prompt.promptText;
+  $('qcount').textContent='Prompt '+(pi+1)+'/'+deck.length;
+  $('typeTag').textContent=ph.phaseName.replace(/^\d+:\s*/,'');
+  $('askTxt').textContent=PHASE_ASK[phase]||'';
+
+  // phase dots
+  [...$('phasedots').children].forEach((d,i)=>{
+    d.className='dot'+(i<phase?' done':i===phase?' cur':'');
+  });
+
+  // options: correct + 3 distractors, shuffled. Remember which was the trap.
+  currentOptions=shuffle([
+    {t:ph.correct, kind:'correct'},
+    {t:ph.distractors[0], kind:'trap'},
+    {t:ph.distractors[1], kind:'wrong'},
+    {t:ph.distractors[2], kind:'wrong'}
+  ]);
+
+  const box=$('opts'); box.innerHTML='';
+  currentOptions.forEach(o=>{
+    const b=document.createElement('button');
+    b.className='opt'; b.textContent=o.t;
+    b.onclick=()=>choose(b,o);
+    box.appendChild(b);
+  });
+
+  $('feedback').className='feedback'; $('feedback').innerHTML='';
+  $('nextBtn').classList.add('hide');
+  $('scorePill').textContent=score+' pts';
+  startSpeedBar();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ============================================================
+   ANSWER
+   ============================================================ */
+async function choose(btn, opt){
+  if(answered) return;
+  answered=true;
+  stopSpeedBar();
+  const remaining=speedRemainingPct();
+  [...$('opts').children].forEach(b=>b.disabled=true);
+
+  const isCorrect=opt.kind==='correct';
+  const isTrap=opt.kind==='trap';
+
+  // scoring
+  let gained=0, msgs=[];
+  if(isCorrect){
+    gained+=10;
+    streak++; correctCount++;
+    if(streak>bestStreak) bestStreak=streak;
+    // streak bonus
+    let sb=0;
+    if(streak>=3) sb=5; else if(streak===2) sb=2;
+    if(sb>0){ gained+=sb; msgs.push('🔥 '+streak+' in a row! +'+sb); }
+    // speed bonus
+    if(remaining>50){ gained+=5; msgs.push('⚡ Speed +5'); }
+  }else{
+    streak=0;
+    if(isTrap) trapCount++;
+  }
+  score+=gained;
+
+  // mark options
+  [...$('opts').children].forEach((b,i)=>{
+    const o=currentOptions[i];
+    b.classList.remove('sel');
+    if(o.kind==='correct') b.classList.add('right');
+    else if(b===btn && isTrap) b.classList.add('trapped');
+    else if(b===btn) b.classList.add('wrong');
+  });
+
+  // feedback box
+  const fb=$('feedback');
+  if(isCorrect){
+    fb.className='feedback show good';
+    fb.innerHTML='<strong>✓ Correct!</strong> +'+gained+' points.'+(msgs.length?'<div class="why">'+msgs.join(' &nbsp;·&nbsp; ')+'</div>':'');
+    if(msgs.length){ toast(msgs.join('  '), remaining>50?'speed':'fire'); }
+  }else if(isTrap){
+    fb.className='feedback show trap';
+    fb.innerHTML='<strong>🚨 TRAP TRIGGERED!</strong> You chose a plausible but incorrect assumption — read the constraints carefully.'
+      +'<div class="why">Correct answer → <span class="corr">'+deck[pi].phases[phase].correct+'</span></div>';
+  }else{
+    fb.className='feedback show bad';
+    fb.innerHTML='<strong>✗ Not quite.</strong><div class="why">Correct answer → <span class="corr">'+deck[pi].phases[phase].correct+'</span></div>';
+  }
+
+  $('scorePill').textContent=score+' pts';
+  $('nextBtn').classList.remove('hide');
+  const last=(pi>=deck.length-1 && phase>=3);
+  $('nextBtn').textContent=last?'Finish ✦':'Next →';
+
+  // sync score to leaderboard
+  if(!offline){
+    try{ await api('POST',{action:'score',team,delta:gained,score,answeredId:deck[pi].id+'-p'+phase,client:'ielts'}); }catch(e){}
+  }
+}
+
+/* ============================================================
+   FLOW
+   ============================================================ */
+function next(){
+  phase++;
+  if(phase>3){ phase=0; pi++; }
+  if(pi>=deck.length){ finish(); return; }
+  renderPhase();
+}
+function finish(){
+  stopSpeedBar();
+  $('game').classList.add('hide'); $('done').classList.remove('hide');
+  $('finalScore').textContent=score;
+  $('stCorrect').textContent=correctCount+'/'+(deck.length*4);
+  $('stBest').textContent=bestStreak;
+  $('stTraps').textContent=trapCount;
+  const pct=correctCount/(deck.length*4);
+  const rank = pct>=.9?'★ Prompt Surgeon': pct>=.75?'Sharp Analyst': pct>=.5?'Solid Effort':'Keep Practising';
+  $('rankLine').textContent=rank;
+}
+
+/* ============================================================
+   UI HELPERS
+   ============================================================ */
+function toast(msg,cls){
+  const t=$('toast'); t.textContent=msg;
+  t.className='toast show'+(cls?' '+cls:'');
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('show'),2000);
+}
+
+async function loadConnection(){
+  try{
+    const r=await api('GET',null,'action=leaderboard');
+    if(r&&r.ok){ offline=false; $('connNote').textContent="Live · synced to leaderboard"; return; }
+    throw new Error('bad');
+  }catch(e){ offline=true; $('connNote').textContent="Offline mode (scores not saved)"; }
+}
+
+/* ============================================================
+   EVENTS
+   ============================================================ */
+$('joinBtn').onclick=async()=>{
+  const name=$('teamName').value.trim();
+  if(name.length<2){ toast("Enter a team name."); return; }
+  team=name; $('joinBtn').textContent='Loading…'; $('joinBtn').disabled=true;
+  await loadConnection();
+  if(!offline){ try{ await api('POST',{action:'register',team}); }catch(e){} }
+  buildDeck();
+  pi=0; phase=0; score=0; streak=0; bestStreak=0; correctCount=0; trapCount=0;
+  $('teamPill').textContent=team;
+  $('join').classList.add('hide'); $('game').classList.remove('hide');
+  renderPhase(); startTimerPoll();
+};
+$('nextBtn').onclick=next;
+$('againBtn').onclick=async()=>{
+  // Reset synchronously so no stale numbers can flash before the async check resolves.
+  pi=0; phase=0; score=0; streak=0; bestStreak=0; correctCount=0; trapCount=0;
+  buildDeck();
+  $('done').classList.add('hide'); $('game').classList.remove('hide');
+  renderPhase();
+  await loadConnection(); // refresh online/offline status in the background
+};
+</script>
+</body>
+</html>

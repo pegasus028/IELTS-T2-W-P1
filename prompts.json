@@ -1,0 +1,842 @@
+[
+  {
+    "id": "p1",
+    "promptText": "Some argue governments should ban private cars in city centers to reduce pollution. Others believe individuals should have the right to drive anywhere. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "Banning city cars vs. individual driving rights.",
+        "distractors": [
+          "How to reduce pollution in modern city centers.",
+          "The global environmental impact of private cars.",
+          "Governments powers vs private car owners rights."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Governments must ban downtown cars entirely.",
+        "distractors": [
+          "Cars cause severe pollution in urban areas.",
+          "Citizens should ride bicycles in the city.",
+          "Only electric vehicles should be allowed."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Citizens need absolute freedom to drive.",
+        "distractors": [
+          "Driving a private car is extremely convenient.",
+          "Banning cars ruins local city businesses.",
+          "Commuters need cars to travel from suburbs."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why ban cars, 2) Why protect rights, 3) Your view.",
+        "distractors": [
+          "1) Why cars pollute, 2) Why people drive, 3) Your opinion.",
+          "1) History of cars, 2) Future of cars, 3) Best car type.",
+          "1) Why pollution is bad, 2) How to stop it, 3) Best transport."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p2",
+    "promptText": "Some say government should only fund university science degrees as they are most useful. Others believe funding should continue for arts subjects. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "How states should fund different degrees.",
+        "distractors": [
+          "The importance of STEM and Arts degrees.",
+          "How much universities charge for tuition.",
+          "Why science is harder to study than art."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "State funds should target only STEM subjects.",
+        "distractors": [
+          "Science and tech are the most useful subjects.",
+          "Universities should stop teaching the arts.",
+          "Students should choose science for better jobs."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "State funds must keep supporting the arts.",
+        "distractors": [
+          "Arts and humanities are also very useful.",
+          "Art students must pay their own tuition.",
+          "Science degrees receive far too much money."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why fund STEM, 2) Why fund Arts, 3) Your opinion.",
+        "distractors": [
+          "1) STEM benefits, 2) Arts benefits, 3) Your preferred subject.",
+          "1) Tax collection, 2) University spending, 3) Free education.",
+          "1) Why science is hard, 2) Why art is easy, 3) Your major."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p3",
+    "promptText": "Some believe prisons are strictly for punishing criminals. Others argue they should focus entirely on rehabilitation. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The main goals of the prison system.",
+        "distractors": [
+          "How to lower the overall crime rate.",
+          "The history and ethics of capital punishment.",
+          "Why people commit violent acts in society."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Prisons should primarily penalize criminals.",
+        "distractors": [
+          "Criminals deserve to suffer for their crimes.",
+          "Prisons should be harsh, miserable places.",
+          "The death penalty needs to be brought back."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Prisons must prioritize reforming all inmates.",
+        "distractors": [
+          "Prisoners should be taught how to read.",
+          "Criminals need therapy instead of prison.",
+          "Society is to blame for creating criminals."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Prison as punishment, 2) Prison as rehab, 3) Your view.",
+        "distractors": [
+          "1) Why punish, 2) How to rehab, 3) Is crime increasing?",
+          "1) Types of crime, 2) Prison sentences, 3) Views on police.",
+          "1) Prison costs, 2) Why inmates escape, 3) Prison food."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p4",
+    "promptText": "Many believe remote work benefits both workers and employers. Others think it isolates staff and reduces overall productivity. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The broad advantages vs. impacts of remote work.",
+        "distractors": [
+          "The changing nature of the modern office.",
+          "Efficiency of employees vs corportate profits.",
+          "Maintaining a healthy work-life balance."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Remote work benefits staff and companies.",
+        "distractors": [
+          "Remote work saves a lot of money on commuting.",
+          "Everyone should be forced to work remotely.",
+          "Employers save millions on office rent."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Remote work causes isolation and lowers output.",
+        "distractors": [
+          "Employees who work from home become lonely.",
+          "It is impossible to manage a remote team.",
+          "Children distract parents who remote work."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Dual benefits, 2) Isolation & low output, 3) Your stance.",
+        "distractors": [
+          "1) Worker benefits, 2) Why workers are lonely, 3) Your stance.",
+          "1) Home office setup, 2) Online communication, 3) Best apps.",
+          "1) History of offices, 2) Future of offices, 3) Your dream job."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p5",
+    "promptText": "Some parents strictly limit their children's screen time for healthy development. Others argue digital screens are vital for modern education and shouldn't be restricted. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "Restricting vs. encouraging children's screen time.",
+        "distractors": [
+          "Parents wishes vs. children's healthy development.",
+          "How to raise physically healthy children.",
+          "The dangers of social media for teenagers."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Strict screen limits ensure healthy child growth.",
+        "distractors": [
+          "Staring at screens damages children's eyesight.",
+          "Children should play outside, not watch TV.",
+          "Parents who buy iPads are bad parents."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Screens are crucial for unrestricted learning.",
+        "distractors": [
+          "Kids must learn computers for future jobs.",
+          "Educational games beat violent video games.",
+          "Parents lack the time to restrict screen use."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why limit screens, 2) Why allow screens, 3) Your view.",
+        "distractors": [
+          "1) Negative effects, 2) Positive effects, 3) Internet views.",
+          "1) Discuss TV, 2) Discuss smartphones, 3) Discuss tablets.",
+          "1) Strict parenting, 2) iPads in school, 3) Favorite games."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6",
+    "promptText": "Some think international tourism benefits the local economy. Others argue it damages local cultures and natural environments. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "Economic gains vs. costs of global tourism.",
+        "distractors": [
+          "The pros vs. cons of local culture.",
+          "How to become an eco-friendly global tourist.",
+          "The rapid growth of the airline industry."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Foreigners bring high prosperity to host towns.",
+        "distractors": [
+          "Tourism creates many jobs for local people.",
+          "Tourists spend lots of money on souvenirs.",
+          "Every country should build more luxury hotels."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Foreign visitors destroy local ecosystems.",
+        "distractors": [
+          "Tourists cause global pollution by flying.",
+          "Tourists consistently ignore local laws.",
+          "Local residents despise foreign tourists."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Economic benefits, 2) Culture/nature damage, 3) Your view.",
+        "distractors": [
+          "1) Why tourism pays, 2) Why culture dies, 3) Where to travel.",
+          "1) Attracting tourists, 2) Saving nature, 3) Favorite holiday.",
+          "1) Discuss hotels, 2) Discuss restaurants, 3) Discuss guides."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p7",
+    "promptText": "Some argue government space funding is a waste and should be spent on Earth's problems. Others believe space research brings essential technological advancements. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The financial justification for space exploration.",
+        "distractors": [
+          "The importance of discovering new habitable planets.",
+          "How space technology is researched and developed.",
+          "The statistical possibility of alien life."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Space funding is unjustifiable while Earth suffers.",
+        "distractors": [
+          "Space exploration is simply far too expensive.",
+          "Rockets cause heavy atmospheric pollution.",
+          "Humans are fundamentally not meant to leave Earth."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Space research yields critical tech breakthroughs.",
+        "distractors": [
+          "We must find a new planet to survive.",
+          "Space exploration creates astronaut jobs.",
+          "Learning about the stars is fascinating."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why fund Earth instead, 2) Tech benefits of space, 3) Your view.",
+        "distractors": [
+          "1) Earth's problems, 2) Space benefits, 3) Views on aliens.",
+          "1) History of NASA, 2) Future of SpaceX, 3) Planet to visit.",
+          "1) Why poverty exists, 2) Why satellites help, 3) Science views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p8",
+    "promptText": "Some think a high tax should be placed on fast food to improve public health. Others believe individuals should be completely free to choose what they eat. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "Taxing unhealthy food to influence dietary habits.",
+        "distractors": [
+          "The causes and solutions for the obesity epidemic.",
+          "Why fast food is detrimental to human health.",
+          "How the government collects citizen taxes."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Heavy junk food taxes will boost societal health.",
+        "distractors": [
+          "Fast food directly causes obesity and heart disease.",
+          "Fast food restaurants should be fully banned.",
+          "The government needs tax money for hospitals."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Citizens must retain liberty over their diets.",
+        "distractors": [
+          "Healthy food is too expensive for the poor.",
+          "Fast food is delicious and highly enjoyable.",
+          "Taxes do not stop people from eating junk food."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Health tax rationale, 2) Personal freedom rationale, 3) Your view.",
+        "distractors": [
+          "1) Why junk food is bad, 2) Why it tastes good, 3) Healthy eating.",
+          "1) Cooking healthy food, 2) Avoiding fast food, 3) Favorite meal.",
+          "1) Economics of taxes, 2) Fast food profits, 3) Views on capitalism."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p9",
+    "promptText": "Some believe traditional print newspapers will be completely replaced by online news. Others argue print media will always maintain a vital place in society. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The survival of print newspapers in the digital era.",
+        "distractors": [
+          "The differences between online and offline reading.",
+          "The rising issue of fake news on the internet.",
+          "How journalists write and publish stories."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Digital platforms will eradicate physical papers.",
+        "distractors": [
+          "Online news is much faster and cheaper to read.",
+          "Printing physical newspapers kills too many trees.",
+          "Only younger generations read the news online."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Physical newspapers will always remain relevant.",
+        "distractors": [
+          "Older generations prefer reading physical papers.",
+          "Print media employs far better journalists.",
+          "The internet requires electricity, which fails."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why digital replaces print, 2) Why print survives, 3) Your stance.",
+        "distractors": [
+          "1) Pros of online news, 2) Pros of print news, 3) What you read.",
+          "1) History of newspapers, 2) Invention of internet, 3) Tech views.",
+          "1) Why reading matters, 2) Why TV is bad, 3) Favorite news channel."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p10",
+    "promptText": "Some think testing medical products on animals is justified because it saves humans. Others argue it is cruel and unnecessary given modern technological alternatives. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The ethical validity of medical animal testing.",
+        "distractors": [
+          "Animal rights and the prevention of cruelty.",
+          "Testing cosmetics and makeup on animals.",
+          "How to invent new medical treatments."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Animal testing leads to human medical advances.",
+        "distractors": [
+          "Human lives are vastly more important than animals.",
+          "Animals do not feel pain the way humans do.",
+          "Scientists have always used animals for tests."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Testing is obsolete due to modern technology.",
+        "distractors": [
+          "Animal testing is cruel and must be stopped.",
+          "Animal tests never yield accurate human results.",
+          "We should test medicines on human prisoners."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Saving humans rationale, 2) Cruelty/alternatives rationale, 3) Your view.",
+        "distractors": [
+          "1) Saving humans, 2) Hurting animals, 3) Views on doctors.",
+          "1) Medical history, 2) Animal types, 3) Best test animal.",
+          "1) How scientists test, 2) Test costs, 3) Views on science."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p11",
+    "promptText": "Some argue competitive sports teach children discipline and resilience. Others believe competition creates unnecessary stress and youth sports should just be for fun. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The role of competition in children's athletics.",
+        "distractors": [
+          "The physical health benefits of youth sports.",
+          "How to train children to become pro athletes.",
+          "Funding for competitive sports programs in schools."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Competitive athletics develop vital life skills.",
+        "distractors": [
+          "Children need to learn how to win and lose.",
+          "Sports keep children out of trouble after school.",
+          "Playing sports makes children physically stronger."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "The pressure to win causes anxiety in children.",
+        "distractors": [
+          "Competitive sports cause physical injuries.",
+          "Children truly do not care about winning.",
+          "Aggressive parents ruin youth sports games."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why competition builds discipline, 2) Why stress means it should be fun, 3) Your view.",
+        "distractors": [
+          "1) Sports benefits, 2) Sports drawbacks, 3) Favorite sport.",
+          "1) Coaching kids, 2) Being a good parent, 3) Olympic views.",
+          "1) Lazy kids today, 2) School sports needs, 3) PE class views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p12",
+    "promptText": "Some believe advertising directed at children should be completely banned. Others argue it helps children learn about the free market and making choices. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The ethics and regulation of marketing to children.",
+        "distractors": [
+          "The negative effects of TV commercials on youth.",
+          "How major toy companies design their products.",
+          "The amount of money children spend on toys."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "The state must enact a ban on youth marketing.",
+        "distractors": [
+          "Ads manipulate kids into wanting junk food.",
+          "Parents should mute the TV during commercials.",
+          "Advertisements make children behave terribly."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Marketing to youth teaches consumer economics.",
+        "distractors": [
+          "Children really enjoy watching funny adverts.",
+          "Banning ads would destroy the toy industry.",
+          "Children are smart enough to spot fake ads."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Rationale for an ad ban, 2) Ads as market education, 3) Your view.",
+        "distractors": [
+          "1) Why ads are bad, 2) Why ads are good, 3) Childhood toys.",
+          "1) Ad creation, 2) Ad placement, 3) General marketing views.",
+          "1) Advertising history, 2) Color psychology, 3) Favorite ad."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p13",
+    "promptText": "Some think it is acceptable for minority languages to die out to make global communication easier. Others believe governments should spend money to protect them. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The preservation vs. extinction of minority languages.",
+        "distractors": [
+          "The importance of learning global English.",
+          "How spoken languages evolve over time.",
+          "The difficulty of translating rare languages."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "The loss of uncommon languages aids interaction.",
+        "distractors": [
+          "Everyone on Earth should speak one language.",
+          "Minority languages are too difficult to learn.",
+          "English is clearly the best global language."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "State funds must safeguard endangered dialects.",
+        "distractors": [
+          "Minority languages contain vital cultural history.",
+          "People should speak their native language at home.",
+          "Schools should teach five different languages."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why language death aids communication, 2) Why governments should fund preservation, 3) Your view.",
+        "distractors": [
+          "1) English benefits, 2) Small language beauty, 3) Learning views.",
+          "1) Grammar learning, 2) Vocab building, 3) Favorite language.",
+          "1) Language origins, 2) Future of language, 3) Views on accents."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p14",
+    "promptText": "Some argue children should only learn their own country's history to build national pride. Others believe world history is more important for understanding global issues. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The scope of history curriculum in modern schools.",
+        "distractors": [
+          "The basic importance of teaching history.",
+          "How to make history classes more interesting.",
+          "The factual accuracy of history textbooks."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Education should be limited to domestic history.",
+        "distractors": [
+          "Children must know their country's leaders.",
+          "World history is too complex for young kids.",
+          "Schools lack the time to teach everything."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Global history is needed to grasp world dynamics.",
+        "distractors": [
+          "World history helps you learn about fun cultures.",
+          "National history is biased and full of lies.",
+          "Students need world history for exams."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Rationale for national history, 2) Rationale for world history, 3) Your view.",
+        "distractors": [
+          "1) Country history, 2) Other history, 3) Favorite era.",
+          "1) Teaching dates, 2) Teaching events, 3) Views on teachers.",
+          "1) History of wars, 2) History of peace, 3) Views on politics."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p15",
+    "promptText": "Some think the government should entirely pay for elderly housing and care. Others believe families should be strictly responsible for supporting older relatives. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "Financial and caregiving duty for aging populations.",
+        "distractors": [
+          "How to improve elderly quality of life.",
+          "The medical problems associated with aging.",
+          "The rapidly rising cost of nursing homes."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "The state must bear the financial burden of care.",
+        "distractors": [
+          "The elderly paid taxes, so they deserve help.",
+          "Nursing homes should be built in every city.",
+          "Old people should be given free medicine."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Relatives must bear sole obligation for aging care.",
+        "distractors": [
+          "Families should visit grandparents more often.",
+          "The government is too broke for elderly care.",
+          "Old people prefer living in their own homes."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why the state should fund care, 2) Why families should be responsible, 3) Your view.",
+        "distractors": [
+          "1) Nursing homes, 2) Living with family, 3) Views on aging.",
+          "1) Elderly health issues, 2) Mental issues, 3) Views on doctors.",
+          "1) High taxes, 2) Expensive housing, 3) Economic views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p16",
+    "promptText": "Some argue genetically modified crops are necessary to feed a growing population. Others believe they pose severe, unknown risks to human health and ecosystems. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The necessity vs. potential dangers of GM crops.",
+        "distractors": [
+          "How to finally stop global starvation.",
+          "The science behind altering plant DNA.",
+          "The economics of the global farming industry."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Manipulating plant genetics prevents starvation.",
+        "distractors": [
+          "Genetically modified crops grow much faster.",
+          "GM food tastes far better than organic food.",
+          "Farmers make more money using GM seeds."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "GM agriculture threatens global health unpredictably.",
+        "distractors": [
+          "Organic food is much healthier than GM food.",
+          "GM crops are too expensive for poor farmers.",
+          "Artificial food is unnatural and morally wrong."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) GM solving hunger, 2) GM health/nature risks, 3) Your view.",
+        "distractors": [
+          "1) We need food, 2) GM is bad, 3) Farming views.",
+          "1) How GM is made, 2) Where GM grows, 3) Favorite vegetable.",
+          "1) Supermarkets, 2) Farmers' markets, 3) Cooking views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p17",
+    "promptText": "Some think public libraries are unnecessary because information is online. Others believe they serve a vital role as community spaces and physical resources. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The relevance and utility of libraries today.",
+        "distractors": [
+          "The decline in reading physical books.",
+          "How to accurately research information online.",
+          "The funding of local government buildings."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "The internet has rendered physical libraries obsolete.",
+        "distractors": [
+          "Buying books online is cheaper than libraries.",
+          "Libraries are too noisy and crowded nowadays.",
+          "Nobody knows how to read physical books now."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Libraries remain crucial as physical community hubs.",
+        "distractors": [
+          "Reading a physical book is better for the eyes.",
+          "The internet has fake news, so libraries are safer.",
+          "Libraries provide necessary jobs for librarians."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why internet makes libraries obsolete, 2) Libraries as community hubs, 3) Your view.",
+        "distractors": [
+          "1) Internet benefits, 2) Book benefits, 3) Reading views.",
+          "1) Library history, 2) Wi-Fi invention, 3) Tech views.",
+          "1) Borrowing books, 2) Using Google, 3) Favorite author."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p18",
+    "promptText": "Some argue individual lifestyle changes are best to combat climate change. Others believe only large-scale government action and corporate regulations work. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The most effective scale of action for climate change.",
+        "distractors": [
+          "The primary causes and effects of global warming.",
+          "How to recycle household waste effectively.",
+          "The global transition to renewable energy."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Personal habit modifications are the superior method.",
+        "distractors": [
+          "People should drive electric cars to stop pollution.",
+          "Everyone must become a vegetarian to save Earth.",
+          "Individuals caused the problem, so they must fix it."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Only state policies and business rules have impact.",
+        "distractors": [
+          "The government should build solar panel farms.",
+          "Big corporations are evil and destroy the Earth.",
+          "Individuals are simply too lazy to change habits."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Case for individual change, 2) Case for state/corporate rules, 3) Your view.",
+        "distractors": [
+          "1) Climate change is bad, 2) Govt actions, 3) Your actions.",
+          "1) Discuss recycling, 2) Discuss solar power, 3) Weather views.",
+          "1) History of pollution, 2) Future of Earth, 3) Nature views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p19",
+    "promptText": "Some believe new buildings should be designed traditionally to match historical surroundings. Others argue modern, innovative architecture should always be encouraged. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The aesthetic philosophy for new urban construction.",
+        "distractors": [
+          "The preservation of old, historical buildings.",
+          "The environmental sustainability of construction.",
+          "How to solve housing shortages in big cities."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "New developments must mimic classical aesthetics.",
+        "distractors": [
+          "Traditional buildings look better than modern ones.",
+          "Modern architecture is ugly and very depressing.",
+          "Tourists only want to see old-fashioned buildings."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Cities should prioritize contemporary building designs.",
+        "distractors": [
+          "Modern buildings are taller and hold more people.",
+          "Traditional architecture is too expensive to build.",
+          "All old buildings should be torn down for the new."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) Why match historical styles, 2) Why push modern designs, 3) Your view.",
+        "distractors": [
+          "1) Beauty of old buildings, 2) Utility of new buildings, 3) City views.",
+          "1) Building a house, 2) Designing a skyscraper, 3) Favorite building.",
+          "1) History of architecture, 2) Building materials, 3) Art views."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p20",
+    "promptText": "Some argue increasing the minimum wage reduces poverty and benefits the economy. Others believe it forces businesses to raise prices and cut jobs. Discuss both views and give your opinion.",
+    "phases": [
+      {
+        "phaseName": "1: Core Topic",
+        "correct": "The macroeconomic impacts of raising baseline salary.",
+        "distractors": [
+          "The growing wealth gap between rich and poor.",
+          "How to negotiate a better salary with a boss.",
+          "The extremely high cost of living in cities."
+        ]
+      },
+      {
+        "phaseName": "2: Side A",
+        "correct": "Mandating higher baseline pay alleviates hardship.",
+        "distractors": [
+          "Poor people deserve to earn more money to survive.",
+          "Everyone should be paid the exact same salary.",
+          "The government should just give everyone money."
+        ]
+      },
+      {
+        "phaseName": "3: Side B",
+        "correct": "Higher mandated wages cause inflation and job loss.",
+        "distractors": [
+          "Small businesses cannot afford to pay workers more.",
+          "Poor people will waste the extra money they earn.",
+          "Minimum wage jobs are only meant for teenagers."
+        ]
+      },
+      {
+        "phaseName": "4: 3-Part Rule",
+        "correct": "1) How raising wages cuts poverty, 2) How raising wages cuts jobs, 3) Your view.",
+        "distractors": [
+          "1) Poverty problems, 2) Business profits, 3) Views on money.",
+          "1) Finding a job, 2) Managing a budget, 3) Your ideal salary.",
+          "1) Labor union history, 2) Future of work, 3) Views on taxes."
+        ]
+      }
+    ]
+  }
+]

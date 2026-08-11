@@ -1,840 +1,840 @@
 [
   {
     "id": "p1",
-    "promptText": "Some argue governments should ban private cars in city centers to reduce pollution. Others believe individuals should have the right to drive anywhere. Discuss both views and give your opinion.",
+    "promptText": "Some argue governments should ban private cars in city centres to reduce pollution. Others believe individuals should have the right to drive wherever they wish. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The inherent conflict between state environmental intervention and personal mobility rights.",
+        "correct": "Whether curbing vehicle emissions justifies overriding people's freedom of movement.",
         "distractors": [
-          "The primary causes of urban air pollution and how to solve them.",
-          "Evaluating whether public transport is a more effective system than private driving.",
-          "The economic impact of restricting private vehicles in downtown areas."
+          "Which fuels and engine types release the most harmful gases in cities.",
+          "How congestion in busy districts wastes the time of daily commuters.",
+          "Comparing underground rail networks with buses as cleaner ways to travel."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Justifying state-mandated vehicle bans as a necessary measure for urban ecological health.",
+        "correct": "Restricting downtown traffic is a legitimate step to protect air quality.",
         "distractors": [
-          "Explaining the specific chemical makeup of exhaust pollution in city centers.",
-          "Arguing that governments should make public transport completely free.",
-          "Describing how traffic congestion wastes time for city commuters."
+          "City authorities ought to make every bus and tram ride free of charge.",
+          "Exhaust fumes are chemically complex and vary from vehicle to vehicle.",
+          "Wide roads and car parks take up land that could hold public housing."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Defending the preservation of individual autonomy regarding transport choices.",
+        "correct": "People are entitled to decide for themselves how they get around.",
         "distractors": [
-          "Highlighting the daily convenience of owning a private car for shopping.",
-          "Arguing that people need to drive because public transport is unreliable.",
-          "Discussing the history of the individual right to own a vehicle."
+          "Families rely on cars because timetabled services are frequently late.",
+          "A private vehicle is simply the handiest way to carry home the shopping.",
+          "The freedom to own a motor car has a long and interesting history."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the rationale for state bans, 2) Evaluate the rationale for personal driving rights, 3) Synthesize your derived stance.",
+        "correct": "Weigh the case for a ban, weigh the case for driver freedom, then judge.",
         "distractors": [
-          "1) Detail the causes of pollution, 2) Detail why people drive, 3) Propose a compromise.",
-          "1) Argue for banning cars, 2) Argue against banning cars, 3) Summarize the points.",
-          "1) State your opinion, 2) List environmental problems, 3) List transport solutions."
+          "Describe pollution's causes, explain why people drive, suggest a middle path.",
+          "Argue only that cars should go, then neatly restate that same position.",
+          "Give your verdict first, list green problems, then list transport fixes."
         ]
       }
     ]
   },
   {
     "id": "p2",
-    "promptText": "Some say government should only fund university science degrees as they are most useful. Others believe funding should continue for arts subjects. Discuss both views and give your opinion.",
+    "promptText": "Some say governments should fund only university science degrees because they are the most useful. Others believe public money should continue to support arts subjects. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The prioritization of state educational subsidies between utilitarian and cultural disciplines.",
+        "correct": "How the state should divide its higher-education budget between fields.",
         "distractors": [
-          "Determining which university degrees lead to the highest paying careers.",
-          "Finding solutions to the rising costs of higher education tuition.",
-          "Comparing the academic difficulty of science versus arts programs."
+          "Whether laboratory subjects are genuinely harder to master than the arts.",
+          "The rising tuition fees that students now face at most universities.",
+          "Which graduates end up earning the highest salaries after leaving college."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Allocating taxpayer funds exclusively to fields that yield direct, practical societal utility.",
+        "correct": "Taxpayer support belongs with technical and scientific study alone.",
         "distractors": [
-          "Listing the most important technological inventions created by university scientists.",
-          "Arguing that science degrees are too expensive for students to afford without help.",
-          "Explaining how governments collect the money used to fund universities."
+          "Young people should simply pick science to secure a well-paid career.",
+          "Universities would be wise to shut down their humanities departments.",
+          "Research laboratories are costly and swallow most of a faculty's money."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Maintaining financial support for disciplines that cultivate societal culture and critical thought.",
+        "correct": "Creative and humanities courses also deserve continued public backing.",
         "distractors": [
-          "Describing famous paintings and why museums are important.",
-          "Explaining that some students are naturally better at arts than mathematics.",
-          "Arguing that listening to music helps students relax during exams."
+          "Learners studying art really ought to cover their own tuition costs.",
+          "Science faculties already receive a far larger slice of the funding.",
+          "The arts matter because they make a nation's culture more attractive."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the logic of utility-based funding, 2) Analyze the intrinsic value of arts funding, 3) Establish your funding philosophy.",
+        "correct": "Assess funding science, assess funding the arts, then state your position.",
         "distractors": [
-          "1) Why science is useful, 2) Why art is nice, 3) Write a conclusion.",
-          "1) Give your opinion on taxes, 2) Explain university spending, 3) Argue for free education.",
-          "1) Discuss science jobs, 2) Discuss arts jobs, 3) Recommend a degree."
+          "Weigh the benefits of science, then those of art, then name your major.",
+          "Discuss how taxes are raised, how colleges spend, then argue fees be scrapped.",
+          "Claim science is demanding, claim art is easy, then reveal your choice."
         ]
       }
     ]
   },
   {
     "id": "p3",
-    "promptText": "Some believe prisons are strictly for punishing criminals. Others argue they should focus entirely on rehabilitation. Discuss both views and give your opinion.",
+    "promptText": "Some believe prisons exist strictly to punish those who break the law. Others argue they should concentrate entirely on reforming offenders. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The fundamental purpose of the penal system: retributive justice versus social reintegration.",
+        "correct": "What the fundamental purpose of locking people up ought to be.",
         "distractors": [
-          "Identifying the root causes of crime and proposing societal solutions.",
-          "Evaluating whether the death penalty is an appropriate form of punishment.",
-          "Analyzing the living conditions and overcrowding inside modern prisons."
+          "The most effective ways for a society to bring down its crime rate.",
+          "Whether the death penalty can ever be morally and legally defended.",
+          "The social and family pressures that push individuals toward crime."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Validating incarceration as a necessary mechanism for societal retribution and deterrence.",
+        "correct": "Confinement should chiefly make wrongdoers pay for their offences.",
         "distractors": [
-          "Explaining how victims of violent crimes feel during a court trial.",
-          "Listing the most serious types of crimes that deserve long sentences.",
-          "Describing the daily routine and strict rules enforced by prison guards."
+          "Offenders truly deserve to endure suffering for the harm they cause.",
+          "Jails ought to be deliberately bleak and thoroughly unpleasant places.",
+          "Bringing back capital punishment would deter the most serious crimes."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Promoting correctional facilities as environments for psychological and educational reform.",
+        "correct": "The core aim should be preparing inmates to rejoin society reformed.",
         "distractors": [
-          "Arguing that many prisoners never learned to read or write as children.",
-          "Detailing how difficult it is for former inmates to find jobs upon release.",
-          "Suggesting that prisons should be replaced entirely with community service."
+          "Prisoners would benefit greatly from being taught how to read and write.",
+          "Wrongdoers need counselling and therapy far more than a cell.",
+          "It is really society itself that manufactures most of its criminals."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the case for punitive incarceration, 2) Assess the case for reformative incarceration, 3) Present your synthesized philosophy.",
+        "correct": "Examine prison as punishment, examine it as reform, then take a side.",
         "distractors": [
-          "1) Explain why crime is bad, 2) Explain how people can change, 3) Summarize.",
-          "1) Detail types of crimes, 2) Detail length of sentences, 3) Give an opinion on police.",
-          "1) Choose a side immediately, 2) Attack the other side, 3) Restate the introduction."
+          "Argue why we punish, explain how to reform, then ask if crime is rising.",
+          "List the kinds of crime, then sentence lengths, then your view of police.",
+          "Weigh the running costs, why inmates flee, and the quality of prison meals."
         ]
       }
     ]
   },
   {
     "id": "p4",
-    "promptText": "Many believe remote work benefits both workers and employers. Others think it isolates staff and reduces overall productivity. Discuss both views and give your opinion.",
+    "promptText": "Many believe that working from home benefits employees and companies alike. Others think it isolates staff and lowers overall productivity. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The trade-off between flexible operational models and organizational cohesion.",
+        "correct": "Whether remote arrangements help or ultimately harm the modern workplace.",
         "distractors": [
-          "The technological evolution of the modern office over the last decade.",
-          "Strategies for workers to maintain a healthy work-life balance at home.",
-          "Evaluating which video conferencing software is best for remote teams."
+          "The way the traditional workplace office has been reshaped over recent years.",
+          "How workers can protect a healthy balance between their job and home.",
+          "The tension between an employee's output and a firm's overall profit."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Highlighting the mutual efficiency and well-being gained through decentralized labor.",
+        "correct": "Home-based work rewards both the individual and the organisation.",
         "distractors": [
-          "Describing how much money people save by not buying train tickets.",
-          "Explaining how comfortable home offices are compared to cubicles.",
-          "Listing the types of jobs that can easily be done on a laptop."
+          "Skipping the daily commute saves people a considerable sum of money.",
+          "Employers can pocket huge savings by shedding expensive office space.",
+          "Every member of staff really ought to be made to work from home."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Emphasizing the detriment to team synergy, mental health, and collective output.",
+        "correct": "Distance breeds loneliness among staff and drags down what they achieve.",
         "distractors": [
-          "Detailing the technical issues caused by slow home internet connections.",
-          "Arguing that children and pets cause too many disruptions during the day.",
-          "Explaining why office buildings are becoming empty and losing value."
+          "People who work from their homes gradually become quite lonely.",
+          "Coordinating a team scattered across many locations is simply impossible.",
+          "Young children constantly distract any parent trying to work at home."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Examine the dual benefits of remote models, 2) Examine the risks of isolation and inefficiency, 3) Conclude with your operational stance.",
+        "correct": "Weigh the shared gains, weigh the isolation and lost output, then decide.",
         "distractors": [
-          "1) List remote work benefits, 2) List remote work problems, 3) Write a summary.",
-          "1) Discuss office history, 2) Discuss future technology, 3) State your dream job.",
-          "1) Explain how to work from home, 2) Explain how to manage staff, 3) Conclude."
+          "Cover the perks for workers, why they feel lonely, then give your stance.",
+          "Explain how to set up a home office, then online tools, then the best apps.",
+          "Trace the history of offices, imagine their future, then name your dream job."
         ]
       }
     ]
   },
   {
     "id": "p5",
-    "promptText": "Some parents strictly limit their children's screen time for healthy development. Others argue digital screens are vital for modern education and shouldn't be restricted. Discuss both views and give your opinion.",
+    "promptText": "Some parents firmly restrict their children's screen time to protect healthy development. Others insist digital devices are essential for modern learning and should not be limited. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "Balancing developmental caution with the necessity of digital literacy in modern parenting.",
+        "correct": "Whether children's use of screens ought to be curbed or freely allowed.",
         "distractors": [
-          "The overarching methods parents use to raise physically healthy children.",
-          "The specific psychological dangers of social media platforms for teenagers.",
-          "Comparing traditional book-based education with modern app-based learning."
+          "The clash between what parents want and what children actually need.",
+          "Practical ways to help young people grow up fit and physically healthy.",
+          "The particular risks that social media poses to impressionable teenagers."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Regulating digital exposure to prevent cognitive and physical developmental delays.",
+        "correct": "Firm limits on devices safeguard a child's healthy growth.",
         "distractors": [
-          "Explaining the exact medical reasons why screens tire human eyes.",
-          "Arguing that children should be forced to play sports outside instead.",
-          "Describing how expensive smartphones and tablets are for parents to buy."
+          "Long hours in front of a display can damage a youngster's eyesight.",
+          "Children really ought to be playing outdoors rather than watching a screen.",
+          "Any parent who hands a child a tablet is failing at their job."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Treating unrestricted device access as an essential tool for contemporary academic integration.",
+        "correct": "Unrestricted access to technology is crucial for a child's education.",
         "distractors": [
-          "Reviewing which educational applications are the most colourful and fun.",
-          "Pointing out that almost all children currently own some form of digital device.",
-          "Detailing how teachers operate smartboards and computers in the classroom."
+          "Youngsters must master computers now to land the jobs of the future.",
+          "Educational apps are clearly preferable to violent video games.",
+          "Most parents are simply too busy to police how long screens are used."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the rationale for strict moderation, 2) Analyze the argument for educational necessity, 3) Formulate your pedagogical stance.",
+        "correct": "Weigh why to limit screens, why to permit them, then give your view.",
         "distractors": [
-          "1) Detail the risks of screens, 2) Detail the lessons on screens, 3) Summarize.",
-          "1) Discuss television rules, 2) Discuss mobile phone rules, 3) Discuss tablet rules.",
-          "1) State your opinion, 2) Give advice to strict parents, 3) Give advice to schools."
+          "Cover the harms, then the benefits, then add your opinion on the internet.",
+          "Discuss television, then smartphones, then tablets, one device at a time.",
+          "Praise strict parenting, then tablets in class, then your favourite games."
         ]
       }
     ]
   },
   {
     "id": "p6",
-    "promptText": "Some think international tourism benefits the local economy. Others argue it damages local cultures and natural environments. Discuss both views and give your opinion.",
+    "promptText": "Some think international tourism strengthens the local economy. Others argue it erodes local cultures and harms the natural environment. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The tension between macroeconomic growth and the preservation of indigenous heritage and ecology.",
+        "correct": "Whether the money tourism brings outweighs its cultural and ecological cost.",
         "distractors": [
-          "Guidelines on how individuals can become more responsible, eco-friendly travelers.",
-          "The reasons behind the rapid expansion of the global airline industry.",
-          "Identifying the most popular global destinations and why people visit them."
+          "The pros and cons that come with preserving a region's local culture.",
+          "How a traveller can behave in a more environmentally responsible way.",
+          "The remarkably rapid expansion of the global airline industry."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Viewing foreign influx as a vital catalyst for local wealth generation and infrastructure.",
+        "correct": "Visitors from abroad pour welcome prosperity into the places they visit.",
         "distractors": [
-          "Listing the types of small souvenirs that tourists typically purchase.",
-          "Explaining how hotels construct large swimming pools near popular beaches.",
-          "Describing how international airports connect different cities around the world."
+          "Tourism opens up plenty of new jobs for ordinary local residents.",
+          "Holidaymakers spend generously on souvenirs and small keepsakes.",
+          "Every nation should hurry to build far more luxury hotels."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Highlighting the degradation of authentic societal norms and ecological stability caused by mass visitation.",
+        "correct": "Foreign crowds wear away native traditions and spoil fragile habitats.",
         "distractors": [
-          "Explaining how tourists sometimes disrespect locals by getting lost in cities.",
-          "Detailing the carbon footprint of long-haul international flights.",
-          "Arguing that translating guidebooks into many languages changes the local dialect."
+          "Tourists add to global pollution every time they board a flight.",
+          "Visitors have a habit of disregarding the laws of the places they enter.",
+          "Local people, on the whole, come to resent the foreigners around them."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the financial stimulation of tourism, 2) Evaluate the socio-ecological cost, 3) Conclude with your developmental perspective.",
+        "correct": "Weigh the economic gains, weigh the damage done, then give your verdict.",
         "distractors": [
-          "1) State that tourism earns money, 2) State that tourism causes harm, 3) Summarize.",
-          "1) Propose ways to attract tourists, 2) Propose ways to save nature, 3) Describe a holiday.",
-          "1) Pick the economic side, 2) Ignore the environmental side, 3) Defend your choice."
+          "Explain why tourism pays, why culture fades, then where you would travel.",
+          "Discuss attracting visitors, then saving nature, then your best holiday.",
+          "Cover the hotels, then the restaurants, then the local tour guides."
         ]
       }
     ]
   },
   {
     "id": "p7",
-    "promptText": "Some argue government space funding is a waste and should be spent on Earth's problems. Others believe space research brings essential technological advancements. Discuss both views and give your opinion.",
+    "promptText": "Some argue that government spending on space is wasteful and should be redirected to problems on Earth. Others believe space research delivers vital technological progress. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The ethical prioritization of immediate terrestrial crises versus long-term extraterrestrial innovation.",
+        "correct": "Whether the money spent exploring space can be financially justified.",
         "distractors": [
-          "Debating the probability of discovering alien life elsewhere in the universe.",
-          "The engineering processes required to build rockets and orbital satellites.",
-          "Evaluating whether human colonization of Mars will be possible in the future."
+          "How important it is to locate other planets that humans could inhabit.",
+          "The technical process by which space equipment is designed and built.",
+          "The statistical likelihood that intelligent alien life truly exists."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Condemning astronomical budgets as socially irresponsible while global terrestrial issues persist.",
+        "correct": "Funding rockets is indefensible while people on Earth still suffer.",
         "distractors": [
-          "Explaining the immense physical size and fuel requirements of modern rockets.",
-          "Pointing out that space is extremely far away and difficult to reach safely.",
-          "Detailing the rigorous physical training astronauts undergo over many years."
+          "Exploring the cosmos is, quite simply, far too expensive an undertaking.",
+          "Launching rockets pumps significant pollution into the atmosphere.",
+          "Human beings were never really meant to venture off their home planet."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Defending space exploration as a primary driver of indispensable downstream technologies.",
+        "correct": "Investigating space yields breakthroughs that benefit everyday life.",
         "distractors": [
-          "Describing how the beauty of the stars inspires artists and philosophers.",
-          "Highlighting the popularity and economic success of science fiction cinema.",
-          "Explaining that space programs inspire young children to study mathematics."
+          "We are obliged to find a fresh planet if our species is to endure.",
+          "Space programmes create prestigious careers for trained astronauts.",
+          "Studying distant stars and galaxies is a genuinely fascinating pursuit."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the utilitarian argument for Earth-first spending, 2) Assess the innovation argument for space, 3) Synthesize your fiscal stance.",
+        "correct": "Weigh funding Earth first, weigh the tech gains of space, then judge.",
         "distractors": [
-          "1) Explain why Earth needs help, 2) Explain how space is cool, 3) Summarize.",
-          "1) Outline the history of NASA, 2) Predict the future of SpaceX, 3) Choose a planet.",
-          "1) List terrestrial problems, 2) List space technologies, 3) Propose a solution."
+          "Discuss Earth's troubles, then space's rewards, then your view on aliens.",
+          "Trace NASA's past, imagine SpaceX's future, then pick a planet to visit.",
+          "Explain why poverty persists, how satellites help, then your take on science."
         ]
       }
     ]
   },
   {
     "id": "p8",
-    "promptText": "Some think a high tax should be placed on fast food to improve public health. Others believe individuals should be completely free to choose what they eat. Discuss both views and give your opinion.",
+    "promptText": "Some think heavy taxes should be imposed on fast food to improve public health. Others believe people should be entirely free to choose what they eat. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The conflict between paternalistic state health interventions and consumer dietary autonomy.",
+        "correct": "Whether taxing unhealthy meals to steer diets is a fair use of state power.",
         "distractors": [
-          "The underlying causes and potential solutions to the global obesity epidemic.",
-          "The mechanisms by which governments collect and distribute national tax revenue.",
-          "Identifying which specific fast food items contain the highest levels of fat."
+          "The tangled causes of obesity and the possible remedies for it.",
+          "The many ways in which fast food undermines a person's health.",
+          "The mechanics of how a government actually collects tax from its citizens."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Using fiscal penalties as a structural deterrent to mitigate diet-related public health crises.",
+        "correct": "Steep levies on junk food would lift the health of the population.",
         "distractors": [
-          "Explaining that fast food is often sold very cheaply to lower-income families.",
-          "Detailing how fast food restaurants use aggressive television advertising.",
-          "Describing the rapid preparation methods of burgers and french fries."
+          "Fast food is a direct trigger of obesity and heart disease.",
+          "Restaurants selling such food ought to be banned outright.",
+          "The state simply needs the extra tax revenue to fund its hospitals."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Protecting civil liberties against government overreach in personal consumption habits.",
+        "correct": "Individuals must keep the liberty to govern their own eating.",
         "distractors": [
-          "Arguing that fast food tastes genuinely good and brings people joy.",
-          "Explaining that busy workers rely on fast food because they lack time to cook.",
-          "Pointing out that fast food menus now offer some healthy salad options."
+          "Wholesome food is priced beyond the reach of poorer households.",
+          "Fast food is, after all, delicious and hugely enjoyable to eat.",
+          "Taxes have never once stopped anyone from buying junk food."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the justification for dietary taxation, 2) Analyze the defense of consumer freedom, 3) Formulate your regulatory stance.",
+        "correct": "Assess the health-tax case, assess personal freedom, then take a stance.",
         "distractors": [
-          "1) State that fast food is unhealthy, 2) State that eating is a choice, 3) Conclude.",
-          "1) Discuss the benefits of cooking, 2) Discuss the dangers of junk food, 3) Recommend a diet.",
-          "1) Give your opinion immediately, 2) Defend it with health stats, 3) Attack the other side."
+          "Argue junk food is bad, then that it tastes good, then praise healthy eating.",
+          "Explain cooking well, then avoiding fast food, then your favourite meal.",
+          "Discuss tax economics, then fast-food profits, then your view of capitalism."
         ]
       }
     ]
   },
   {
     "id": "p9",
-    "promptText": "Some believe traditional print newspapers will be completely replaced by online news. Others argue print media will always maintain a vital place in society. Discuss both views and give your opinion.",
+    "promptText": "Some believe printed newspapers will be completely replaced by online news. Others argue that print media will always keep a valued place in society. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The impending obsolescence of physical journalism versus its enduring cultural and practical relevance.",
+        "correct": "Whether the printed newspaper can survive in a digital age.",
         "distractors": [
-          "The growing societal problem of fake news and misinformation on social media.",
-          "The ethical standards journalists must follow when researching and writing stories.",
-          "Evaluating which international news broadcasting networks are the most trustworthy."
+          "The differences between reading a screen and reading on paper.",
+          "The growing problem of false stories spreading across the internet.",
+          "The process by which reporters research and publish their articles."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Predicting the total digitization of information due to superior speed, accessibility, and cost.",
+        "correct": "Digital platforms will eventually wipe out the physical paper.",
         "distractors": [
-          "Detailing how modern news websites can display high-resolution, colourful photos.",
-          "Explaining that smartphones are physically carried everywhere by modern citizens.",
-          "Describing the simple process of downloading a news application from an app store."
+          "Reading news online is both quicker and cheaper than in print.",
+          "Printing papers fells an enormous number of trees each year.",
+          "It is only the younger generation who bother to read news online."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Asserting that tactile media offers unique credibility, archival value, and demographic access that screens cannot.",
+        "correct": "The paper newspaper will hold on to its relevance indefinitely.",
         "distractors": [
-          "Pointing out that old newspapers can be environmentally recycled after reading.",
-          "Explaining that broadsheet newspapers come in different physical sizes.",
-          "Describing the visual appeal of traditional newsstands found on city streets."
+          "Older readers, by and large, still prefer a paper they can hold.",
+          "Print outlets happen to employ noticeably better journalists.",
+          "The web depends on electricity, and electricity sometimes fails."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the drivers of digital media dominance, 2) Evaluate the anchoring value of print, 3) Project your media forecast.",
+        "correct": "Weigh why digital wins, weigh why print endures, then give your view.",
         "distractors": [
-          "1) Explain why digital is winning, 2) Explain why print is surviving, 3) Summarize.",
-          "1) Outline the history of print media, 2) Outline the rise of the internet, 3) State a preference.",
-          "1) Discuss why reading is important, 2) Discuss why television is bad, 3) Pick a format."
+          "List online's merits, then print's merits, then what you personally read.",
+          "Trace newspapers' history, the web's invention, then your view of tech.",
+          "Explain why reading matters, why TV harms, then your favourite channel."
         ]
       }
     ]
   },
   {
     "id": "p10",
-    "promptText": "Some think testing medical products on animals is justified because it saves humans. Others argue it is cruel and unnecessary given modern technological alternatives. Discuss both views and give your opinion.",
+    "promptText": "Some think testing medical products on animals is justified because it saves human lives. Others argue it is cruel and needless now that modern alternatives exist. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The ethical dilemma of prioritizing human survival over animal welfare in scientific research.",
+        "correct": "Whether experimenting on animals for medicine can be ethically defended.",
         "distractors": [
-          "The broader philosophical debate concerning global animal rights and vegetarianism.",
-          "The specific biochemical processes used to discover and manufacture new medicines.",
-          "Debating whether testing luxury cosmetics on animals is morally acceptable."
+          "The much broader question of animal rights and the prevention of needless cruelty.",
+          "The separate practice of testing cosmetics and make-up on animals.",
+          "The general process by which new medical treatments are invented."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Validating interspecies experimentation as an unavoidable prerequisite for critical human medical breakthroughs.",
+        "correct": "Animal trials pave the way for genuine advances in human medicine.",
         "distractors": [
-          "Detailing the wide variety of animal species kept in modern laboratory facilities.",
-          "Explaining that clinical trials for new drugs often take many years to complete.",
-          "Describing the protective clothing scientists must wear when handling lab subjects."
+          "A human life is, without question, worth more than an animal's.",
+          "Animals do not experience pain in the way that people do.",
+          "Scientists have relied on animal testing for as long as anyone recalls."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Condemning vivo testing as ethically archaic and redundant in the age of computational biology and in vitro modeling.",
+        "correct": "Such testing is now obsolete thanks to newer technology.",
         "distractors": [
-          "Appealing to emotion by describing how cute and helpless laboratory animals are.",
-          "Comparing the captivity of laboratory animals to the confinement of animals in zoos.",
-          "Pointing out that humans develop deep emotional bonds with their domestic pets."
+          "Experimenting on animals is plainly cruel and ought to cease.",
+          "Animal tests rarely predict how a drug behaves in a human body.",
+          "Medicines would be better trialled on prisoners than on animals."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the utilitarian defense of medical testing, 2) Assess the ethical and technological counterarguments, 3) Formulate your bioethical stance.",
+        "correct": "Weigh saving humans, weigh the cruelty and the alternatives, then decide.",
         "distractors": [
-          "1) State that it helps humans, 2) State that it hurts animals, 3) Summarize.",
-          "1) Outline the history of medicine, 2) List types of animals used, 3) Pick the best animal.",
-          "1) Explain how tests work, 2) Detail the financial costs, 3) Give an opinion on science."
+          "Argue we save people, then that we hurt animals, then your view of doctors.",
+          "Recount medical history, then list animal types, then the best test animal.",
+          "Explain how tests run, then their cost, then your general view of science."
         ]
       }
     ]
   },
   {
     "id": "p11",
-    "promptText": "Some argue competitive sports teach children discipline and resilience. Others believe competition creates unnecessary stress and youth sports should just be for fun. Discuss both views and give your opinion.",
+    "promptText": "Some argue that competitive sport teaches children discipline and resilience. Others believe competition breeds needless stress and that youth sport should simply be fun. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The psychological impact of performance-based metrics versus recreational participation in youth athletics.",
+        "correct": "What place, if any, competition should hold in children's sport.",
         "distractors": [
-          "The purely physiological health benefits of maintaining an active lifestyle in childhood.",
-          "The intensive training regimens required to turn a child into a professional athlete.",
-          "How public schools secure funding to support their extracurricular sports programs."
+          "The physical health rewards that young people gain from playing sport.",
+          "How to coach a talented child toward a professional sporting career.",
+          "The funding that schools set aside for their competitive sports teams."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Valuing rivalry as a developmental tool that mimics real-world challenges and builds character.",
+        "correct": "Competing helps youngsters build character and vital life skills.",
         "distractors": [
-          "Explaining that organized sport keeps children safely occupied after school hours.",
-          "Describing the sense of belonging children feel when wearing matching team uniforms.",
-          "Detailing how weekend matches provide a structured routine for families."
+          "Children have to learn how to cope with both winning and losing.",
+          "Sport usefully keeps children busy and out of trouble after school.",
+          "Playing games makes a child's body noticeably stronger and fitter."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Prioritizing intrinsic enjoyment and mental well-being over the pressure of achieving victory.",
+        "correct": "The drive to win burdens children with unnecessary anxiety.",
         "distractors": [
-          "Pointing out that children often get physically dirty or muddy when playing outside.",
-          "Arguing that not every child's family can afford to buy proper, high-quality kit.",
-          "Explaining the disappointment children feel when games are cancelled by bad weather."
+          "Competitive sport frequently leaves children with physical injuries.",
+          "In truth, children do not much care whether they win or lose.",
+          "Over-competitive parents ruin the atmosphere at youth sporting events."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the developmental benefits of rivalry, 2) Analyze the psychological risks of pressure, 3) Establish your pedagogical view.",
+        "correct": "Weigh how competition builds discipline against the stress it causes, then judge.",
         "distractors": [
-          "1) Explain why competition is good, 2) Explain why it is stressful, 3) Summarize.",
-          "1) Give advice on coaching kids, 2) Give advice on parenting, 3) Discuss the Olympics.",
-          "1) Criticize lazy children, 2) Praise school sports, 3) Discuss physical education lessons."
+          "List sport's upsides, then its downsides, then your favourite sport.",
+          "Discuss coaching children, then good parenting, then your view of the Olympics.",
+          "Complain that children are lazy, that schools need sport, then your PE opinion."
         ]
       }
     ]
   },
   {
     "id": "p12",
-    "promptText": "Some believe advertising directed at children should be completely banned. Others argue it helps children learn about the free market and making choices. Discuss both views and give your opinion.",
+    "promptText": "Some believe advertising aimed at children should be banned outright. Others argue it teaches them about the marketplace and how to make choices. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The ethical boundary of exposing minors to commercial marketing versus facilitating economic socialization.",
+        "correct": "How, and whether, marketing directed at children ought to be regulated.",
         "distractors": [
-          "The psychological methods toy companies utilize in their product design phases.",
-          "The macroeconomic analysis of how much money the youth demographic spends annually.",
-          "Evaluating which styles of television commercials are the most humorous or entertaining."
+          "The harm that television commercials can do to young viewers.",
+          "The methods that big toy firms use to design their products.",
+          "The sheer amount of money that children spend on toys each year."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Protecting vulnerable cognitive stages from predatory manipulation and manufactured desires.",
+        "correct": "The law should forbid all advertising that targets the young.",
         "distractors": [
-          "Complaining that some television adverts are broadcast at a very loud volume.",
-          "Explaining that commercials strategically interrupt popular Saturday morning cartoons.",
-          "Detailing the high number of hours the average child spends watching television."
+          "Adverts pressure children into craving unhealthy junk food.",
+          "Parents ought simply to mute the set whenever commercials appear.",
+          "Advertising makes children behave in noticeably worse ways."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Viewing commercial exposure as a necessary mechanism for developing consumer literacy and decision-making.",
+        "correct": "Marketing to children usefully teaches them how the economy works.",
         "distractors": [
-          "Describing how advertisers use catchy, repetitive songs to make products memorable.",
-          "Explaining the financial model of how television networks rely on ad revenue to survive.",
-          "Pointing out that advertising has expanded from television to internet pop-ups."
+          "Children genuinely enjoy watching a clever and funny advert.",
+          "A ban on adverts would wreck the entire toy-making industry.",
+          "Children are sharp enough to see through a misleading advert."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the case for protecting minors from marketing, 2) Assess the argument for economic socialization, 3) Synthesize your regulatory stance.",
+        "correct": "Weigh the case for a ban against ads as market education, then decide.",
         "distractors": [
-          "1) State that ads are manipulative, 2) State that ads teach shopping, 3) Summarize.",
-          "1) Explain how to make an advert, 2) Explain where to place an advert, 3) Give marketing advice.",
-          "1) Review advert history, 2) Discuss colour psychology, 3) Describe your favourite commercial."
+          "Argue ads are harmful, then beneficial, then recall your childhood toys.",
+          "Explain making an advert, placing it, then your general view of marketing.",
+          "Trace advertising's history, colour psychology, then your favourite advert."
         ]
       }
     ]
   },
   {
     "id": "p13",
-    "promptText": "Some think it is acceptable for minority languages to die out to make global communication easier. Others believe governments should spend money to protect them. Discuss both views and give your opinion.",
+    "promptText": "Some think it is acceptable for minority languages to disappear if it makes global communication easier. Others believe governments should spend money to keep them alive. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The tension between linguistic homogenization for practical efficiency and the financial preservation of cultural identity.",
+        "correct": "Whether dying minority tongues should be saved or allowed to fade.",
         "distractors": [
-          "Analyzing the historical and economic reasons why English became the dominant global lingua franca.",
-          "The natural linguistic evolution and how languages continuously borrow words from one another.",
-          "The logistical difficulties and inaccuracies involved in translating highly obscure dialects."
+          "The importance of everyone learning to speak global English.",
+          "The way spoken languages naturally change over the centuries.",
+          "The difficulty translators face when handling a rare language."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Accepting linguistic attrition as a natural progression that facilitates frictionless international integration.",
+        "correct": "Letting uncommon languages vanish smooths communication worldwide.",
         "distractors": [
-          "Pointing out that some indigenous languages only have a few dozen elderly speakers left.",
-          "Explaining that dedicating years to learning a language is a frustrating experience for students.",
-          "Describing how difficult it is for foreigners to pronounce words with unfamiliar phonetic sounds."
+          "Ideally, every person on Earth would share a single language.",
+          "Minority languages are, frankly, too hard for outsiders to learn.",
+          "English is plainly the finest language for the world to adopt."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Framing language preservation as a critical state obligation to protect irreplaceable cultural paradigms.",
+        "correct": "Public funds ought to shield endangered languages from extinction.",
         "distractors": [
-          "Highlighting that some ancient languages utilize visually fascinating and unusual alphabets.",
-          "Explaining that people naturally speak at a faster pace when using their mother tongue.",
-          "Detailing how physical dictionaries are required to list the thousands of unique words."
+          "A minority language carries irreplaceable cultural memory within it.",
+          "People should at least keep speaking their mother tongue at home.",
+          "Schools would do well to teach as many as five separate languages."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the utilitarian benefits of linguistic conformity, 2) Evaluate the cultural mandate for state funding, 3) Conclude with your sociolinguistic stance.",
+        "correct": "Weigh how language loss aids communication against the case for funding rescue, then judge.",
         "distractors": [
-          "1) State that one language helps, 2) State that old languages matter, 3) Summarize.",
-          "1) Analyze grammar structures, 2) Analyze vocabulary lists, 3) State your favourite language.",
-          "1) Trace language origins, 2) Predict the future of language, 3) Give an opinion on regional accents."
+          "Praise English, then small-language beauty, then your view on learning.",
+          "Cover learning grammar, then vocabulary, then your favourite language.",
+          "Trace language origins, its future, then your opinion about accents."
         ]
       }
     ]
   },
   {
     "id": "p14",
-    "promptText": "Some argue children should only learn their own country's history to build national pride. Others believe world history is more important for understanding global issues. Discuss both views and give your opinion.",
+    "promptText": "Some argue children should study only their own country's history to foster national pride. Others believe world history matters more for understanding global affairs. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The pedagogical debate between fostering domestic allegiance and cultivating a globally contextualized worldview.",
+        "correct": "How wide the history taught in schools ought to be.",
         "distractors": [
-          "The broader philosophical discussion regarding why studying the past matters at all.",
-          "Methodologies for making history lessons more engaging for unmotivated students.",
-          "Evaluating whether state-mandated history textbooks are factually accurate and unbiased."
+          "The basic case for teaching any history to children at all.",
+          "Practical tricks for making history lessons more engaging.",
+          "Whether the facts in history textbooks can be fully trusted."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Utilizing curriculum to forge a cohesive civic identity and respect for domestic heritage.",
+        "correct": "Lessons should be confined to the nation's own past.",
         "distractors": [
-          "Listing the names of famous kings, queens, or presidents from the nation's past.",
-          "Explaining that history lessons are typically scheduled in the morning at most schools.",
-          "Arguing that memorizing centuries of old dates is mentally exhausting for young children."
+          "Children ought to know the names of their country's leaders.",
+          "World history is far too complicated for young minds to grasp.",
+          "Schools simply lack the hours to cover everything that happened."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Prioritizing a comprehensive understanding of international interconnectivity and historical precedents.",
+        "correct": "Grasping world events calls for knowledge of the wider past.",
         "distractors": [
-          "Pointing out that the Earth contains nearly two hundred distinct and different countries.",
-          "Explaining that some significant historical events happened many thousands of years ago.",
-          "Describing how teachers use large wall maps to show where different countries are located."
+          "World history is enjoyable because it introduces exotic cultures.",
+          "National history tends to be biased and stuffed with falsehoods.",
+          "Pupils need world history mainly because it comes up in exams."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the rationale for a domestically isolated curriculum, 2) Analyze the necessity of global perspectives, 3) Formulate your curricular view.",
+        "correct": "Assess the pride argument, assess the global-awareness argument, then decide.",
         "distractors": [
-          "1) Explain why home history matters, 2) Explain why world history matters, 3) Summarize.",
-          "1) Discuss teaching dates, 2) Discuss teaching major events, 3) Give your opinion on teachers.",
-          "1) Detail the history of wars, 2) Detail the history of peace treaties, 3) State a political view."
+          "Cover your own country's past, then everyone else's, then your single favourite era.",
+          "Discuss teaching dates, then events, then your view of teachers.",
+          "Trace the history of wars, then of peace, then your view on politics."
         ]
       }
     ]
   },
   {
     "id": "p15",
-    "promptText": "Some think the government should entirely pay for elderly housing and care. Others believe families should be strictly responsible for supporting older relatives. Discuss both views and give your opinion.",
+    "promptText": "Some think the government should bear the full cost of housing and caring for the elderly. Others believe families should take sole responsibility for their older relatives. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The allocation of the socioeconomic burden of geriatric care between the state welfare system and the nuclear family.",
+        "correct": "Who should shoulder the duty of caring for an ageing population.",
         "distractors": [
-          "General strategies for improving the daily physical quality of life for the elderly.",
-          "The specific biological and medical problems that inevitably accompany the ageing process.",
-          "Analyzing the economic reasons why private nursing homes have become highly expensive."
+          "Ways to improve the day-to-day quality of an older person's life.",
+          "The various medical conditions that tend to accompany old age.",
+          "The steeply climbing cost of running modern nursing homes."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Viewing eldercare as a universal civic entitlement funded collectively through taxation.",
+        "correct": "The state ought to carry the financial weight of elderly care.",
         "distractors": [
-          "Explaining that old people frequently require complex daily combinations of medication.",
-          "Detailing the specific medical training that nurses in care homes must possess.",
-          "Stating the biological fact that ageing is an inevitable process that happens to everyone."
+          "The elderly paid their taxes and so have earned this help.",
+          "New nursing homes should be built in every single town.",
+          "Older citizens deserve to receive their medicines free of charge."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Asserting that filial piety and private kinship networks are the appropriate mechanisms for elder support.",
+        "correct": "Relatives alone should be answerable for looking after the old.",
         "distractors": [
-          "Describing how much grandparents enjoy receiving visits from their grandchildren on weekends.",
-          "Pointing out that some modern homes have spare bedrooms that could be used.",
-          "Explaining that older generations possess many fascinating memories to share."
+          "Families really ought to visit their grandparents far more often.",
+          "The government is far too short of money to fund elderly care.",
+          "Most older people would rather stay on in their own homes."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the argument for state-sponsored eldercare, 2) Assess the argument for familial obligation, 3) Establish your policy stance.",
+        "correct": "Weigh the case for state funding against family responsibility, then judge.",
         "distractors": [
-          "1) State that the government pays, 2) State that the family cares, 3) Summarize.",
-          "1) Discuss physical elderly illnesses, 2) Discuss elderly mental health, 3) Give an opinion on doctors.",
-          "1) Complain about high taxes, 2) Complain about costly housing, 3) Outline an economic theory."
+          "Discuss nursing homes, then living with family, then your view of ageing.",
+          "Cover elderly illness, then mental health, then your view of doctors.",
+          "Complain about high taxes, then costly housing, then the economy."
         ]
       }
     ]
   },
   {
     "id": "p16",
-    "promptText": "Some argue genetically modified crops are necessary to feed a growing population. Others believe they pose severe, unknown risks to human health and ecosystems. Discuss both views and give your opinion.",
+    "promptText": "Some argue that genetically modified crops are essential to feed a growing population. Others believe they carry serious, unknown dangers to human health and ecosystems. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The conflict between utilizing agricultural biotechnology for demographic survival versus exercising ecological and physiological precaution.",
+        "correct": "Whether modified crops are a necessity or a hidden hazard.",
         "distractors": [
-          "Logistical proposals on how international organizations could end global starvation.",
-          "The microscopic scientific processes detailing how plant DNA is spliced and altered.",
-          "Analyzing the corporate monopolization and scale of the modern farming industry."
+          "The wider ambition of finally putting an end to world hunger.",
+          "The scientific method used to alter the genetic code of a plant.",
+          "The economics that shape the global farming business today."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Positioning bio-engineered yields as the only viable mathematical solution to global food security.",
+        "correct": "Altering plant genes offers a way to stave off mass starvation.",
         "distractors": [
-          "Explaining that some resilient crop varieties can be cultivated in extremely hot climates.",
-          "Describing the annual routine of farmers planting new seeds at the start of each season.",
-          "Pointing out that supermarkets sell vegetables in a wide variety of attractive colours."
+          "Modified crops simply grow a good deal faster than normal ones.",
+          "Engineered food actually tastes better than the organic kind.",
+          "Farmers stand to earn more money by planting modified seed."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Highlighting the unpredictable, long-term biological consequences of introducing synthetic DNA into the food chain.",
+        "correct": "Such farming may threaten health and nature in ways we cannot foresee.",
         "distractors": [
-          "Detailing how organic food is traditionally sold at local weekend farmers' markets.",
-          "Explaining that some consumers simply prefer the taste of traditional home cooking.",
-          "Describing the geographical distance between rural agricultural farms and major cities."
+          "Organic produce is unquestionably healthier than modified food.",
+          "Modified seed is priced out of reach for the poorest farmers.",
+          "Tampering with food is unnatural and, to many, morally wrong."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the demographic necessity of modified yields, 2) Evaluate the bio-risk factors, 3) Synthesize your agricultural stance.",
+        "correct": "Weigh how modification fights hunger against its risks, then decide.",
         "distractors": [
-          "1) Explain why we need food, 2) Explain why science is risky, 3) Summarize.",
-          "1) Detail how GM food is made, 2) Detail where GM food grows, 3) State your favourite vegetable.",
-          "1) Compare large supermarkets, 2) Compare local markets, 3) Give an opinion on cooking."
+          "Argue we need food, then that modification is bad, then your view of farming.",
+          "Explain how it's made, then where it grows, then your favourite vegetable.",
+          "Discuss supermarkets, then farmers' markets, then your view on cooking."
         ]
       }
     ]
   },
   {
     "id": "p17",
-    "promptText": "Some think public libraries are unnecessary because information is online. Others believe they serve a vital role as community spaces and physical resources. Discuss both views and give your opinion.",
+    "promptText": "Some think public libraries are no longer needed because information is available online. Others believe they play a vital role as community spaces and sources of physical resources. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The debate over the obsolescence of civic archival institutions in the era of digital omnipresence.",
+        "correct": "Whether libraries still serve a purpose in a connected world.",
         "distractors": [
-          "Analyzing the psychological reasons why fewer young people engage in reading physical books.",
-          "Educational strategies on how to research information safely and accurately online.",
-          "The municipal budgetary processes used to fund and maintain local public buildings."
+          "The steady fall in the number of physical books people read.",
+          "How to research information accurately using online sources.",
+          "The way local councils fund their various public buildings."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Arguing that the internet provides superior, instantaneous access to the entirety of human knowledge, rendering physical spaces redundant.",
+        "correct": "The internet has left the physical library redundant.",
         "distractors": [
-          "Explaining that informative websites can be accessed by users at any hour of the day or night.",
-          "Detailing the megabyte storage capacity of modern smartphones to hold electronic books.",
-          "Describing the rapid speed at which commercial search engines process user queries."
+          "Buying books online now works out cheaper than a library.",
+          "Libraries have grown too noisy and crowded to be pleasant.",
+          "Hardly anyone still knows how to read a physical book."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Defending libraries as irreplaceable egalitarian hubs for social cohesion, literacy, and equitable access.",
+        "correct": "Libraries remain essential as shared spaces at a community's heart.",
         "distractors": [
-          "Pointing out that library reading rooms are usually maintained as strictly quiet environments.",
-          "Explaining the Dewey Decimal system used to arrange physical books neatly on shelves.",
-          "Highlighting the historical architectural beauty of some very old library buildings."
+          "Reading a paper book is easier on the eyes than a screen.",
+          "Because the web spreads fake news, libraries are the safer source.",
+          "Libraries at least provide steady employment for librarians."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Assess the argument for digital displacement, 2) Assess the argument for civic necessity, 3) Project your view on their future.",
+        "correct": "Weigh why the web makes libraries obsolete against their community value, then decide.",
         "distractors": [
-          "1) State that online wins, 2) State that libraries help, 3) Summarize.",
-          "1) Outline the history of libraries, 2) Outline the invention of Wi-Fi, 3) State a technological view.",
-          "1) Describe borrowing books, 2) Describe using Google, 3) State your favourite author."
+          "List the web's merits, then books', then what you personally read.",
+          "Trace the library's history, the arrival of Wi-Fi, then your view of tech.",
+          "Explain borrowing books, then using search engines, then a favourite author."
         ]
       }
     ]
   },
   {
     "id": "p18",
-    "promptText": "Some argue individual lifestyle changes are best to combat climate change. Others believe only large-scale government action and corporate regulations work. Discuss both views and give your opinion.",
+    "promptText": "Some argue that personal lifestyle changes are the best way to fight climate change. Others believe only large-scale government action and corporate regulation can work. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The effectiveness of micro-level consumer responsibility versus macro-level systemic enforcement in environmental mitigation.",
+        "correct": "At what level action against climate change is most effective.",
         "distractors": [
-          "The overarching scientific causes and devastating atmospheric effects of global warming.",
-          "Practical guidelines on how individual households can properly sort and recycle their daily waste.",
-          "The infrastructural challenges of transitioning the global grid entirely to clean energy."
+          "The chief causes and consequences of a warming planet.",
+          "Practical methods for recycling household waste properly.",
+          "The worldwide shift toward cleaner, renewable sources of energy."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Asserting that cumulative shifts in grassroots consumer behavior are the ultimate driver of sustainable markets.",
+        "correct": "Changing one's own daily habits is the more powerful route.",
         "distractors": [
-          "Pointing out the rising popularity and sleek designs of modern electric cars.",
-          "Explaining the process by which some dedicated people grow their own organic food.",
-          "Describing how bicycles rely solely on human pedaling rather than combustible fuel."
+          "People ought to switch to electric cars to cut their pollution.",
+          "Everyone should turn vegetarian if the planet is to be saved.",
+          "Individuals caused the mess, so individuals must clean it up."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Arguing that the scale of the crisis requires coercive state legislation to dismantle industrial-level pollution.",
+        "correct": "Only state policy and corporate rules can make a real difference.",
         "distractors": [
-          "Describing the physical height of the chimneys found on heavy manufacturing factories.",
-          "Explaining that international governments hold regular meetings in different global cities.",
-          "Detailing the massive number of employees working for multinational oil companies."
+          "Governments should invest in building vast solar-panel farms.",
+          "Greedy corporations are the true villains destroying the Earth.",
+          "Ordinary people are, frankly, too lazy to change their habits."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the impact of grassroots behavioral shifts, 2) Evaluate the necessity of top-down systemic regulation, 3) Synthesize your strategic view.",
+        "correct": "Weigh the case for individual change against state and corporate action, then judge.",
         "distractors": [
-          "1) State that you must act, 2) State that they must act, 3) Summarize.",
-          "1) Discuss household recycling, 2) Discuss solar panel technology, 3) Give an opinion on the weather.",
-          "1) Detail the history of pollution, 2) Predict the Earth's future, 3) State a view on nature."
+          "Note that warming is bad, then government steps, then your own actions.",
+          "Discuss recycling, then solar power, then your view of the weather.",
+          "Trace pollution's history, imagine Earth's future, then your love of nature."
         ]
       }
     ]
   },
   {
     "id": "p19",
-    "promptText": "Some believe new buildings should be designed traditionally to match historical surroundings. Others argue modern, innovative architecture should always be encouraged. Discuss both views and give your opinion.",
+    "promptText": "Some believe new buildings should be designed in a traditional style to blend with historic surroundings. Others argue that bold, modern architecture should always be encouraged. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The aesthetic and cultural conflict between architectural conservationism and avant-garde structural progression.",
+        "correct": "Which design philosophy should guide the buildings we put up next.",
         "distractors": [
-          "The engineering techniques utilized to safely preserve and restore decaying historical buildings.",
-          "The scientific methods for integrating eco-friendly materials into modern construction projects.",
-          "Macroeconomic strategies for how rapidly expanding cities can solve severe housing shortages."
+          "The separate task of preserving genuinely old, historic buildings.",
+          "How sustainable and eco-friendly new construction can be made.",
+          "Ways to relieve the housing shortage gripping large cities."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Prioritizing visual harmony and the preservation of municipal identity over disruptive stylistic experimentation.",
+        "correct": "Fresh developments should echo the classical styles around them.",
         "distractors": [
-          "Explaining that very old, historically significant buildings attract many international tourists.",
-          "Pointing out that traditional clay bricks are manufactured in a wide variety of subtle colours.",
-          "Highlighting that some European towns were originally established hundreds of years ago."
+          "Old-fashioned buildings are simply better looking than modern ones.",
+          "Modern architecture is, to many eyes, ugly and rather depressing.",
+          "Tourists come only to admire the old-fashioned buildings anyway."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Championing functional evolution, technological integration, and the artistic freedom to redefine skylines.",
+        "correct": "Cities ought to champion strikingly contemporary designs.",
         "distractors": [
-          "Describing how incredibly tall skyscrapers can be visibly seen from many miles away.",
-          "Explaining that the glass exteriors of modern towers brightly reflect the afternoon sunlight.",
-          "Detailing the heavy machinery, like cranes, that are essential on modern building sites."
+          "Modern towers rise higher and so house many more people.",
+          "Building in the traditional style has grown far too costly.",
+          "Every old building should be cleared away to make room for the new."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Analyze the defense of aesthetic continuity, 2) Analyze the case for stylistic evolution, 3) Establish your architectural philosophy.",
+        "correct": "Weigh matching historic styles against pushing modern design, then decide.",
         "distractors": [
-          "1) Explain why old is nice, 2) Explain why new is useful, 3) Summarize.",
-          "1) Detail how to build a house, 2) Detail how to design a tower, 3) Name your favourite building.",
-          "1) Review the history of architecture, 2) List modern building materials, 3) State an opinion on art."
+          "Praise old buildings' beauty, then new ones' use, then your view of cities.",
+          "Explain building a house, then a skyscraper, then your favourite building.",
+          "Trace architecture's history, building materials, then your view of art."
         ]
       }
     ]
   },
   {
     "id": "p20",
-    "promptText": "Some argue increasing the minimum wage reduces poverty and benefits the economy. Others believe it forces businesses to raise prices and cut jobs. Discuss both views and give your opinion.",
+    "promptText": "Some argue that raising the minimum wage cuts poverty and strengthens the economy. Others believe it drives businesses to raise prices and shed jobs. Discuss both views and give your own opinion.",
     "phases": [
       {
         "phaseName": "1: Core Topic",
-        "correct": "The macroeconomic tension between mandated wealth redistribution and corporate operational viability.",
+        "correct": "How lifting the lowest legal pay ripples through the wider economy.",
         "distractors": [
-          "The sociological factors driving the widening wealth gap between the upper and lower classes.",
-          "Interpersonal strategies on how an employee can successfully negotiate a pay rise with a boss.",
-          "Analyzing the complex global supply chain issues that cause the cost of living to continuously increase."
+          "The steadily widening gulf in wealth between the very richest and the poorest people.",
+          "Tactics for negotiating a better salary with one's employer.",
+          "The punishing cost of living that city dwellers now endure."
         ]
       },
       {
         "phaseName": "2: Side A",
-        "correct": "Arguing that elevating the wage floor stimulates aggregate demand by placing capital directly into the hands of consumers.",
+        "correct": "A higher pay floor eases the hardship of the low-paid.",
         "distractors": [
-          "Explaining the administrative process of how wages are typically paid at the end of every calendar month.",
-          "Detailing the exhausting reality that some lower-class workers must hold more than one job to survive.",
-          "Describing the basic layout of a corporate payslip, which lists the total hours worked and tax deducted."
+          "Poorer workers deserve to earn more just to get by.",
+          "Everyone, ideally, would be paid exactly the same wage.",
+          "The state should simply hand money out to all its citizens."
         ]
       },
       {
         "phaseName": "3: Side B",
-        "correct": "Warning that artificial wage inflation inevitably triggers retaliatory corporate layoffs and consumer price hikes.",
+        "correct": "Mandated pay rises stir up inflation and destroy jobs.",
         "distractors": [
-          "Pointing out that retail shops clearly display the prices of their goods on shelves for customers to see.",
-          "Explaining that many small, family-owned businesses must open very early in the morning to prepare.",
-          "Describing how some agricultural or tourism jobs are only available as seasonal work during the summer."
+          "Small firms cannot afford to pay their workers any more.",
+          "The poor will only squander whatever extra they are given.",
+          "Minimum-wage jobs were only ever meant for teenagers anyway."
         ]
       },
       {
         "phaseName": "4: 3-Part Rule",
-        "correct": "1) Evaluate the stimulative effects of wage floors, 2) Evaluate the inflationary and employment risks, 3) Synthesize your economic stance.",
+        "correct": "Weigh how higher wages cut poverty against how they cut jobs, then decide.",
         "distractors": [
-          "1) State that high wages help, 2) State that high wages hurt, 3) Summarize.",
-          "1) Give advice on finding a job, 2) Give advice on budgeting money, 3) State your ideal salary.",
-          "1) Review the history of trade unions, 2) Predict the future of artificial intelligence at work, 3) Discuss tax views."
+          "Discuss poverty, then business profit, then your view of money.",
+          "Cover finding work, then budgeting, then your own ideal salary.",
+          "Trace the unions' history, the future of work, then your view of tax."
         ]
       }
     ]

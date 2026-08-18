@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Arena Leaderboard</title>
+<title>IELTS Arena · Live Leaderboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -11,99 +11,37 @@
   :root{
     --ink:#1a1410; --paper:#f4ead7; --gold:#c8961e; --gold-deep:#a8780f;
     --green:#2f7d52; --red:#b8442f;
-    --silver:#c9c6bd; --bronze:#c08552;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   body{font-family:'Space Mono',monospace;background:var(--ink);color:var(--paper);overflow:hidden;
        background-image:radial-gradient(circle at 15% 15%,rgba(200,150,30,.18),transparent 45%),
                         radial-gradient(circle at 85% 85%,rgba(47,125,82,.14),transparent 45%);}
-  .stage{height:100vh;display:flex;flex-direction:column;padding:26px 40px}
-  header{display:flex;justify-content:space-between;align-items:flex-start}
+  .stage{height:100vh;display:flex;flex-direction:column;padding:24px 40px}
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
   .title .kicker{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
-  .title h1{font-family:'Fraunces',serif;font-weight:900;font-size:46px;line-height:.95;margin-top:4px}
+  .title h1{font-family:'Fraunces',serif;font-weight:900;font-size:42px;line-height:.98;margin-top:4px}
   .title h1 em{font-style:italic;color:var(--gold)}
 
   .timerbox{text-align:right}
   .timerbox .lab{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
-  .timerbox .clock{font-family:'Fraunces',serif;font-weight:900;font-size:78px;line-height:.9}
+  .timerbox .clock{font-family:'Fraunces',serif;font-weight:900;font-size:74px;line-height:.9}
   .clock.warn{color:var(--gold)}
   .clock.danger{color:var(--red);animation:pulse .9s infinite}
-  .clock.over{color:var(--red)}
   @keyframes pulse{50%{opacity:.45}}
 
   .chartwrap{flex:1;margin-top:16px;position:relative;min-height:0}
   .empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-         font-family:'Fraunces',serif;font-size:30px;color:var(--gold);opacity:.6}
+         font-family:'Fraunces',serif;font-size:30px;color:var(--gold);opacity:.6;text-align:center}
 
   .controls{display:flex;gap:12px;align-items:center;margin-top:14px;flex-wrap:wrap}
   .controls input{font-family:'Space Mono',monospace;width:70px;font-size:16px;padding:8px;border:2px solid var(--gold);
                   border-radius:8px;background:transparent;color:var(--paper);text-align:center}
   .controls button{font-family:'Fraunces',serif;font-weight:900;font-size:15px;padding:9px 18px;border:2px solid var(--gold);
-                   border-radius:9px;background:var(--gold);color:var(--ink);cursor:pointer;transition:transform .1s}
-  .controls button:active{transform:translateY(2px)}
+                   border-radius:9px;background:var(--gold);color:var(--ink);cursor:pointer}
   .controls button.ghost{background:transparent;color:var(--gold)}
-  .controls button.danger{border-color:var(--red);color:var(--red)}
   .controls .spacer{flex:1}
   .status{font-size:12px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase}
-
-  /* ================= PODIUM ================= */
-  .podium{position:fixed;inset:0;z-index:40;background:
-      radial-gradient(ellipse at 50% 28%,rgba(200,150,30,.20),transparent 62%),
-      #0a0705;
-    backdrop-filter:blur(6px);
-    display:none;flex-direction:column;align-items:center;justify-content:center;padding:26px 34px;overflow:hidden}
-  .podium.on{display:flex;animation:fadein .55s}
-  @keyframes fadein{from{opacity:0}to{opacity:1}}
-
-  .podium .ptitle{font-family:'Fraunces',serif;font-weight:900;font-size:52px;line-height:1;text-align:center;
-                  color:var(--gold);text-shadow:0 0 46px rgba(200,150,30,.45)}
-  .podium .psub{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:rgba(244,234,215,.5);margin-top:12px;text-align:center}
-
-  .plinths{display:flex;align-items:flex-end;justify-content:center;gap:22px;margin-top:30px;height:378px}
-  .pl{width:266px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
-  .pl .cap{text-align:center;margin-bottom:13px;width:100%}
-  .pl .medal{font-size:44px;line-height:1;filter:drop-shadow(0 5px 14px rgba(0,0,0,.6))}
-  .pl .nm{font-family:'Fraunces',serif;font-weight:900;font-size:25px;line-height:1.15;margin-top:8px;
-          overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .pl .sc{font-family:'Fraunces',serif;font-weight:900;font-size:44px;line-height:1;margin-top:4px}
-  .pl .base{width:100%;border-radius:14px 14px 0 0;display:flex;flex-direction:column;align-items:center;
-            justify-content:flex-start;padding:16px 10px;position:relative;overflow:hidden;
-            animation:rise .85s cubic-bezier(.2,.85,.25,1) both}
-  @keyframes rise{from{transform:translateY(100%)}to{transform:none}}
-  .pl .base .rk{font-family:'Fraunces',serif;font-weight:900;font-size:60px;line-height:.9;opacity:.32;color:#000}
-  .pl .stats{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap;justify-content:center}
-  .pl .stats span{background:rgba(0,0,0,.34);border-radius:20px;padding:4px 10px;font-size:10px;font-weight:700;
-                  letter-spacing:.05em;white-space:nowrap}
-
-  .pl1 .base{height:250px;background:linear-gradient(180deg,#e8c05c,#a8780f)}
-  .pl1 .sc{color:var(--gold)}
-  .pl1 .nm{color:#ffeab5}
-  .pl2 .base{height:186px;background:linear-gradient(180deg,#e2ded3,#9b978d)}
-  .pl2 .sc{color:var(--silver)}
-  .pl3 .base{height:142px;background:linear-gradient(180deg,#d9a06a,#95612f)}
-  .pl3 .sc{color:var(--bronze)}
-  .pl2 .base{animation-delay:.12s}
-  .pl3 .base{animation-delay:.24s}
-  .pl1 .base{animation-delay:.36s}
-
-  .alsoran{margin-top:30px;display:flex;gap:9px;flex-wrap:wrap;justify-content:center;max-width:1000px}
-  .alsoran span{border:1px solid rgba(200,150,30,.3);border-radius:20px;padding:6px 14px;font-size:12px;color:rgba(244,234,215,.72)}
-  .alsoran b{color:var(--gold);font-weight:700}
-  .podium .pfoot{margin-top:26px;display:flex;gap:10px}
-  .podium .pfoot button{font-family:'Fraunces',serif;font-weight:900;font-size:15px;padding:11px 24px;
-    border:2px solid var(--gold);border-radius:10px;background:transparent;color:var(--gold);cursor:pointer}
-  .podium .pfoot button.solid{background:var(--gold);color:var(--ink)}
-
-  .podium .ptitle,.podium .psub,.podium .plinths,.podium .alsoran,.podium .pfoot{position:relative;z-index:1}
-  .confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-  .confetti i{position:absolute;top:-24px;width:9px;height:15px;opacity:.92;animation:fall linear forwards}
-  @keyframes fall{to{transform:translateY(112vh) rotate(760deg)}}
-
-  @media (max-height:820px){
-    .plinths{height:300px} .pl1 .base{height:196px} .pl2 .base{height:146px} .pl3 .base{height:112px}
-    .podium .ptitle{font-size:42px}
-  }
 </style>
 </head>
 <body>
@@ -111,10 +49,10 @@
   <header>
     <div class="title">
       <div class="kicker">Satriwithaya · Live</div>
-      <h1>Conditional <em>Arena</em></h1>
+      <h1>IELTS Anatomy of a Prompt: <em>Live Arena</em></h1>
     </div>
     <div class="timerbox">
-      <div class="lab" id="clockLab">Time Remaining</div>
+      <div class="lab">Time Remaining</div>
       <div class="clock" id="clock">--:--</div>
     </div>
   </header>
@@ -127,33 +65,18 @@
   <div class="controls">
     <input type="number" id="mins" value="10" min="1" max="60" />
     <button id="startBtn">Start Round</button>
-    <button class="ghost" id="stopBtn">Stop &amp; Show Podium</button>
-    <button class="ghost danger" id="resetBtn">Reset</button>
+    <button class="ghost" id="stopBtn">Stop</button>
+    <button class="ghost" id="resetBtn">Reset</button>
     <div class="spacer"></div>
     <div class="status" id="status">Polling every 3s</div>
   </div>
 </div>
 
-<!-- ================= PODIUM ================= -->
-<div class="podium" id="podium">
-  <div class="confetti" id="confetti"></div>
-  <div class="ptitle" id="podTitle">Final Results</div>
-  <div class="psub">Conditional Arena · Satriwithaya English Program</div>
-  <div class="plinths" id="plinths"></div>
-  <div class="alsoran" id="alsoran"></div>
-  <div class="pfoot">
-    <button id="backBtn">← Back to Board</button>
-    <button class="solid" id="againBtn">Start Another Round</button>
-  </div>
-</div>
-
 <script>
-/* Paste your deployed Google Apps Script Web App URL below */
-const API_URL = "https://script.google.com/macros/s/AKfycbxFyjmyRRH9DrFS7seWIfYyw6lPzxx9eosrPnYKxMd8PWke91c4eJU1B-YSCk0lSHMAPA/exec";
+/* Paste your deployed Google Apps Script Web App URL below (same URL as index.html) */
+const API_URL = "https://script.google.com/macros/s/AKfycbxEy47rMjJ9_yy4KwJrzzXPZrBX93jslfJj1C4H3qE1exzWmfQfzj04H8EUINaq1-J8jA/exec";
 
-const $ = id => document.getElementById(id);
-const esc = t => String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
+/* ---------- Network ---------- */
 async function api(method, body, params){
   if(!API_URL || API_URL.indexOf("PASTE_")===0) throw new Error("no-api");
   let url = API_URL;
@@ -163,7 +86,7 @@ async function api(method, body, params){
   const r=await fetch(url,opts); return r.json();
 }
 
-/* ----- Chart ----- */
+/* ---------- Chart ---------- */
 const ctx = document.getElementById('chart').getContext('2d');
 const COLORS = ['#c8961e','#2f7d52','#b8442f','#7a5cc4','#2f6d9e','#c46a1e','#5a8f3a','#a83f6a',
                 '#3a8f8a','#9e7a2f','#6a4fb0','#2f9e6d','#b04f3a','#4f6ab0','#8f5a2f'];
@@ -181,151 +104,57 @@ const chart = new Chart(ctx, {
   }
 });
 
-/* teamLabel — prefer a team name if the backend supplies one, else "Team N" */
-const teamLabel = t => t.name || ('Team '+t.team);
-
 function renderBoard(teams){
   const empty=document.getElementById('empty');
   if(!teams.length){ empty.style.display='flex'; chart.data.labels=[]; chart.data.datasets[0].data=[]; chart.update(); return; }
   empty.style.display='none';
-  const sorted = [...teams].sort((a,b)=> b.score-a.score || a.team-b.team);
-  const top = sorted.slice(0,15);
-  chart.data.labels = top.map((t,i)=> (i===0?'👑 ':'')+teamLabel(t));
+  // dynamically re-sort so highest score is at top
+  const sorted=[...teams].sort((a,b)=>b.score-a.score);
+  const top=sorted.slice(0,15);
+  chart.data.labels = top.map((t,i)=> (i===0?'👑 ':'')+t.team);
   chart.data.datasets[0].data = top.map(t=>t.score);
   chart.data.datasets[0].backgroundColor = top.map((_,i)=>COLORS[i%COLORS.length]);
   chart.update();
 }
 
-/* ----- Timer (absolute-timestamp, survives refresh) ----- */
-let expirationMs = 0, running = false;
-
-/* The round is "finished" once a started timer's expiry has passed. */
-function isFinished(){ return running && expirationMs && Date.now() >= expirationMs; }
-
+/* ---------- Timer (absolute-timestamp, survives refresh) ---------- */
+let expirationMs=0, running=false;
 function renderClock(){
-  const clock = document.getElementById('clock');
-  if(isFinished()){ clock.textContent='0:00'; clock.className='clock over'; $('clockLab').textContent='Round Over'; maybePodium(); return; }
-  if(!running || !expirationMs){ clock.textContent='--:--'; clock.className='clock'; $('clockLab').textContent='Time Remaining'; return; }
-  const rem = Math.max(0, expirationMs - Date.now());
-  const s = Math.floor(rem/1000), m=Math.floor(s/60), ss=String(s%60).padStart(2,'0');
+  const clock=document.getElementById('clock');
+  if(!running || !expirationMs){ clock.textContent='--:--'; clock.className='clock'; return; }
+  const rem=Math.max(0, expirationMs - Date.now());
+  const s=Math.floor(rem/1000), m=Math.floor(s/60), ss=String(s%60).padStart(2,'0');
   clock.textContent = m+':'+ss;
-  clock.className = 'clock' + (s<=30?' danger':s<60?' warn':'');
-  $('clockLab').textContent = 'Time Remaining';
+  clock.className = 'clock' + (s<=0?' danger':s<30?' danger':s<60?' warn':'');
 }
-setInterval(renderClock, 250);
+setInterval(renderClock,250);
 
-/* ============================================================
-   PODIUM
-   ============================================================ */
-let latestTeams = [];
-let podiumDismissed = false;   // set when the teacher clicks "Back to Board"
-let podiumShown = false;       // guards one-shot confetti
-
-function maybePodium(){
-  const finished = isFinished();
-  const scored = latestTeams.filter(t=>t.score>0);
-  if(finished && scored.length && !podiumDismissed){ showPodium(scored); }
-  else if(!finished){ hidePodium(); podiumDismissed = false; }
-}
-
-function showPodium(scored){
-  const sorted = [...scored].sort((a,b)=> b.score-a.score || a.team-b.team);
-  const top = sorted.slice(0,3);
-  const rest = sorted.slice(3);
-
-  /* Stat chips render only for fields the backend actually provides,
-     so this degrades gracefully on the current Apps Script. */
-  const stat = t => {
-    const chips = [];
-    if(t.rounds) chips.push('<span>'+t.rounds+' rounds</span>');
-    if(t.rounds && t.correct!=null) chips.push('<span>'+Math.round((t.correct||0)/t.rounds*100)+'% read</span>');
-    if(t.bestStreak>=2) chips.push('<span>🔥 '+t.bestStreak+' streak</span>');
-    return chips.length ? '<div class="stats">'+chips.join('')+'</div>' : '';
-  };
-  const plinth = (t, place) => t ? (
-    '<div class="pl pl'+place+'">'+
-      '<div class="cap">'+
-        '<div class="medal">'+(place===1?'🥇':place===2?'🥈':'🥉')+'</div>'+
-        '<div class="nm">'+esc(teamLabel(t))+'</div>'+
-        '<div class="sc">'+t.score+'</div>'+
-      '</div>'+
-      '<div class="base"><div class="rk">'+place+'</div>'+stat(t)+'</div>'+
-    '</div>') : '';
-
-  // 2nd on the left, 1st centre, 3rd on the right
-  $('plinths').innerHTML = plinth(top[1],2) + plinth(top[0],1) + plinth(top[2],3);
-  $('podTitle').textContent = top.length===1 ? 'Winner' : 'Final Results';
-  $('alsoran').innerHTML = rest.map((t,i)=>
-    '<span>'+(i+4)+'. '+esc(teamLabel(t))+' <b>'+t.score+'</b></span>').join('');
-
-  if(!podiumShown){ dropConfetti(); podiumShown = true; }
-  $('podium').classList.add('on');
-}
-
-function hidePodium(){ $('podium').classList.remove('on'); podiumShown = false; }
-
-function dropConfetti(){
-  const c = $('confetti'); c.innerHTML='';
-  const cols = ['#c8961e','#f4ead7','#2f7d52','#b8442f','#7a5cc4','#e8c05c'];
-  let html = '';
-  for(let i=0;i<90;i++){
-    const dur = (2.6 + Math.random()*2.8).toFixed(2);
-    html += '<i style="left:'+(Math.random()*100).toFixed(2)+'%;'+
-            'background:'+cols[i%cols.length]+';'+
-            'animation-duration:'+dur+'s;'+
-            'animation-delay:'+(Math.random()*2.2).toFixed(2)+'s;'+
-            'transform:rotate('+Math.floor(Math.random()*360)+'deg)"></i>';
-  }
-  c.innerHTML = html;
-}
-
-$('backBtn').onclick = ()=>{ podiumDismissed = true; hidePodium(); };
-$('againBtn').onclick = async ()=>{
-  const m = parseInt($('mins').value)||10;
-  podiumDismissed = false;
-  try{ await api('POST',{action:'start',minutes:m}); hidePodium(); poll(); }catch(e){ alert('Set API_URL first.'); }
-};
-
-/* ----- Short polling (3s) ----- */
+/* ---------- Polling every 3s ---------- */
 async function poll(){
   try{
-    const r = await api('GET', null, 'action=leaderboard');
+    const r=await api('GET',null,'action=leaderboard');
     if(r && r.ok){
-      latestTeams = r.teams || [];
-      renderBoard(latestTeams);
-      if(r.timer){ expirationMs = r.timer.expirationMs||0; running = !!r.timer.running; }
-      renderClock();
-      maybePodium();
-      document.getElementById('status').textContent='Live · '+latestTeams.length+' teams';
+      renderBoard(r.teams||[]);
+      if(r.timer){ expirationMs=r.timer.expirationMs||0; running=!!r.timer.running; }
+      document.getElementById('status').textContent='Live · '+((r.teams&&r.teams.length)||0)+' teams';
     }
   }catch(e){
     document.getElementById('status').textContent='Set API_URL in leaderboard.html';
   }
 }
-poll(); setInterval(poll, 3000);
+poll(); setInterval(poll,3000);
 
-/* ----- Teacher controls ----- */
-$('startBtn').onclick = async ()=>{
-  const m = parseInt($('mins').value)||10;
-  podiumDismissed = false;
-  try{ await api('POST',{action:'start',minutes:m}); hidePodium(); poll(); }catch(e){ alert('Set API_URL first.'); }
+/* ---------- Teacher controls ---------- */
+document.getElementById('startBtn').onclick=async()=>{
+  const m=parseInt(document.getElementById('mins').value)||10;
+  try{ await api('POST',{action:'start',minutes:m}); poll(); }catch(e){ alert('Set API_URL first.'); }
 };
-$('stopBtn').onclick = async ()=>{
-  /* Ask the backend to stop; if it doesn't support "stop", fall back to
-     expiring the timer locally so the podium still appears. */
-  podiumDismissed = false;
-  try{ await api('POST',{action:'stop'}); }catch(e){}
-  if(running){ expirationMs = Date.now(); }
-  poll();
-  maybePodium();
+document.getElementById('stopBtn').onclick=async()=>{
+  try{ await api('POST',{action:'stop'}); poll(); }catch(e){ alert('Set API_URL first.'); }
 };
-$('resetBtn').onclick = async ()=>{
+document.getElementById('resetBtn').onclick=async()=>{
   if(!confirm('Reset all scores and timer?')) return;
-  try{
-    await api('POST',{action:'reset'});
-    podiumDismissed=false; hidePodium();
-    poll();
-  }catch(e){ alert('Set API_URL first.'); }
+  try{ await api('POST',{action:'reset'}); poll(); }catch(e){ alert('Set API_URL first.'); }
 };
 </script>
 </body>
